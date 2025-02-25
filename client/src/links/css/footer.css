@@ -1,0 +1,101 @@
+.footer {
+    width: 100%;
+    background-color: #121212; /* Dark background */
+    padding: 2vw 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #d3ad8c; /* Beige text color */
+}
+
+/* Left Section - Icon */
+.footer .image img {
+    height: 5vw;
+}
+
+/* Subscription Section */
+.footer .subscription {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.footer .subscription .subscribe {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.footer .subscription input {
+    width: 15vw;
+    padding: 0.8vw;
+    border: none;
+    background: #333;
+    color: white;
+    font-size: 1vw;
+    border-radius: 5px;
+    margin-top: 1vw;
+}
+
+.footer .subscription input::placeholder {
+    color: #bbb;
+}
+
+.footer .subscription .subscribe-button {
+    background: #5b3223;
+    color: white;
+    padding: 0.8vw 1.5vw;
+    border: none;
+    border-radius: 5px;
+    margin-left: 0.5vw;
+    cursor: pointer;
+}
+
+.footer .subscription .subscribe-button:hover {
+    background: #45261b;
+}
+
+/* Social Media Section */
+.footer .connect {
+    text-align: right;
+}
+
+.footer .connect .text {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.footer .connect .social-media-icons a {
+    font-size: 1.8vw;
+    color: white;
+    margin: 0 0.5vw;
+    transition: transform 0.2s;
+}
+
+.footer .connect .social-media-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .image img {
+        height: 8vw;
+    }
+
+    .footer .subscription input {
+        width: 80%;
+        font-size: 3vw;
+    }
+
+    .footer .subscription .subscribe-button {
+        padding: 2vw;
+        font-size: 3vw;
+    }
+
+    .footer .connect .social-media-icons a {
+        font-size: 5vw;
+    }
+}

@@ -1,0 +1,85 @@
+/* Background: Soft parchment texture */
+.contactus {
+	background: linear-gradient(to bottom, #d4b595, #4a2c2a); /* Background color similar to the image */
+    min-height: 100vh;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Elegant header styling */
+.contactusTop {
+    text-align: center;
+    font-size: 6vw;
+    font-weight: bold;
+    color: #5D4037;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    padding-top: 5vw;
+    line-height: 1.2;
+}
+
+/* Contact Cards - Make them pop */
+.contact-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 3vw;
+}
+
+.contact {
+    background: linear-gradient(135deg, #f5e1c9, #f9f0e1);
+    border: 2px solid #8D6E63;
+    padding: 2vw;
+    margin: 1vw;
+    border-radius: 15px;
+    width: 40%;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Card Hover Effect - Soft Glow */
+.contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #f3d6b5, #f7ebd8);
+}
+
+/* Contact Text Styling */
+.contact h2 {
+    color: #5D4037;
+    font-weight: bold;
+    font-size: 1.8vw;
+}
+
+.contact a {
+    color: #795548;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+
+.contact p {
+    font-size: 1.2vw;
+    color: #6D4C41;
+}
+
+/* Icon Styling */
+.contact p::before {
+    content: "📞 ";
+    font-size: 1.4vw;
+    color: #D84315;
+}
+
+/* Responsive Tweaks */
+@media screen and (max-width: 970px) {
+    .contact {
+        width: 80%;
+        font-size: 4vw;
+    }
+    .contact h2 {
+        font-size: 5vw;
+    }
+    .contact a, .contact p {
+        font-size: 4vw;
+    }
+}

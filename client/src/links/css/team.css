@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+VN:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'BasheqVintage';
+    src: url('../fonts/BasheqVintage.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 🌟 Vintage Background */
+.shilp-team { 
+    background-image: url("https://www.transparenttextures.com/patterns/aged-paper.png"); /* Vintage Paper */
+    background-size: cover;
+    background-repeat: repeat;
+    overflow-x: hidden;
+    margin-top: 10vh;
+    padding: 5vh 0;
+    filter: sepia(10%) contrast(90%);
+}
+
+/* 🌟 Keep Team Title Layout the Same */
+.team-title {
+    position: relative;
+    color: #3b2c20;
+    font-family: 'BasheqVintage', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #dbb27de4;    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #6b4f3f;
+    margin-bottom: 30px;
+}
+
+/* 🟢 Keep Team Cards in ROW layout */
+.team-container {
+    position: relative;
+    z-index: 1;
+    width: 85%;
+    margin: auto;
+    display: flex;  /* Keeps cards in a row */
+    flex-direction: row;  /* Ensures it remains horizontal */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* 🌟 Vintage Themed Team Cards */
+.team-container .team-card {
+    width: 280px; /* Keep Original Size */
+    height: 380px;
+    margin: 20px;
+    background-image: url('../img/teamContainer.webp'); /* Replace with correct path */
+    background-size: cover;  /* Covers the full area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    border: 3px solid #6b4f3f; /* Dark Brown */
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+/* 🟢 Keep Profile Image Inside Circle */
+.team-container .team-card .team-content .imgBx {
+    position: relative;
+    margin-top: 1.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #cdb518; /* Aged Gold Frame */
+    background: #c4a484; /* Light Brown */
+}
+
+/* 🌟 Image Stays Inside */
+.team-container .team-card .team-content .imgBx img {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keeps Image Fitting */
+}
+
+/* 🌟 Text Styling for Vintage Feel */
+.team-container .team-card .team-content .contentBx {
+    margin-left: 1vh;
+    margin-right: 1vh;
+    text-align: center;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: 'BasheqVintage', serif;
+    color: #3b2c20;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.team-container .team-card .team-content .contentBx .profile-Name{
+    font-size: 1.5rem;
+    font-weight: "semi-bold";
+    margin-bottom: 5px;
+}
+/* 🌟 Social Icons with Vintage Gold Effect */
+.team-container .team-card .sci {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-container .team-card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.team-container .team-card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.team-container .team-card .sci li a {
+    color: #8b5a2b;  /* Goldish Brown */
+    font-size: 22px;
+    transition: 0.3s ease-in-out;
+}
+
+.team-container .team-card .sci li a:hover {
+    color: #5b3a29; /* Darker Brown */
+    transform: scale(1.2);
+}
+
+/* 🌟 Hover Effects */
+.team-container .team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 🟢 Ensure Team Header Stays Centered */
+.team-header {
+    margin: 5vh 0 5vh 0;
+}
+
+.team-header h1 {
+    color: #5b3a29;
+    font-size: 6vw;
+    font-weight: 700;
+    font-family: 'BasheqVintage', serif;
+    text-align: center;
+}
+
+/* 🟢 Keep Layout Responsive */
+@media screen and (max-width: 768px) {
+    .team-header h1 {
+        font-size: 8vw;
+    }
+
+    .team-container {
+        flex-direction: row;  /* Keeps in Rows */
+    }
+
+    .team-container .team-card {
+        width: 250px;
+        height: 350px;
+    }
+
+    .team-container .team-card .team-content .imgBx {
+        width: 140px;
+        height: 140px;
+    }
+}

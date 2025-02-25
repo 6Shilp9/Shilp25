@@ -1,0 +1,151 @@
+/* 🌟 Base Styles */
+.contain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5%;
+    min-height: 100vh;
+    background-color: #c9a883; /* Light brown background */
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 20px; /* Adds spacing between elements */
+}
+.description {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #4a1f1f; /* Dark brown text */
+    max-width: 600px;
+    text-align: justify;
+}
+
+.shilp-logo {
+    flex: 0 0 auto;
+    margin-right: 40px;
+    width: 400px;
+    height: 400px;
+}
+
+/* Ensure the 3D model fits correctly */
+.shilp-logo div {
+    width: 100%;
+    height: 100%;
+}
+
+/* 🌟 Stats Section */
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2); /* Light opacity box */
+    padding: 12px;
+    border-radius: 10px;
+    min-width: 120px;
+}
+
+.stat-item h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #4a1f1f; /* Dark brown */
+    margin: 5px 0;
+}
+
+.stat-item p {
+    font-size: 0.8rem;
+    color: #4a1f1f;
+}
+
+.icon {
+    font-size: 1.8rem;
+    color: #4a1f1f;
+}
+
+/* 🌟 Responsive Design */
+@media screen and (max-width: 1024px) {
+    .contain {
+        flex-direction: column;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .shilp-logo {
+        margin-bottom: 20px;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0 10px;
+    }
+
+    .stat-item {
+        min-width: 100px;
+        padding: 10px;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+    }
+
+    .stat-item h2 {
+        font-size: 1.2rem;
+    }
+
+    .stat-item p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .description {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+
+    .stat-item {
+        width: 90%;
+        padding: 8px;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+    }
+
+    .stat-item h2 {
+        font-size: 1rem;
+    }
+
+    .stat-item p {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,55 @@
+.navbar {
+	position:fixed !important;
+	top: 0;
+	width: 100%;
+	background: #310751f4;
+	padding-bottom: 0px;
+	z-index: 9999999;
+}
+.navbar-brand img{
+	position: absolute;
+	top: 0;left: 0;
+	height: 70px;
+	width: 70px;
+}
+.nav-item {
+	font-size: 1.1vw;
+	font-weight: 600;
+	color: white;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar-toggler {
+	margin-right: 15px;
+}
+
+.ProfilePic {
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+	.navbar{
+		background: #310751;
+	}
+	.nav-item {
+		font-size: 18px;
+	}
+	.navbar-collapse{
+		height: 100dvh;
+	}
+	.nav-link{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.ProfilePic{
+		display: flex;
+		margin: auto;
+	}
+}

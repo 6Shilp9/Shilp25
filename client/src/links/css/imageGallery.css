@@ -1,32 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-.imageGallery{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    z-index: 99;
+.gallerycontain {
+    margin-top: 20vh;
+  }
+  
+  .imgGallery {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allows wrapping of images to the next row */
     justify-content: space-between;
-}
-.subtitle{
-    color: #9b7fae;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 5vw;
+    gap: 3vw; /* Space between images */
+    margin: 5vw;
+  }
+  
+  .frame {
     position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 5vh;
-}
-@media screen and (max-width: 600px) {
-    .imageGallery{
-        margin-top: 20vh;
+    display: inline-block;
+    padding: 10px; /* Padding for inner spacing between frame and image */
+    border: 8px solid #d4a373; /* Vintage gold frame color */
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); /* Gives a subtle shadow for depth */
+    background-color: #f2e8c9; /* Slightly off-white background like old paper */
+  }
+  
+  .galimg {
+    width: 28vw;
+    border-radius: 5px; /* Rounded corners inside the frame */
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 900px) {
+    .imgGallery {
+      gap: 3vw; /* Adjust space between images */
     }
-    .subtitle{
-        font-size: 9.7vw;
+    .galimg {
+      width: 40vw; /* Images take up more space on smaller screens */
     }
-    .mySwiper2 img{
-        height: 40vh;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .imgGallery {
+      gap: 3vw; 
     }
-    
-}
+    .galimg {
+      width: 80vw; 
+    }
+  }
+  

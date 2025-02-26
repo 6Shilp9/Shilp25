@@ -19,7 +19,7 @@ function Hero() {
       </div>
       <div className="hero-bottom">
         <Fade bottom delay = {800}>
-        <h3 className="hero-date">5-7 April, 2024</h3>
+        <h3 className="hero-date">11-13 April, 2024</h3>
         <div className="countdown-timer">
           <Timer />
         </div>

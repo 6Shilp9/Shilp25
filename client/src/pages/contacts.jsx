@@ -42,19 +42,11 @@ const Contacts = ({ AllAuth }) => {
                             <p>📞 +91 8369895384</p>
                         </div>
 						</Fade>
-						<Fade left>
+                        <Fade right>
                         <div className="contact">
-                            <h2>Sarthak Anand</h2>
-                            <a href="mailto:sarthak.anand.civ21@itbhu.ac.in">sarthak.anand.civ21@itbhu.ac.in</a>
-                            <p>📞 +91 9007508444</p>
-        
-                        </div>
-						</Fade>
-						<Fade right>
-                        <div className="contact">
-                            <h2>Aman Srivastava</h2>
-                            <a href="mailto:aman.srivastava.civ21@itbhu.ac.in">aman.srivastava.civ21@itbhu.ac.in</a>
-                            <p>📞 +91 9625167658</p>
+                            <h2>Mugdha Chaturvedi</h2>
+                            <a href="mailto:mugdha.chaturvedi.civ22@itbhu.ac.in">mugdha.chaturvedi.civ22@itbhu.ac.in</a>
+                            <p>📞 +91 9305781467</p>
                         </div>
 						</Fade>
                     </div>

@@ -45,15 +45,16 @@ const Contacts = ({ AllAuth }) => {
 						<Fade left>
                         <div className="contact">
                             <h2>Sarthak Anand</h2>
-                            <p>📞 +91 9007508444</p>
                             <a href="mailto:sarthak.anand.civ21@itbhu.ac.in">sarthak.anand.civ21@itbhu.ac.in</a>
+                            <p>📞 +91 9007508444</p>
+        
                         </div>
 						</Fade>
 						<Fade right>
                         <div className="contact">
                             <h2>Aman Srivastava</h2>
                             <a href="mailto:aman.srivastava.civ21@itbhu.ac.in">aman.srivastava.civ21@itbhu.ac.in</a>
-                            <p>📞 +91 96251 67658</p>
+                            <p>📞 +91 9625167658</p>
                         </div>
 						</Fade>
                     </div>

@@ -6,6 +6,45 @@ import TeamCard from "../components/TeamCard";
 import Contacts from "../components/Contact Information";
 import Loader from "../components/LoadingScreen";
 
+const convenors = [
+    {
+        id: 1,
+        Designation: "Convenor",
+        data: [
+            {
+                url: "./TeamPhotos/IV Year/Ashutosh Gupta_ Convenor.webp",
+                Name: "Ashutosh Gupta",
+                Email: "ashutosh.gupta.civ20@iitbhu.ac.in",
+                Instagram: "https://www.instagram.com/interesting10ashu",
+                Linkedin: "https://www.linkedin.com/in/ashutosh-gupta-3a7577203",
+                MobileNo: "7458842288",
+            },
+        ],
+    },
+    {
+        id: 2,
+        Designation: "Co-Convenor",
+        data: [
+            {
+                url: "./TeamPhotos/IV Year/Kanhaiya Kumar _ Co-Convener.webp",
+                Name: "Kanhaiya Kumar",
+                Email: "",
+                Instagram: "",
+                Linkedin: "",
+                MobileNo: "",
+            },
+            {
+                url: "/TeamPhotos/III Year/NANDINI BHIMSARIA_ CO-CONVENOR_page-0001 (1).webp",
+                Name: "Nandini Bhimsaria",
+                Email: "",
+                Instagram: "",
+                Linkedin: "",
+                MobileNo: "",
+            },
+        ],
+    },
+];
+
 const Team = ({ AllAuth }) => {
     const [loading, setLoading] = useState(true);
 
@@ -18,10 +57,7 @@ const Team = ({ AllAuth }) => {
     return (
         <div className="App">
             {loading ? (
-                <div className="loader-container" style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100vh", background:"black"}}>
-                {/* <ParticleBackground /> */}
-                <Loader onComplete={() => setLoading(false)} />
-                </div>
+                <Loader />
             ) : (
                 <div className="body">
                     <NavBar AllAuth={AllAuth} />
@@ -30,42 +66,54 @@ const Team = ({ AllAuth }) => {
                         <header className="team-header">
                             <h1>Meet Our SHILP Team</h1>
                         </header>
+                        <div className="conveynor-box">
+                        <div className="conveynor-title">Conveynor</div>
+                        <div className="conveynor-container">
+                        {convenors.map((e) => (
+                            <div className="box" key={e.id}>
+                                <div className="team-title conveynor-subtitle">{e.Designation}</div>
+                                <div className="team-container conveynor-container">
+                                    {e.data.map((member, memberIndex) => (
+                                        <TeamCard
+                                        key={`team-${member.Name}-${memberIndex}`} // ✅ Unique key
+                                                    Name={member.Name}
+                                                    ProfilePhoto={member.url}
+                                                    LinkedIn={member.Linkedin}
+                                                    Gmail={member.Email}
+                                                    Instagram={member.Instagram} />
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                        </div>
+                        </div>
 
-                        {Contacts.map((e) => (
-                            <div className="team-title" id="coConveynor" key={e.id}>
-                                <div className="team-title-heading">{e.Designation}</div>
-                                <div className="team-container">
-    {e.data.map((f, index) =>
-        f.Name === "Anurag Prakash" || f.Name === "Anshika Singh" || f.Name === "Pratik Nand" ? (
-            <TeamCard
-                key={`team-${f.Name}-${index}`} // ✅ Unique key added here
-                Name={f.Name}
-                ProfilePhoto={f.url}
-                LinkedIn={f.Linkedin}
-                Gmail={f.Email}
-                Instagram={f.Instagram}
-                style={{ objectFit: "contain", transform: "scale(1.5)", top: "40px" }}
-            />
-        ) : (
-            <TeamCard
-                key={`team-${f.Name}-${index}`} // ✅ Unique key added here
-                Name={f.Name}
-                ProfilePhoto={f.url}
-                LinkedIn={f.Linkedin}
-                Gmail={f.Email}
-                Instagram={f.Instagram}
-            />
-        )
-    )}
-</div>
-
+                        {Contacts.map((team) => (
+                            <div className="team-box" key={team.id}>
+                                <div className="team-title">{team.Team}</div>
+                                {team.team.map((role) => (
+                                    <>
+                                        <div className="team-subheading">{role.Designation}</div>
+                                        <div className="team-container">
+                                            {role.data.map((member, memberIndex) => (
+                                                <TeamCard
+                                                key={`team-${member.Name}-${memberIndex}`} // ✅ Unique key
+                                                    Name={member.Name}
+                                                    ProfilePhoto={member.url}
+                                                    LinkedIn={member.Linkedin}
+                                                    Gmail={member.Email}
+                                                    Instagram={member.Instagram}
+                                                    />
+                                            ))}
+                                        </div>
+                                    </>
+                                ))}
                             </div>
                         ))}
                     </div>
-
-                    <Footer />
                 </div>
             )}
+            <Footer />
         </div>
     );
 };

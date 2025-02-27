@@ -61,7 +61,7 @@ function Gallery({ AllAuth }) {
             <div className="imgGallery">
               {images.map((img, index) => (
                 <div className="frame" key={index}>
-                  <img className="galimg" src={img} alt={`Gallery Image ${index + 1}`} />
+                  <img className="galimg" src={img} alt={`Gallery ${index + 1}`} />
                 </div>
               ))}
             </div>

@@ -31,7 +31,7 @@ const Guests = ({ AllAuth }) => {
 				<NavBar AllAuth={AllAuth} />
 				
 				<div className=" Guesttitle">
-					Our Guests
+					Guests
 				</div>
 				<div className="guestContainer">
 				<h1 style={{fontStyle:"italic"}}>
@@ -43,9 +43,8 @@ const Guests = ({ AllAuth }) => {
 					</div>
 					
 				</div>	
-
-				<Footer />
 			</div>
+			<Footer />
 		</div>
 		
 		}

@@ -1,13 +1,7 @@
 import React, { useState } from "react";
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaSquareFacebook } from "react-icons/fa6";
-import { IoLogoYoutube } from "react-icons/io5";
-import "../../links/css/login.css";
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import shilp from "../../links/img/SHILP.png";
-import { useMotionValue, useTransform, motion } from "framer-motion";
 import GoogleButton from "react-google-button";
-
 import { signInWithPopup } from "firebase/auth";
 import { doc, getDoc, setDoc } from "firebase/firestore";
 import { auth, provider, db } from "../../firebase";
@@ -19,8 +13,11 @@ const Login = ({ AllAuth }) => {
 	const setIsProf = AllAuth.setIsProf;
 	const navigate = useNavigate();
 
-	const x = useMotionValue(-542);
-	const y = useMotionValue(-255);
+	// Set initial position values
+	const initialX = -542;
+	const initialY = -255;
+	const x = useMotionValue(initialX);
+	const y = useMotionValue(initialY);
 	const rotateX = useTransform(y, [-338, -138], [20, -20]);
 	const rotateY = useTransform(x, [-642, -442], [-20, 20]);
 
@@ -31,7 +28,6 @@ const Login = ({ AllAuth }) => {
 			setSubmitButtonDisabled(true);
 			signInWithPopup(auth, provider)
 				.then((data) => {
-					console.log(data);
 					localStorage.setItem("displayName", data.user.displayName);
 					localStorage.setItem("photoURL", data.user.photoURL);
 					localStorage.setItem("UID", data.user.uid);
@@ -63,7 +59,7 @@ const Login = ({ AllAuth }) => {
 					});
 					toast.success(
 						<div>
-							{"Succesfully Logged In!"} <br />{" "}
+							{"Successfully Logged In!"} <br />{" "}
 							{"Welcome " + localStorage.getItem("displayName")}
 						</div>
 					);
@@ -79,72 +75,52 @@ const Login = ({ AllAuth }) => {
 		}
 	};
 
+	// Handle mouse movement for hover effect
+	const handleMouseMove = (e) => {
+		const { clientX, clientY } = e;
+		const { innerWidth, innerHeight } = window;
+
+		// Update position based on cursor movement
+		x.set(initialX + (clientX - innerWidth / 2) / 20);
+		y.set(initialY + (clientY - innerHeight / 2) / 20);
+	};
+
+	// Reset smoothly when mouse leaves
+	const handleMouseLeave = () => {
+		animate(x, initialX, { type: "spring", stiffness: 100, damping: 15 });
+		animate(y, initialY, { type: "spring", stiffness: 100, damping: 15 });
+	};
+
 	return (
 		<>
 			<div className="background" style={{ perspective: 2000 }}>
 				<motion.div
-					style={
-						window.innerWidth >= 1400
-							? { x, y, rotateX, rotateY, z: 100 }
-							: {}
-					}
-					drag={window.innerWidth >= 1400 ? true : false}
-					dragElastic={0.18}
-					dragConstraints={{
-						top: -285,
-						left: -542,
-						right: -542,
-						bottom: -285,
-					}}
-					whileTap={{ cursor: "grabbing" }}
+					style={{ x, y, rotateX, rotateY, z: 100 }}
+					onMouseMove={handleMouseMove}
+					onMouseLeave={handleMouseLeave}
 					className="loginContainer"
 				>
 					<div className="content">
-						<img src={shilp} alt="" />
+						<img src={shilp} alt="Shilp Logo" />
 						<div className="text-sci">
 							<h2>
 								Welcome! <br />
 								<span>
-									To the <span>Shilp</span> Website
+									To the <span>Shilp</span>
 								</span>
 							</h2>
-
-							<div className="social-icons">
-								<a href="https://www.linkedin.com/company/civil-engineering-society-iit-bhu/">
-									<FaLinkedin className="linkedIn" />
-								</a>
-								<a href="https://www.instagram.com/ces_iitbhu/">
-									<FaInstagram
-										className="instagram"
-										style={{ margin: "0 0 0 1vw" }}
-									/>
-								</a>
-								<a href="https://www.facebook.com/groups/157760987681133/">
-									<FaSquareFacebook
-										className="facebook"
-										style={{ margin: "0 0 0 1vw" }}
-									/>
-								</a>
-								<a href="https://www.youtube.com">
-									<IoLogoYoutube
-										className="youtube"
-										style={{ margin: "0 0 0 1vw" }}
-									/>
-								</a>
-							</div>
 						</div>
 					</div>
 
 					<div className="login">
 						<div className="form-box">
 							<GoogleButton
+								className="google-button"
 								disabled={submitButtonDisabled}
 								onClick={() => {
 									onFormSubmit();
 								}}
-								style={{
-									background: "#000",
-								}}
+								style={{ background: "#000" }}
 							/>
 						</div>
 					</div>
@@ -153,4 +129,5 @@ const Login = ({ AllAuth }) => {
 		</>
 	);
 };
+
 export default Login;

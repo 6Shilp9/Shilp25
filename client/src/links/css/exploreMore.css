@@ -1,31 +1,38 @@
+/* 🌟 Base Styles */
 .events {
     text-align: center;
-    padding: 50px 0;
-    background: linear-gradient(to bottom, #d4b595, #4a2c2a); /* Background color similar to the image */
+    padding: 50px 0%;
+    background: linear-gradient(to bottom, #d4b595, #4a2c2a);
 }
 
 .explore-heading {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #4a2f24;  /* Dark brown for contrast */
-    margin-bottom: 10vh;
+    color: #4a2f24;
+    margin-bottom: 8vh;
 }
 
+/* 🌟 Event Gallery */
 .event-gallery {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
 }
 
+/* 🌟 Event Cards */
 .event {
     background-color: #f3dec0;
     border-radius: 10px;
-    padding: 10px;
+    padding: 12px;
     width: 320px;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.05);
 }
 
 .event img {
@@ -36,22 +43,136 @@
 }
 
 .event h3 {
-    font-size: 1.2rem;
-    text-decoration : none;;
+    font-size: 1.3rem;
     margin-top: 10px;
     color: #4a2f24;
     font-weight: bold;
 }
 
 .event p {
-    text-decoration : none;
     font-size: 1rem;
     color: #666;
 }
-.no-underline{
-    text-decoration : none;
+
+.no-underline {
+    text-decoration: none;
+}
+.exploreMore{
+    width: 100%;
+    margin: auto;
 }
 
-.event:hover {
-    transform: scale(1.05);
+/* 🌟 Responsive for Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .explore-heading {
+        font-size: 2.2rem;
+    }
+
+    .event {
+        width: 280px; /* Slightly reduce event card width */
+        padding: 10px;
+    }
+
+    .event h3 {
+        font-size: 1.2rem;
+    }
+
+    .event p {
+        font-size: 0.9rem;
+    }
+}
+
+/* 🌟 Responsive for Medium Devices (500px - 767px) */
+@media screen and (max-width: 767px) {
+    .explore-heading {
+        font-size: 2rem;
+        margin-bottom: 6vh;
+    }
+
+    .event-gallery {
+        gap: 20px;
+    }
+
+    .event {
+        width: 90%; /* Make cards take up more width on small screens */
+        max-width: 260px;
+        padding: 8px;
+    }
+
+    .event img {
+        height: 180px;
+    }
+
+    .event h3 {
+        font-size: 1.1rem;
+    }
+
+    .event p {
+        font-size: 0.85rem;
+    }
+}
+
+/* 🌟 Responsive for Small Mobile Devices (max-width: 500px) */
+@media screen and (max-width: 500px) {
+    .events {
+        padding: 40px 5%;
+    }
+
+    .explore-heading {
+        font-size: 1.8rem;
+    }
+
+    .event-gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .event {
+        width: 95%;
+        max-width: 240px;
+        padding: 6px;
+    }
+
+    .event img {
+        height: 160px;
+    }
+
+    .event h3 {
+        font-size: 1rem;
+    }
+
+    .event p {
+        font-size: 0.8rem;
+    }
+}
+
+/* 🌟 Responsive for Very Small Devices (max-width: 360px) */
+@media screen and (max-width: 360px) {
+    .explore-heading {
+        font-size: 1.6rem;
+    }
+
+    .event {
+        width: 95%;
+        max-width: 220px;
+    }
+
+    .event img {
+        height: 140px;
+    }
+
+    .event h3 {
+        font-size: 0.95rem;
+    }
+
+    .event p {
+        font-size: 0.75rem;
+    }
+}
+
+/* 🌟 Explore More Button */
+.exploreMore {
+    margin-top: 40px;
+    text-align: center;
 }

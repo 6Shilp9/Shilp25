@@ -7,7 +7,7 @@ function Timer() {
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
 
-    const deadline = "April, 5, 2025 08:00:00"
+    const deadline = "April, 11, 2025 08:00:00"
 
     const getTimeRemaining = () => {
         const total = Date.parse(deadline) - Date.parse(new Date());

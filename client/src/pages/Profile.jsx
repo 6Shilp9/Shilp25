@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../links/css/Profile.css";
 import NavBar from "../components/NavBar";
+import Loader from "../components/LoadingScreen";
 // import Footer from "../components/Footer";
 // import Fade from "react-reveal/Fade";
 import {
@@ -19,7 +20,6 @@ import Alert from "@mui/material/Alert";
 // import { updateProfile } from "firebase/auth";
 import { db } from "../firebase";
 import { doc, setDoc, getDoc } from "firebase/firestore";
-import ParticleBackground from "../components/ParticleBackground";
 import { toast } from "react-toastify";
 // import { Fade } from "@mui/material";
 
@@ -39,6 +39,13 @@ const Profile = ({ AllAuth }) => {
 	const [accommodationStatus, setAccommodationStatus] =
 		useState("Unaccommodated");
 	const [paidRegistration, setPaidRegistration] = useState(false);
+	const [loading, setLoading] = useState(true);
+
+	useEffect(() => {
+		setTimeout(() => {
+			setLoading(false);
+		}, 5000);
+	}, []);
 
 	useEffect(() => {
 		const docRef = doc(db, "userProfile", localStorage.getItem("UID"));
@@ -131,10 +138,16 @@ const Profile = ({ AllAuth }) => {
 	};
 
 	return (
+		<>
+		{loading ? (
+			<div className="loader-container" style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100vh", background:"black"}}>
+			{/* <ParticleBackground /> */}
+			<Loader onComplete={() => setLoading(false)} />
+			</div>
+		) :
 		<div>
 			<div className="App">
 				<div className="body profile-body">
-					<ParticleBackground />
 					<NavBar AllAuth={AllAuth}></NavBar>
 					{/* <h1>Profile</h1>
 			<div>
@@ -1019,6 +1032,8 @@ const Profile = ({ AllAuth }) => {
 				</div>
 			</div>
 		</div>
+	}
+	</>
 	);
 };
 

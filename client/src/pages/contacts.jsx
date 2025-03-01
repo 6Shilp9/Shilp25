@@ -30,29 +30,23 @@ const Contacts = ({ AllAuth }) => {
                     <div className="contact-body">
 						<Fade left>
                         <div className="contact">
-                            <h2>Aman Srivastava</h2>
-                            <a href="mailto:aman.srivastava.civ21@itbhu.ac.in">aman.srivastava.civ21@itbhu.ac.in</a>
-                            <p>📞 +91 96251 67658</p>
+                            <h2>Devesh Sindhi</h2>
+                            <a href="mailto:devesh.sindhi.civ21@itbhu.ac.in">devesh.sindhi.civ21@itbhu.ac.in</a>
+                            <p>📞 +91 7752962212</p>
                         </div>
 						</Fade>
 						<Fade right>
                         <div className="contact">
-                            <h2>Mithilesh K</h2>
-                            <a href="mailto:k.mithilesh.civ21@itbhu.ac.in">k.mithilesh.civ21@itbhu.ac.in</a>
-                            <p>📞 +91 6309881816</p>
+                            <h2>Param Srivastava</h2>
+                            <a href="mailto:param.srivastava.civ21@itbhu.ac.in">param.srivastava.civ21@itbhu.ac.in</a>
+                            <p>📞 +91 8369895384</p>
                         </div>
 						</Fade>
-						<Fade left>
+                        <Fade right>
                         <div className="contact">
-                            <h2>Vishu Raj</h2>
-                            <p>📞 +91 9065055049</p>
-                        </div>
-						</Fade>
-						<Fade right>
-                        <div className="contact">
-                            <h2>Akhand Pratap Yadav</h2>
-                            <a href="mailto:akhandp.yadav.civ21@itbhu.ac.in">akhandp.yadav.civ21@itbhu.ac.in</a>
-                            <p>📞 +91 7007446710</p>
+                            <h2>Mugdha Chaturvedi</h2>
+                            <a href="mailto:mugdha.chaturvedi.civ22@itbhu.ac.in">mugdha.chaturvedi.civ22@itbhu.ac.in</a>
+                            <p>📞 +91 9305781467</p>
                         </div>
 						</Fade>
                     </div>

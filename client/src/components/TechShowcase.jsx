@@ -1,7 +1,6 @@
 import "../links/css/techshowcase.css";
 import Fade from "react-reveal/Fade";
 import EventCard from "./EventCard";
-// import PdfComp from './PdfComp';
 import "../links/css/pdf.css";
 
 function TechShowcase({ AllAuth, RegisteredEvents }) {
@@ -16,7 +15,7 @@ function TechShowcase({ AllAuth, RegisteredEvents }) {
 					{/* Event-1 */}
 					<Fade left>
 						<EventCard
-							name="Hackathon and ML"
+							name="ML Forge"
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}
@@ -36,7 +35,7 @@ function TechShowcase({ AllAuth, RegisteredEvents }) {
 					{/* Event -3 */}
 					<Fade right>
 						<EventCard
-							name="InsightRise Symposium"
+							name="Codeblitz"
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}

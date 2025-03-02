@@ -13,7 +13,7 @@ function CivilExpo({ AllAuth, RegisteredEvents }) {
 					{/* Event-1 */}
 					<Fade left>
 						<EventCard
-							name="Building Vision Expo"
+							name="Cartodraft"
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}
@@ -23,7 +23,7 @@ function CivilExpo({ AllAuth, RegisteredEvents }) {
 					{/* Event-2 */}
 					<Fade right>
 						<EventCard
-							name="Case Clash"
+							name="Vintage Visionaries"
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}

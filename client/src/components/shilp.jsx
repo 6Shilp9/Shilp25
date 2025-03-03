@@ -54,7 +54,7 @@ function Shilp() {
             <div className="description">
                 <Fade right delay={200}>
                 <p>
-                    <strong style={{ fontFamily: 'Times New Roman', fontWeight:"800", fontSize:"1.6vw" }}>Shilp</strong>, the annual fest by the Civil Engineering Society, is a dynamic celebration of creativity and innovation in the field. Serving as a pivotal platform, Shilp fosters collaboration, promotes innovation, and values inclusivity. 
+                    <strong style={{ fontFamily: 'Times New Roman', fontWeight:"800", fontSize:"1.6rem" }}>Shilp</strong>, the annual fest by the Civil Engineering Society, is a dynamic celebration of creativity and innovation in the field. Serving as a pivotal platform, Shilp fosters collaboration, promotes innovation, and values inclusivity. 
                 </p>
                 </Fade>
 

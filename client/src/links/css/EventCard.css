@@ -24,7 +24,11 @@
 
 .card {
 	color: var(--clr-neutral-100);
-	background-size: cover;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #e1c39c !important;
+	box-shadow: 0 0 1rem 0.5rem rgb(0 0 0 / 50%);
 	padding: 10rem 0 0;
 	width: 25vw;
 	border-radius: 0.5rem;

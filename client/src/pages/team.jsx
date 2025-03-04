@@ -23,26 +23,19 @@ const convenors = [
     },
     {
         id: 2,
-        Designation: "Co-Convenor",
-        data: [
-            {
-                url: "./TeamPhotos/IV Year/Kanhaiya Kumar _ Co-Convener.webp",
-                Name: "Kanhaiya Kumar",
-                Email: "",
-                Instagram: "",
-                Linkedin: "",
-                MobileNo: "",
-            },
-            {
-                url: "/TeamPhotos/III Year/NANDINI BHIMSARIA_ CO-CONVENOR_page-0001 (1).webp",
-                Name: "Nandini Bhimsaria",
-                Email: "",
-                Instagram: "",
-                Linkedin: "",
-                MobileNo: "",
-            },
-        ],
-    },
+            
+                Designation: "Co-Convenor",
+                data: [
+                    {
+                        "url": "./TeamPhotos/Co_Convenor.webp",
+                        "Name": "Param Srivastava",
+                        "Email": "param.srivastava.civ21@itbhu.ac.in",
+                        "Instagram": "",
+                        "Linkedin": "https://www.linkedin.com/in/param-srivastava-016ba6261",
+                        "MobileNo": ""
+                    }
+                ]
+    }
 ];
 
 const Team = ({ AllAuth }) => {

@@ -1,9 +1,6 @@
 import React from 'react';
 import '../links/css/exploreMore.css';
 import {Link} from 'react-router-dom'
-import event1 from '../links/img/InsightRise Symposium.webp'
-import event2 from '../links/img/Building Vision Expo.webp'
-import event3 from '../links/img/BridgeIt.webp'
 import Button from './Button';
 
 function ExploreMore() {

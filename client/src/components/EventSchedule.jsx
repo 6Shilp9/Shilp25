@@ -7,16 +7,22 @@ const EventSchedule = () => {
 
   const schedule = {
     "Day 1": [
-      { title: "Opening Ceremony", location: "Main Auditorium", time: "9:00 AM", duration: "2 Hours" },
-      { title: "Technical Workshop", location: "Workshop Hall A", time: "11:30 AM", duration: "3 Hours" },
-      { title: "Guest Lecture", location: "Seminar Hall", time: "2:30 PM", duration: "1.5 Hours" },
+      { title: "Opening Ceremony", location: "ABLT4", time: "10:00 AM - 1:00 PM" },
+      { title: "Workshop", location: "Online/ABLT2", time: "11:30 AM - 1:30 PM" },
+      { title: "Vintage Visionaries", location: "Civil Department", time: "2:00 PM - 5:00 PM" },
+      { title: "Code Craft", location: "Online", time: "5:30 PM - 7:30 PM" },
     ],
     "Day 2": [
-      { title: "Panel Discussion", location: "Main Auditorium", time: "10:00 AM", duration: "2 Hours" },
-      { title: "Hands-on Workshop", location: "Workshop Hall B", time: "1:00 PM", duration: "3 Hours" },
+      { title: "Capture the  Snap / ML Forge", location: "Civil Department", time: "9:00 AM - 5:00 PM" },
+      { title: "Feast for Brain", location: "Civil Department", time: "8:00 AM - 10:00 AM / 11:00 AM - 1:00 PM"},
+      { title: "CodeBlitz (hackathon)", location: "Online", time: "Deadline for submission: 5:00 PM" },
+      { title: "Workshop 2", location: "Online", time: "2:00 PM - 3:30 PM" },
+      { title: "BridgeIt", location: "Civil department", time: "2:00 PM - 5:00 PM" },
     ],
     "Day 3": [
-      { title: "Closing Ceremony", location: "Main Auditorium", time: "4:00 PM", duration: "2 Hours" },
+      { title: "Surveyor's Hunt / 3 Minute Thesis", location: "Civil Department", time: "8:00 AM - 11:00 AM" },
+      { title: "CartoDraft", location: "Civil Department", time: "1:30 PM - 4:30 PM" },
+      { title: "Closing Ceremony", location: "Civil Department", time: "5:00 PM - 6:00 PM" },
     ],
   };
 

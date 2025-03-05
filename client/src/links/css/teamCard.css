@@ -1,6 +1,114 @@
-@media screen and (max-width: 1153px){
-    .team-card{
-        display: block;
-        transform: translateX(0) translateY(0) translateZ(100px) rotateX(0deg) rotateY(0deg) !important;
-    }
+/* 🔹 Team Card - Center Align Everything */
+.team-card {
+    width: 280px;
+    height: 380px;
+    margin: 20px;
+    background-image: url('../img/teamContainer.webp'); /* Vintage Paper */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid #6b4f3f;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.4); /* Initial subtle shadow */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+/* 🔹 Profile Image - Centered */
+.team-card .imgBx {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #7a4c10;
+    background: #c4a484;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.team-card .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 🔹 Profile Name - Centered */
+.team-card .contentBx {
+    font-size: 18px;
+    font-family: 'BasheqVintage', serif;
+    color: #3b2c20;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* 🔹 Social Media Icons - Initially Hidden */
+.team-card .sci {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    bottom: -50px; /* Hidden initially */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+/* 🔹 Social Icons Style */
+.team-card .sci li {
+    list-style: none;
+}
+
+.team-card .sci li a {
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Hover Effects - Scale Up & Add Shadow */
+.team-card:hover {
+    transform: scale(1.08); /* Slight Scale Up */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8); /* Darker Shadow */
+}
+
+/* 🔹 Move Image & Name Up on Hover */
+.team-card:hover .imgBx {
+    transform: translateY(-20px);
+}
+
+.team-card:hover .contentBx {
+    transform: translateY(-10px);
+}
+
+/* 🔹 Show Social Links on Hover */
+.team-card:hover .sci {
+    bottom: 20px;
+    opacity: 1;
+}
+
+/* 🔹 Social Icons Hover Effects */
+.team-card .sci li .linkedIn:hover {
+    color: #0077b5;
+}
+
+.team-card .sci li .gmail:hover {
+    color: #de321b;
+}
+
+team-card .sci li .instagram:hover {
+    color: #c13584;
 }

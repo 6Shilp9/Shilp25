@@ -9,6 +9,16 @@
 }
 
 /* Left Section - Icon */
+.footer .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .image a{
+    text-decoration: none;
+    color: #d3ad8c;
+}
 .footer .image img {
     height: 5vw;
 }
@@ -72,6 +82,12 @@
 
 .footer .connect .social-media-icons a:hover {
     transform: scale(1.2);
+}
+.footer .connect .social-media-icons .linkedIn:hover{
+    color: #0077b5;
+}
+.footer .connect .social-media-icons .instagram:hover{
+    color: #e4405f;
 }
 
 /* Responsive Design */

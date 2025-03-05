@@ -22,10 +22,10 @@
   }
   
   .accommodation-heading span {
-    color: #b87333; /* Copper color matching the tone */
+    color: #b87333; 
   }
   
-  /* Buttons styling */
+  
   .accommodation-tabs .buttons {
     display: flex;
     justify-content: space-evenly;
@@ -33,7 +33,7 @@
   
   .buttons .btn {
     margin: 1vw;
-    background-color: #b87333; /* Copper color */
+    background-color: #b87333; 
     border: none;
     color: white;
     font-weight: bold;
@@ -45,11 +45,11 @@
   }
   
   .buttons .btn:hover {
-    background-color: #a0522d; /* Darker copper for hover */
-    color: #f4ecd8; /* Light parchment */
+    background-color: #a0522d; 
+    color: #f4ecd8; 
   }
   
-  /* Animations for button display */
+  
   @keyframes display {
     0% {
       opacity: 0;

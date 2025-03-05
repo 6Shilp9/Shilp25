@@ -13,8 +13,7 @@
     max-height: 100%;
     width: 100%;
     margin: auto;
-    background: linear-gradient(251.9deg, rgba(76, 18, 77, 0.65) -6.07%, rgba(13, 4, 27, 0.65) 47.04%, rgba(70, 18, 72, 0.65) 86.81%);
-    border-radius: 50px;
+    background: linear-gradient(251.9deg, rgba(77, 53, 18, 0.65) -6.07%, rgba(27, 19, 4, 0.65) 47.04%, rgba(72, 58, 18, 0.65) 86.81%);    border-radius: 50px;
     border-top:4px solid rgba(255, 255, 255, 0.06);
     display: flex;
     flex-direction: column;
@@ -22,7 +21,7 @@
 }
 
 .civilexpo .main .heading{
-    color: #D12156;
+    color: rgb(209, 167, 16);
     font-size: 7.7vw;
     font-weight: 700;
     line-height: 11vw;

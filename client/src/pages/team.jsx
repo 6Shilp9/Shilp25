@@ -23,26 +23,27 @@ const convenors = [
     },
     {
         id: 2,
-        Designation: "Co-Convenor",
-        data: [
-            {
-                url: "./TeamPhotos/IV Year/Kanhaiya Kumar _ Co-Convener.webp",
-                Name: "Kanhaiya Kumar",
-                Email: "",
-                Instagram: "",
-                Linkedin: "",
-                MobileNo: "",
-            },
-            {
-                url: "/TeamPhotos/III Year/NANDINI BHIMSARIA_ CO-CONVENOR_page-0001 (1).webp",
-                Name: "Nandini Bhimsaria",
-                Email: "",
-                Instagram: "",
-                Linkedin: "",
-                MobileNo: "",
-            },
-        ],
-    },
+            
+                Designation: "Co-Convenor",
+                data: [
+                    {
+                        "url": "./TeamPhotos/Co_Convenor.webp",
+                        "Name": "Param Srivastava",
+                        "Email": "param.srivastava.civ21@itbhu.ac.in",
+                        "Instagram": "",
+                        "Linkedin": "https://www.linkedin.com/in/param-srivastava-016ba6261",
+                        "MobileNo": ""
+                    },
+                    {
+                        "url": "./TeamPhotos/III Year/MUGDHA_CHATURVEDI_CO_CONVENER.webp",
+                        "Name": "MUGDHA CHATURVEDI",
+                        "Email": "mugdha.chaturvedi.civ22@itbhu.ac.in",
+                        "Instagram": "https://www.instagram.com/mugdha__chaturvedi?igsh=Nm1kZmR3M2Z6ZmFr",
+                        "Linkedin": "https://www.linkedin.com/in/mugdha-chaturvedi-096853258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                        "MobileNo": ""
+                    }
+                ]
+    }
 ];
 
 const Team = ({ AllAuth }) => {

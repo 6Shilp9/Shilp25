@@ -3,8 +3,8 @@
     padding-top: 6vw;
 }
 .events-body{
-    background-image: url(../img/Clubs\ \(1\).png);
-    background-position-y: 20vh;
-    background-size: 300% 100%;
-    background-repeat: no-repeat;
+    background-color: #f4ecd8; 
+    background-image: url('../img/download.jpg');
+    color: #4a3b2e;
+    font-family: 'Georgia', serif; 
 }

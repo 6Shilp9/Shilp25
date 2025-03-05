@@ -12,6 +12,12 @@ function Footer() {
         {/* Left Section */}
         <div className="image">
             <img src={temple} alt="Temple Icon" />
+            <a
+              href="mailto: shilp@iitbhu.ac.in"
+              className="gmail-link"
+            >
+              shilp@iitbhu.ac.in
+            </a>
         </div>
 
         {/* Subscription Section */}
@@ -25,8 +31,8 @@ function Footer() {
         <div className="connect">
             <div className="text">Connect with us</div>
             <div className="social-media-icons">
-                <a href="https://www.linkedin.com"><FaLinkedin /></a>
-                <a href="https://www.instagram.com"><FaInstagram /></a>
+                <a href="https://www.linkedin.com" className='linkedIn'><FaLinkedin /></a>
+                <a href="https://www.instagram.com" className='instagram'><FaInstagram /></a>
             </div>
         </div>
     </div>

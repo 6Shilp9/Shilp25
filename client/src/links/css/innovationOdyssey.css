@@ -24,6 +24,10 @@
     color: rgb(209, 167, 16);
 }
 .innovation-odyssey .desc{
+    height : 100%;
+    width: 90%;
+    margin: auto;
+    padding-bottom : 10px;
     font-size: 1.7vw;
     color: white;
 }
@@ -38,14 +42,14 @@
 }
 @media screen and (max-width:360px) {
     .innovation-odyssey .heading{
-        font-size: 7vw;
+        font-size: 9vw;
     }
     .innovation-odyssey .heading div{
-        margin-top: -12vw;
+        margin-top: -8vw;
         display: block;
     }
     .innovation-odyssey .desc{
-        margin-top: 15vw;
+        margin-top: 10vw;
         font-size: 4vw;
     }
 }

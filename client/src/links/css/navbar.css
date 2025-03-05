@@ -1,55 +1,106 @@
-.navbar {
-	position:fixed !important;
+.vintage-navbar {
+	position: absolute !important;
 	top: 0;
 	width: 100%;
-	background: #310751f4;
+	background: #8B7355; /* Vintage brown color */
 	padding-bottom: 0px;
 	z-index: 9999999;
+	font-family: 'Old Standard TT', serif; /* Vintage-style font */
 }
-.navbar-brand img{
-	position: absolute;
-	top: 0;left: 0;
+
+.vintage-navbar .navbar-brand img {
 	height: 60px;
 	width: 60px;
 }
-.nav-item {
+
+.vintage-navbar .nav-item {
 	font-size: 1.1vw;
 	font-weight: 600;
-	color: white;
+	color: #FFF8DC; /* Vintage off-white color */
 	margin: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.navbar-toggler {
+.vintage-navbar .navbar-toggler {
 	margin-right: 15px;
+	border-color: #654321; /* Dark brown color for hamburger icon */
 }
 
-.ProfilePic {
+.vintage-navbar .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(101, 67, 33, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.vintage-navbar .ProfilePic {
 	width: 40px;
 	height: 40px;
 	border-radius: 50px;
 	justify-content: center;
 }
 
+/* Close Icon */
+.close-icon {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: none;
+	border: none;
+	color: #FFF8DC;
+	font-size: 24px;
+	cursor: pointer;
+	display: none; /* Hidden by default */
+}
+
+/* Mobile Styles */
 @media screen and (max-width: 1200px) {
-	.navbar{
-		background: #310751;
+	.vintage-navbar {
+		background: transparent; /* Background-less navbar */
 	}
-	.nav-item {
+
+	.vintage-navbar .navbar-collapse {
+		position: fixed;
+		top: 0;
+		right: -250px; /* Start off-screen */
+		width: 250px; /* Width of the sidebar */
+		height: 100vh;
+		background: #8B7355; /* Vintage brown color */
+		transition: right 1.5s ease-in-out; /* Smooth animation */
+		padding-top: 60px; /* Space for the logo */
+	}
+
+	.vintage-navbar .navbar-collapse.show {
+		right: 0; /* Slide in from the right */
+	}
+
+	.vintage-navbar .close-icon {
+		display: block; /* Show close icon when sidebar is open */
+	}
+
+	.vintage-navbar .nav-item {
 		font-size: 18px;
 	}
-	.navbar-collapse{
-		height: 100dvh;
-	}
-	.nav-link{
+
+	.vintage-navbar .nav-link {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		color: #FFF8DC; /* Vintage off-white color */
 	}
-	.ProfilePic{
+
+	.vintage-navbar .ProfilePic {
 		display: flex;
 		margin: auto;
+	}
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1201px) {
+	.vintage-navbar .navbar-collapse {
+		justify-content: flex-end; /* Align nav items to the right */
+	}
+
+	.vintage-navbar .navbar-brand {
+		margin-right: auto; /* Push logo to the left */
 	}
 }

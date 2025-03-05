@@ -5,11 +5,13 @@ import Fade from "react-reveal/Fade";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
 import { toast } from "react-toastify";
+import { useState } from "react";
 
 const NavBar = ({ AllAuth }) => {
 	const isAuth = AllAuth.isAuth;
 	const setAuth = AllAuth.setAuth;
 	const location = useLocation();
+	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
 	const onLogout = (e) => {
 		e.preventDefault();
@@ -22,28 +24,35 @@ const NavBar = ({ AllAuth }) => {
 			toast("Successfully Logged Out.");
 		});
 	};
+
+	const toggleSidebar = () => {
+		setIsSidebarOpen(!isSidebarOpen);
+	};
+
 	return (
 		<Fade top>
-			<nav className="navbar navbar-dark navbar-expand-xl ">
+			<nav className="navbar navbar-dark navbar-expand-xl vintage-navbar">
 				<a className="navbar-brand mx-1 py-auto" href="#home">
 					<img src={SHILP} alt="SHILP logo" width="64px" />
 				</a>
 				<button
 					className="navbar-toggler"
 					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarText"
-					aria-controls="navbarText"
-					aria-expanded="false"
+					onClick={toggleSidebar}
 					aria-label="Toggle navigation"
 				>
 					<span className="navbar-toggler-icon"></span>
 				</button>
 				<div
-					className="collapse navbar-collapse justify-content-center"
+					className={`navbar-collapse justify-content-end ${
+						isSidebarOpen ? "show" : ""
+					}`}
 					id="navbarText"
 				>
-					<ul className="navbar-nav ">
+					<button className="close-icon" onClick={toggleSidebar}>
+						&#10005; {/* Close icon (X) */}
+					</button>
+					<ul className="navbar-nav">
 						<li className="nav-item px-2 mx-2">
 							<Link
 								className={
@@ -108,19 +117,6 @@ const NavBar = ({ AllAuth }) => {
 								Contacts
 							</Link>
 						</li>
-						{/* <li className="nav-item px-2 mx-2">
-							<Link
-								className={
-									"nav-link" +
-									(location.pathname === "/store"
-										? " active"
-										: "")
-								}
-								to="/store"
-							>
-								Store
-							</Link>
-						</li> */}
 						<li className="nav-item px-2 mx-2">
 							<Link
 								className={
@@ -147,19 +143,6 @@ const NavBar = ({ AllAuth }) => {
 								Team
 							</Link>
 						</li>
-						{/* <li className="nav-item px-2 mx-2">
-							<Link
-								className={
-									"nav-link" +
-									(location.pathname === "/media"
-										? " active"
-										: "")
-								}
-								to="/media"
-							>
-								Media
-							</Link>
-						</li> */}
 						<li className="nav-item px-2 mx-2">
 							<Link
 								className={

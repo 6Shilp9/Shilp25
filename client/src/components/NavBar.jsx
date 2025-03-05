@@ -12,6 +12,7 @@ const NavBar = ({ AllAuth }) => {
 	const setAuth = AllAuth.setAuth;
 	const location = useLocation();
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
 	const onLogout = (e) => {
 		e.preventDefault();
@@ -27,6 +28,10 @@ const NavBar = ({ AllAuth }) => {
 
 	const toggleSidebar = () => {
 		setIsSidebarOpen(!isSidebarOpen);
+	};
+
+	const toggleDropdown = () => {
+		setIsDropdownOpen(!isDropdownOpen);
 	};
 
 	return (
@@ -167,31 +172,36 @@ const NavBar = ({ AllAuth }) => {
 
 						{isAuth ? (
 							<>
-								<li className="nav-item px-2 mx-2">
-									<button
-										className="nav-link"
-										onClick={(e) => {
-											onLogout(e);
-										}}
-									>
-										Logout
-									</button>
+								<li className="nav-item px-2 mx-2 desktop-dropdown">
+									<div className="dropdown">
+										<button
+											className="nav-link dropdown-toggle"
+											onClick={toggleDropdown}
+										>
+											<img
+												src={localStorage.getItem("photoURL")}
+												alt="Profile Pic"
+												className="ProfilePic"
+											/>
+										</button>
+										{isDropdownOpen && (
+											<div className="dropdown-menu show">
+												<Link
+													className="dropdown-item"
+													to="/profile"
+												>
+													Profile
+												</Link>
+												<button
+													className="dropdown-item"
+													onClick={onLogout}
+												>
+													Logout
+												</button>
+											</div>
+										)}
+									</div>
 								</li>
-								<Link
-									className={
-										"nav-link" +
-										(location.pathname === "/profile"
-											? " active"
-											: "")
-									}
-									to="/profile"
-								>
-									<img
-										src={localStorage.getItem("photoURL")}
-										alt="Profile Pic"
-										className="ProfilePic"
-									/>
-								</Link>
 							</>
 						) : (
 							<>

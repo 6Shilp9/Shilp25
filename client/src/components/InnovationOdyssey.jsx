@@ -15,7 +15,7 @@ function InnovationOdyssey() {
         <div className="desc">
         Why vintage vistas ? 
         Shilp ’25, organized by the Civil Engineering Society of IIT BHU, embraces the theme 
-        “Vintage Vistas” to celebrate the grandeur and ingenuity of ancient architecture. This theme 
+        <strong> “Vintage Vistas”</strong> to celebrate the grandeur and ingenuity of ancient architecture. This theme 
         is a tribute to the timeless engineering marvels that have shaped civilizations and continue to 
         inspire modern construction. From the majestic temples of India to the intricate aqueducts of 
         Rome, historical structures stand as testaments to the brilliance of early architects and 

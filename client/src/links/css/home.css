@@ -12,6 +12,7 @@
 .home-body {
 	position: relative;
 	background-color: #f5e6d3;
+	overflow-x: hidden;
 }
 .body {
 	position: relative;

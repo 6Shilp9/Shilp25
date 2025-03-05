@@ -561,7 +561,7 @@ const Profile = ({ AllAuth }) => {
                                         }}
                                       >
                                         <th colSpan={3}>
-                                          <b>REGISTRATION CLOSED</b>
+                                          <b>Registration To Be Open Soon !</b>
                                         </th>
                                       </tr>
                                     </>

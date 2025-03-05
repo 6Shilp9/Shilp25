@@ -51,7 +51,15 @@
 	cursor: pointer;
 	display: none; /* Hidden by default */
 }
-
+.dropdown .show{
+	padding: 0px;
+	border-radius: 10px;
+	background-color: #8B7355;
+}
+.dropdown .show a, .dropdown-item{
+	border: 1px solid white !important;
+	color: #FFF8DC !important;
+}
 /* Mobile Styles */
 @media screen and (max-width: 1200px) {
 	.vintage-navbar {
@@ -70,6 +78,7 @@
 	}
 
 	.vintage-navbar .navbar-collapse.show {
+		position: fixed;
 		right: 0; /* Slide in from the right */
 	}
 
@@ -92,6 +101,11 @@
 		display: flex;
 		margin: auto;
 	}
+
+	/* Hide dropdown on mobile */
+	.desktop-dropdown {
+		display: none;
+	}
 }
 
 /* Desktop Styles */
@@ -102,5 +116,33 @@
 
 	.vintage-navbar .navbar-brand {
 		margin-right: auto; /* Push logo to the left */
+	}
+
+	/* Profile Dropdown */
+	.desktop-dropdown {
+		position: relative;
+	}
+
+	.desktop-dropdown .dropdown-menu {
+		position: absolute;
+		right: 0;
+		top: 100%;
+		background: #8B7355;
+		border: none;
+	}
+
+	.desktop-dropdown .dropdown-item {
+		color: #FFF8DC;
+		padding: 10px 20px;
+		background: #8B7355;
+	}
+
+	.desktop-dropdown .dropdown-item:hover {
+		background: #654321;
+	}
+
+	/* Hide mobile profile and logout on desktop */
+	.mobile-profile {
+		display: none;
 	}
 }

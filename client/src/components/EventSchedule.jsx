@@ -32,8 +32,9 @@ const EventSchedule = () => {
   return (
     <div className = "schedule">
     <div className="event-schedule">
+      <Fade top>
       <h2 className="title">Event Schedule</h2>
-
+      </Fade>
       {/* Tabs */}
       <div className="tabs">
         {Object.keys(schedule).map((day) => (

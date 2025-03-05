@@ -8,12 +8,25 @@ function InnovationOdyssey() {
     <div className='innovation-odyssey'>
         <LightSpeed left>
         <div className="heading">
-            Embark on an <div><br /></div><span>Innovation Odyssey</span>
+            <div><br /></div><span>Vintage vistas</span>
         </div>
         </LightSpeed>
         <LightSpeed right>
         <div className="desc">
-        SHILP, the annual fest of the Civil Engineering Society (CES) at IIT BHU, proudly unveils its theme for the year—'Innovation Odyssey.' This theme encapsulates our commitment to charting a transformative journey through the realms of cutting-edge technologies, ingenious design thinking, and pioneering solutions within the field of civil engineering. Embracing the spirit of exploration and creativity, Innovation Odyssey signifies our dedication to inspiring, celebrating, and fostering innovation among the brightest minds in civil engineering. Join us on this intellectual and technological odyssey, as we embark on a quest to redefine the boundaries of possibility and shape the future of the built environmentfor growth and expansion.
+        Why vintage vistas ? 
+        Shilp ’25, organized by the Civil Engineering Society of IIT BHU, embraces the theme 
+        “Vintage Vistas” to celebrate the grandeur and ingenuity of ancient architecture. This theme 
+        is a tribute to the timeless engineering marvels that have shaped civilizations and continue to 
+        inspire modern construction. From the majestic temples of India to the intricate aqueducts of 
+        Rome, historical structures stand as testaments to the brilliance of early architects and 
+        engineers.  
+        Architecture is more than just structures; it is a reflection of culture, heritage, and identity. 
+        Vintage Vistas highlights the significance of preserving and understanding these historical 
+        masterpieces, as they offer insights into the evolution of design and construction. The fusion 
+        of traditional architectural principles with modern technology has the potential to create 
+        sustainable, aesthetically rich spaces that honor history while embracing innovation. By 
+        revisiting the past, we aim to draw inspiration for the future, ensuring that the legacy of 
+        architectural excellence continues to thrive.
         </div>
         </LightSpeed>
     </div>

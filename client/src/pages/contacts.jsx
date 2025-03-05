@@ -30,23 +30,23 @@ const Contacts = ({ AllAuth }) => {
                     <div className="contact-body">
 						<Fade left>
                         <div className="contact">
-                            <h2>Devesh Sindhi</h2>
-                            <a href="mailto:devesh.sindhi.civ21@itbhu.ac.in">devesh.sindhi.civ21@itbhu.ac.in</a>
-                            <p>📞 +91 7752962212</p>
+                            <h2>Prithvi Dutta</h2>
+                            <a href="mailto:prithvi.dutta.civ22@itbhu.ac.in">prithvi.dutta.civ22@itbhu.ac.in</a>
+                            <p>📞 +91 6009193323</p>
                         </div>
 						</Fade>
 						<Fade right>
                         <div className="contact">
-                            <h2>Param Srivastava</h2>
-                            <a href="mailto:param.srivastava.civ21@itbhu.ac.in">param.srivastava.civ21@itbhu.ac.in</a>
-                            <p>📞 +91 8369895384</p>
+                            <h2>Sunil Parswal</h2>
+                            <a href="mailto:sunil.parswal.civ22@itbhu.ac.in">sunil.parswal.civ22@itbhu.ac.in</a>
+                            <p>📞 +91 7976050475</p>
                         </div>
 						</Fade>
                         <Fade right>
                         <div className="contact">
-                            <h2>Mugdha Chaturvedi</h2>
-                            <a href="mailto:mugdha.chaturvedi.civ22@itbhu.ac.in">mugdha.chaturvedi.civ22@itbhu.ac.in</a>
-                            <p>📞 +91 9305781467</p>
+                            <h2>Ayush Kumar</h2>
+                            <a href="mailto:ayush.kumar.civ22@itbhu.ac.in">ayush.kumar.civ22@itbhu.ac.in</a>
+                            <p>📞 +91 6386442663</p>
                         </div>
 						</Fade>
                     </div>

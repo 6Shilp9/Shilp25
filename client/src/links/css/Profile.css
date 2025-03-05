@@ -1,8 +1,8 @@
 .profile-card{
   width: 100%;
   max-width: 100%;
-  padding: 0 !important;
-  margin-bottom: 20vh;
+ padding: 0 !important;
+ margin-bottom: 20vh;
 }
 .profile-body{
 padding-bottom: 15vw;
@@ -20,7 +20,6 @@ background: #f6d365; /* fallback for old browsers */
 background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1)); /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
 .card-body .row{
 display: flex;
 flex-wrap: wrap;
@@ -30,105 +29,46 @@ justify-content: space-around;
 width: 100%;
 }
 .card-text{
-  color: black;
-  height: 100% !important;
+  color:black;
+  height:100% !important;
 }
 .DashboardDescription{
 width: 134%;
 font-size: 17px;
-color: red;
+color:red;
 margin-bottom: 10px;
 }
 .WorkshopDescription{
 width: 120%;
 font-size: 16px;
-color: red;
+color:red;
 margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1000px) {
-.profile-card {
+@media screen and (max-width:1000px) {
+.profile-card{
   margin: auto;
   width: 80vw;
 }
-.card-body .row .col-6 {
-  width: 48%; /* Reduce the width for better fit in smaller screens */
-  margin-bottom: 10px;
-}
 }
 
-@media screen and (max-width: 768px) {
-/* Make profile card take up more space on mid-sized screens (tablets) */
-.profile-card {
-  width: 90vw;
-  margin-bottom: 15vh;
+@media screen and (max-width:400px) {
+.profileHeader{
+  width: 150% !important;
+  font-size: 5vw !important;
 }
-
-.DashboardDescription, .WorkshopDescription {
-  width: 100%; /* Ensure descriptions fit within the screen */
-  font-size: 15px;
+.DashboardHeader{
+  width: 160% !important;
 }
-
-.card-body .row .col-6 {
-  width: 100%; /* Stack the columns vertically on smaller screens */
-  margin-bottom: 15px;
+.accommodationHeader{
+  width: 160% !important;
 }
-
-.profileHeader, .DashboardHeader, .accommodationHeader {
-  font-size: 4.5vw; /* Reduce font size on tablets */
-  width: 100%; /* Ensure headers fit within the screen */
+.DashboardDescription{
+  width: 165%;
+  font-size: 14px;
 }
-}
-
-@media screen and (max-width: 600px) {
-/* Make adjustments for smaller devices (phones) */
-.profile-card {
-  margin: auto;
-  width: 95vw; /* Use more width on smaller screens */
-}
-
-.DashboardDescription, .WorkshopDescription {
-  font-size: 14px; /* Reduce font size further for readability */
-  width: 100%; /* Fit descriptions within the viewport */
-}
-
-.profileHeader, .DashboardHeader, .accommodationHeader {
-  width: 100%; /* Ensure headers are well-sized */
-  font-size: 6vw; /* Larger font on very small devices */
-}
-
-.card-body .row .col-6 {
-  width: 100%; /* Stack the columns vertically */
-}
-
-.DashboardDescription, .WorkshopDescription {
-  margin-bottom: 12px;
-}
-}
-
-@media screen and (max-width: 400px) {
-/* For very small screens like phones in portrait mode */
-.profileHeader, .DashboardHeader, .accommodationHeader {
-  width: 100% !important;
-  font-size: 7vw !important; /* Increase font size slightly */
-}
-
-.DashboardDescription, .WorkshopDescription {
-  width: 100%;
-  font-size: 12px; /* Adjust description font size for readability */
-  margin-bottom: 8px;
-}
-
-.profile-card {
-  width: 90vw;
-  margin-bottom: 10vh;
-}
-
-.card-text {
-  font-size: 14px; /* Adjust text size for mobile readability */
-}
-
-.card-body .row {
-  flex-direction: column; /* Stack content vertically on very small screens */
+.WorkshopDescription{
+  width: 140%;
+  font-size: 14px;
 }
 }

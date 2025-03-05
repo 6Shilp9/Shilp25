@@ -33,6 +33,14 @@ const convenors = [
                         "Instagram": "",
                         "Linkedin": "https://www.linkedin.com/in/param-srivastava-016ba6261",
                         "MobileNo": ""
+                    },
+                    {
+                        "url": "./TeamPhotos/III Year/MUGDHA_CHATURVEDI_CO_CONVENER.webp",
+                        "Name": "MUGDHA CHATURVEDI",
+                        "Email": "mugdha.chaturvedi.civ22@itbhu.ac.in",
+                        "Instagram": "https://www.instagram.com/mugdha__chaturvedi?igsh=Nm1kZmR3M2Z6ZmFr",
+                        "Linkedin": "https://www.linkedin.com/in/mugdha-chaturvedi-096853258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                        "MobileNo": ""
                     }
                 ]
     }

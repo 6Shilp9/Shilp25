@@ -48,6 +48,9 @@
     .imgGallery img {
         width: 40vw;
     }
+    .single-image img{
+        width: 70vw !important;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -59,6 +62,9 @@
 
     .imgGallery img {
         width: 80vw;
+    }
+    .single-image img{
+        width: 90vw !important;
     }
 }
 

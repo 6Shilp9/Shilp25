@@ -99,19 +99,31 @@
 
     .footer .image img {
         height: 8vw;
+        margin-bottom: 1vw;
     }
 
     .footer .subscription input {
         width: 80%;
         font-size: 3vw;
+        padding: 2vw;
+        margin: 2vw;
     }
 
     .footer .subscription .subscribe-button {
         padding: 2vw;
         font-size: 3vw;
+        margin: 2vw;
     }
 
+    .footer .connect .text {
+        font-size: 3vw;
+    }
+    .footer .connect .social-media-icons{
+        display: flex;
+        justify-content: center;
+    }
     .footer .connect .social-media-icons a {
         font-size: 5vw;
+        margin: 1vw;
     }
 }

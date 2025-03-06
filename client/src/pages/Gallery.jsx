@@ -4,6 +4,7 @@ import "../links/css/gallery.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Loader from "../components/LoadingScreen";
+import GallerySlider from "../components/GallerySlider";
 
 function Gallery({ AllAuth }) {
   const [loading, setLoading] = useState(true);
@@ -13,12 +14,13 @@ function Gallery({ AllAuth }) {
       setLoading(false);
     }, 5000);
   }, []);
+
   const groups = {
     "DEPARTMENT": [1],
-    "OPENING CEREMONY": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12],
+    "OPENING CEREMONY": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     "SHILP DECOR": [13, 14, 15, 16, 17, 18],
     "EVENTS": [19, 20, 21, 22, 23, 24, 25, 26],
-    "SPECIAL PERFORMANCE BY IMC": [27, 28, 29, 30, 31, 32],
+    "SPECIAL PERFORMANCE BY IMC": [27, 29, 30, 31, 32],
     "CLOSING CEREMONY": [33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51],
   };
 
@@ -35,13 +37,14 @@ function Gallery({ AllAuth }) {
             {Object.keys(groups).map((group, index) => (
               <div key={index} className="group-section">
                 <h2 className="group-title">{group}</h2>
-                <div className="imgGallery">
-                  {groups[group].map((img, imgIndex) => (
-                    <div className="frame" key={imgIndex}>
-                      <img className="galimg" src={`./galleryPhoto/${img}.webp`} alt={`${group} ${imgIndex + 1}`} />
-                    </div>
-                  ))}
-                </div>
+
+                {group === "DEPARTMENT" ? (
+                  <div className="imgGallery single-image">
+                    <img className="galimg" src={`./galleryPhoto/${groups[group][0]}.webp`} alt={`${group}`} />
+                  </div>
+                ) : (
+                  <GallerySlider images={groups[group]} />
+                )}
               </div>
             ))}
           </div>
@@ -53,4 +56,3 @@ function Gallery({ AllAuth }) {
 }
 
 export default Gallery;
-

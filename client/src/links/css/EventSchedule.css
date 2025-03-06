@@ -1,10 +1,24 @@
 /* 🌟 General Styles */
 .schedule {
-  background-color: #f5e6d3;
-  padding: 2rem 5%;
+  background: url("../img/hero-bg.png"); /* Light brown background */
+  padding: 6rem 5%;
   max-height: 100%;
   min-height: 100vh;
+  position: relative; /* Required for shadow overlay */
 }
+
+/* Top Shadow Effect */
+.schedule::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%; /* Adjust height for stronger or softer effect */
+  background: linear-gradient(to bottom, #4a2c2a, transparent); /* Dark brown fading */
+  pointer-events: none; /* Ensures it doesn't interfere with interactions */
+}
+
 
 .event-schedule {
   max-width: 700px;
@@ -13,7 +27,7 @@
   text-align: center;
   background: rgba(255, 255, 255, 0.8); /* Subtle vintage paper feel */
   border-radius: 10px;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.619);
 }
 
 /* 🌟 Title */

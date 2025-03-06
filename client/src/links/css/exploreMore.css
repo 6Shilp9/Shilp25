@@ -3,7 +3,22 @@
     text-align: center;
     padding: 50px 0%;
     background: linear-gradient(to bottom, #d4b595, #4a2c2a);
+    position: relative; /* Required for shadow overlay */
 }
+
+/* Top Shadow Effect */
+.events::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%; /* Adjust for more or less shadow */
+    background: linear-gradient(to bottom, #2e1633, transparent); /* Dark brown fading */
+    pointer-events: none; /* Ensures it doesn’t interfere with interactions */
+    z-index: 1; /* Keeps it above the background */
+}
+
 
 .explore-heading {
     font-size: 2.5rem;
@@ -32,7 +47,8 @@
 }
 
 .event:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
+    transition: transform 1s ease-in-out !important;
 }
 
 .event img {

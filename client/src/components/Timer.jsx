@@ -25,7 +25,7 @@ function Timer() {
   return (
     <div>
         <div className="clockdiv" style={{
-    background: "linear-gradient(45deg, #8b5e3b, #5d3a1a, #a67c52, #4e342e, #7a5230, #e0c9a6)",
+    background: "linear-gradient(45deg, #8b5e3b, #5d3a1a, #a67c52, #4e342e, #7a5230,rgb(89, 86, 82))",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     display: "flex"

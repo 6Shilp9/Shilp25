@@ -150,14 +150,14 @@
 }
 
 .Guesttitle{
-  background: rgb(0, 0, 0, 0.4);
   width: 95%;
   margin: auto;
   border-radius: 50px;
-  margin-top: 10vh;
+  margin-top: 15vh;
   font-size: 10vh;
   font-weight: 900;
-  color: rgb(209, 167, 16);
+  color: #3b2c20;
+  font-family: 'BasheqVintage', serif;
   margin-bottom: 2vh;
 }
 .guestContainer{

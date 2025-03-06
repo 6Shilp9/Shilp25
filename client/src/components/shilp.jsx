@@ -63,21 +63,21 @@ function Shilp() {
                     <div className="stat-item">
                         <FaUsers className="icon" style={{ color: 'grey' }}/>
                         <h2 ref={participantsRef}>
-                            <CountUp start={0} end={showParticipants ? 1500 : 0} duration={2.5} />+
+                            <CountUp start={0} end={showParticipants ? 200 : 0} duration={2.5} />+
                         </h2>
                         <p>Participants from across India</p>
                     </div>
                     <div className="stat-item">
                         <FaCalendarAlt className="icon" style={{ color: 'red' }}/>
                         <h2 ref={eventsRef}>
-                            <CountUp start={0} end={showEvents ? 20 : 0} duration={2.5} />+
+                            <CountUp start={0} end={showEvents ? 15 : 0} duration={2.5} />+
                         </h2>
                         <p>Technical and Cultural programs</p>
                     </div>
                     <div className="stat-item">
                         <FaTrophy className="icon" style={{ color: 'gold' }}/>
                         <h2 ref={prizeRef}>
-                            ₹<CountUp start={0} end={showPrize ? 5 : 0} duration={2.5} decimals={1} />L+
+                            ₹<CountUp start={0} end={showPrize ? 10 : 0} duration={2.5} decimals={1} />K+
                         </h2>
                         <p>Prize pool</p>
                     </div>

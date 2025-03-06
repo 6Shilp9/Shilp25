@@ -1,5 +1,5 @@
 .outer-body{
-    background: rgb(101, 88, 31);
+    background: rgb(40, 26, 37);
     width: 95%;
     min-height: 100vh;
     max-height: 100%;
@@ -8,37 +8,53 @@
     padding: 4vw;
     margin-bottom: 5vh;
 }
-.outer-body .inner-body{
-    background: linear-gradient(to bottom, #be9256, #624d31); /* Background color similar to the image */
-    padding: 9vh 6vw 6vw 6vw;
-    font-weight: 700;
+
+.outer-body .inner-body {
+    background: linear-gradient(rgba(198, 190, 190, 0.5), rgba(88, 82, 82, 0.5)), 
+                url('../img/Abstract-vintage-wallpaper-hd.jpg') no-repeat center center;
+    background-size: cover;
+    font-weight: bolder;
     min-height: 85vh;
-    max-height:100%;
+    max-height: 100%;
     text-align: justify;
-    color: white;
+    color: #030303; /* Darker text color */
+    padding: 2vw;
 }
 
-.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed{
+.outer-body .inner-body p, 
+.outer-body .inner-body h1, 
+.outer-body .inner-body h2 {
+    color: #000000; /* Darker color for headings and paragraphs */
+}
+
+.accordion-flush .accordion-item .accordion-button, 
+.accordion-flush .accordion-item .accordion-button.collapsed {
     margin-bottom: 5vh;
     margin-top: 5vh;
     padding: 5vh 0 5vh 5vh;
-    background: linear-gradient(to bottom, #be9256, #624d31);    color: white;
-    font-weight: 700;
+    background: linear-gradient(to bottom, #be9256, #624d31);
+    color: white;
+    font-weight: bolder;
 }
+
 .accordion-button::after {
     color: white;
     background-image: url('../img/arrow-down-short.svg') !important;
     margin-right: 1vh;
 }
-.accordion-body{
-    background:  #be9256;
+
+.accordion-body {
+    background: rgba(255, 255, 255, 0.8); 
     text-align: justify;
+    color: #000000; /* Darker text color in accordion body */
 }
-.accordion-flush .accordion-item{
+
+.accordion-flush .accordion-item {
     background-color: black;
     border: none !important;
 }
-.contact-inner-body{
+
+.contact-inner-body {
     max-height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -46,54 +62,58 @@
     background: rgba(54, 24, 68, 1) !important;
     padding: 0 !important;
 }
-.contact-inner-body .contact{
+
+.contact-inner-body .contact {
     margin: 2vw;
-    background: rgb(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.contact-inner-body .contact a{
+
+.contact-inner-body .contact a {
     text-decoration: none;
-    color: white;
+    color: #222; /* Darker color for contact links */
     margin-top: 1vh;
     margin-bottom: -1.5vh;
 }
 
 @media screen and (max-width: 970px) {
-    .contact-inner-body{
+    .contact-inner-body {
         height: 100% !important;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
         background: rgba(54, 24, 68, 1) !important;
         padding: 0 !important;
     }
-    .outer-body .contact-outer-body{
+    
+    .outer-body .contact-outer-body {
         height: 100% !important;
     }
-    .contact-inner-body .contact{
+    
+    .contact-inner-body .contact {
         margin: 2vw;
         margin-top: 6vw;
-        background: rgb(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.4);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 3vw;
     }
-    .contact-inner-body .contact a{
+
+    .contact-inner-body .contact a {
         text-decoration: none;
-        color: white;
+        color: #222; /* Darker color for contact links in media query */
         margin-top: 1vh;
         margin-bottom: -1.5vh;
     }
-    
 }
+
 @media screen and (max-width: 456px) {
-    .contact-inner-body .contact a{
+    .contact-inner-body .contact a {
         font-size: 4vw;
     }
 }

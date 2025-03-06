@@ -4,34 +4,34 @@
   
   .imgGallery {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping of images to the next row */
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 3vw; /* Space between images */
+    gap: 3vw; 
     margin: 5vw;
   }
   
   .frame {
     position: relative;
     display: inline-block;
-    padding: 10px; /* Padding for inner spacing between frame and image */
-    border: 8px solid #d4a373; /* Vintage gold frame color */
+    padding: 10px; 
+    border: 8px solid #d4a373; 
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); /* Gives a subtle shadow for depth */
-    background-color: #f2e8c9; /* Slightly off-white background like old paper */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); 
+    background-color: #f2e8c9;
   }
   
   .galimg {
     width: 28vw;
-    border-radius: 5px; /* Rounded corners inside the frame */
+    border-radius: 5px; 
   }
   
-  /* Media queries for responsiveness */
+ 
   @media screen and (max-width: 900px) {
     .imgGallery {
-      gap: 3vw; /* Adjust space between images */
+      gap: 3vw; 
     }
     .galimg {
-      width: 40vw; /* Images take up more space on smaller screens */
+      width: 40vw; 
     }
   }
   

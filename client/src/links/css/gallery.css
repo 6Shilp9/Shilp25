@@ -36,7 +36,7 @@
     object-fit: contain;
     border-radius: 10px;
     margin-top: 24vh !important;
-    margin-bottom: 13vh;
+    margin-bottom: 10vh;
 }
 @media screen and (max-width: 900px) {
     .imgGallery {

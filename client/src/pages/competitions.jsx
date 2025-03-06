@@ -16,7 +16,7 @@ const Competitions = ({ AllAuth }) => {
 	useEffect(() => {
 		setTimeout(() => {
 			setLoading(false);
-		}, 5000);
+		}, 3000);
 	}, []);
 	useEffect(() => {
 		const docRef = doc(db, "userProfile", localStorage.getItem("UID"));

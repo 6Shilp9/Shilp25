@@ -26,7 +26,7 @@ const Home = ({ AllAuth }) => {
 	useEffect(() => {
 		setTimeout(() => {
 			setLoading(false);
-		}, 5000);
+		}, 4000);
 	}, []);
 
 

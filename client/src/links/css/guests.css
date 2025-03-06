@@ -170,6 +170,7 @@
   border-radius: 50px;
   max-height: 100%;
   margin-bottom: 10vh;
+  font-family: 'Old Standard TT', serif; /* Vintage-style font */
 }
 .guestContainer .card__cont .name{
   display: flex;

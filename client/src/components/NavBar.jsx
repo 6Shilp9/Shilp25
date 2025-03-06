@@ -36,7 +36,16 @@ const NavBar = ({ AllAuth }) => {
 
 	return (
 		<Fade top>
-			<nav className="navbar navbar-dark navbar-expand-xl vintage-navbar">
+			<nav
+	className="navbar navbar-dark navbar-expand-xl vintage-navbar"
+	style={{
+		position: isSidebarOpen ? "fixed" : "absolute",
+		width: "100%",
+		top: "0",
+		zIndex: "9999999",
+	}}
+>
+
 				<a className="navbar-brand mx-1 py-auto" href="#home">
 					<img src={SHILP} alt="SHILP logo" width="64px" />
 				</a>

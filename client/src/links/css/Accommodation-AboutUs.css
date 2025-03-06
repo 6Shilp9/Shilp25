@@ -4,53 +4,59 @@
     min-height: 100vh;
     max-height: 100%;
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 6vh;
     padding: 4vw;
     margin-bottom: 5vh;
 }
 
 .outer-body .inner-body {
-    background: linear-gradient(rgba(198, 190, 190, 0.5), rgba(88, 82, 82, 0.5)), 
-                url('../img/Abstract-vintage-wallpaper-hd.jpg') no-repeat center center;
+    background: linear-gradient(rgba(198, 190, 190, 0.5), rgba(145, 118, 61, 0.845)), 
+                url('../img/5217c521542d3c754a36fc825f23de6c.jpg') no-repeat center center;
     background-size: cover;
     font-weight: bolder;
     min-height: 85vh;
     max-height: 100%;
     text-align: justify;
-    color: #030303; /* Darker text color */
+    color: #030303; 
     padding: 2vw;
 }
 
 .outer-body .inner-body p, 
 .outer-body .inner-body h1, 
 .outer-body .inner-body h2 {
-    color: #000000; /* Darker color for headings and paragraphs */
+    color: #000000; 
 }
 
 .accordion-flush .accordion-item .accordion-button, 
 .accordion-flush .accordion-item .accordion-button.collapsed {
-    margin-bottom: 5vh;
+    
     margin-top: 5vh;
-    padding: 5vh 0 5vh 5vh;
-    background: linear-gradient(to bottom, #be9256, #624d31);
-    color: white;
+    padding: 5vh  0 5vh 5vh;
+    background: linear-gradient(rgba(198, 190, 190, 0.5), rgba(145, 118, 61, 0.845)), 
+                url('../img/5217c521542d3c754a36fc825f23de6c.jpg') no-repeat center center;
+                background-size: cover;
     font-weight: bolder;
 }
 
 .accordion-button::after {
-    color: white;
-    background-image: url('../img/arrow-down-short.svg') !important;
-    margin-right: 1vh;
+    content: url('../img/plus-circle-svgrepo-com.svg'); 
+    margin-right: 1cm;
+    transition: transform 0.3s ease-in-out; 
 }
 
+
+
 .accordion-body {
-    background: rgba(255, 255, 255, 0.8); 
+    background: linear-gradient(rgba(198, 190, 190, 0.5), rgba(132, 102, 35, 0.845)), 
+                url('../img/Old-Vintage-Paper-Textured-background-Graphics-69135662-1.jpg') no-repeat center center;
+                background-size: cover;
     text-align: justify;
-    color: #000000; /* Darker text color in accordion body */
+    color: #000000; 
 }
 
 .accordion-flush .accordion-item {
-    background-color: black;
+    background: linear-gradient(rgba(198, 190, 190, 0.5), rgba(145, 118, 61, 0.845)), 
+                url('../img/5217c521542d3c754a36fc825f23de6c.jpg') no-repeat center center;
     border: none !important;
 }
 

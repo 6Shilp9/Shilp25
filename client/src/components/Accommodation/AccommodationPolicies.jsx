@@ -7,7 +7,7 @@ function AccommodationPolicies() {
     <div className='outer-body accommodationPolicies-outer-body'>
         <Zoom>
         <div className="inner-body accommodationPolicies-inner-body">
-          Would be released soon ...
+          <h2>Would be released soon ...</h2>
         </div>
         </Zoom>
     </div>

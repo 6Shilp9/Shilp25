@@ -14,14 +14,25 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	object-fit: cover;
 	text-align: center;
-	background-image: url("../img/Hero.webp");
-	background-size: cover;
+	background-image: url("../img/Abstract-vintage-wallpaper-hd.jpg");
+	background-size: 100% 100%;
 	background-position: center;
-	padding-top: 10vh; /* Adjust top spacing */
+	padding-top: 10vh;
 }
 
-/* Adjust title section */
+.hero-container::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(151, 123, 123, 0.3); /* Lightens the image with a semi-transparent white overlay */
+	z-index: 1;
+}
+
 .hero-content {
 	display: flex;
 	flex-direction: column;
@@ -29,11 +40,13 @@
 	justify-content: center;
 	gap: 10px;
 	margin-top: 0vh; /* Reduce gap between navbar and title */
+	position: relative;
+	z-index: 2; /* Make sure the content appears above the overlay */
 }
 
 .hero-title {
 	font-family: "Times New Roman", sans-serif;
-	font-size: 12vh; /* Increased size */
+	font-size: 12vh; 
 	font-weight: 700;
 	color: #4a1f1f;
 }
@@ -45,14 +58,13 @@
 	font-family: 'BasheqVintage', serif;
 }
 
-/* Improve logo visibility */
+
 .hero-logo {
-	width: 250px; /* Increased logo size */
+	width: 250px;
 	height: auto;
 	margin-top: 15px;
 }
 
-/* Fix date & timer positioning */
 .hero-bottom {
 	display: flex;
 	flex-direction: column;
@@ -61,21 +73,27 @@
 }
 
 .hero-date {
-	color: #4a1f1f;
+	color: #301a1c;
 	font-size: 3.5vh;
 	font-weight: 600;
 }
 
 .countdown-timer {
-	color: #4a1f1f;
+	color: #4a1f1f; /* Make the color lighter for better contrast */
 	font-size: 2.5vh;
+	font-weight: bolder;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
+	position: relative;
+	z-index: 2; 
+	background-color: rgba(194, 189, 189, 0.82); 
+	padding: 10px;
+	border-radius: 1000px; 
 }
 
-/* Responsive Design */
+
 @media screen and (max-width: 768px) {
 	.hero-title {
 		font-size: 9vw;

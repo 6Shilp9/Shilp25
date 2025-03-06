@@ -2,7 +2,7 @@
 	position: absolute !important;
 	top: 0;
 	width: 100%;
-	background: #8B7355; /* Vintage brown color */
+	background: rgba(0, 0, 0, 0.587); /* Vintage brown color */
 	padding-bottom: 0px;
 	z-index: 9999999;
 	font-family: 'Old Standard TT', serif; /* Vintage-style font */

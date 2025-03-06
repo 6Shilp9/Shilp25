@@ -9,8 +9,7 @@
 
 /* 🌟 Background Styling */
 .shilp-team { 
-    background: linear-gradient(to bottom, #d4b595, #4a2c2a); /* Background color similar to the image */
-    margin-top: 10vh;
+    margin-top: 15vh;
     padding: 5vh 0;
     min-height: 100vh;
 }

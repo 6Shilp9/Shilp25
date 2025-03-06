@@ -16,10 +16,28 @@
 	justify-content: center;
 	object-fit: cover;
 	text-align: center;
-	background-image: url("../img/Abstract-vintage-wallpaper-hd.jpg");
+	background-image: url("../img/hero-bg.png");
 	background-size: 100% 100%;
 	background-position: center;
 	padding-top: 10vh;
+}
+.hero-left{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 50%;
+	background-size: 100% 100%;
+	background-image: url("../img/hero-Left.jpg");
+}
+.hero-right{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 50%;
+	background-size: 100% 100%;
+	background-image: url("../img/hero-Right.jpg");
 }
 
 .hero-container::before {
@@ -40,7 +58,6 @@
 	justify-content: center;
 	gap: 10px;
 	margin-top: 0vh; /* Reduce gap between navbar and title */
-	position: relative;
 	z-index: 2; /* Make sure the content appears above the overlay */
 }
 

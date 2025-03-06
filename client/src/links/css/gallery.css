@@ -10,13 +10,34 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3vw;
-    margin: 5vw;
+    margin-bottom: 5vw;
 }
 
 .galimg {
     border-radius: 10px;
 }
-
+.group-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.group-section{
+    margin-bottom: 8rem;
+}
+.single-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh !important;
+}
+.single-image img{
+    width: 50vw !important;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-top: 24vh !important;
+    margin-bottom: 13vh;
+}
 @media screen and (max-width: 900px) {
     .imgGallery {
         grid-template-columns: repeat(2, 1fr);

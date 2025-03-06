@@ -20,7 +20,7 @@ function Gallery({ AllAuth }) {
     "OPENING CEREMONY": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     "SHILP DECOR": [13, 14, 15, 16, 17, 18],
     "EVENTS": [19, 20, 21, 22, 23, 24, 25, 26],
-    "SPECIAL PERFORMANCE BY IMC": [27, 29, 30, 31, 32],
+    "SPECIAL PERFORMANCE BY INDIAN MUSIC CLUB": [27, 29, 30, 31, 32],
     "CLOSING CEREMONY": [33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51],
   };
 

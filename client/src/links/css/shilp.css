@@ -176,6 +176,9 @@
 
 /* 📌 Small Mobile Devices (below 500px) */
 @media screen and (max-width: 500px) {
+    .contain{
+        padding: 15% 10px;
+    }
     .description {
         font-size: 0.9rem;
         line-height: 1.4rem;

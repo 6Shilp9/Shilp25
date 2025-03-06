@@ -1,5 +1,5 @@
 .vintage-navbar {
-	position: absolute !important;
+	position: absolute;
 	top: 0;
 	width: 100%;
 	background: rgba(0, 0, 0, 0.587); /* Vintage brown color */
@@ -25,11 +25,11 @@
 
 .vintage-navbar .navbar-toggler {
 	margin-right: 15px;
-	border-color: #654321; /* Dark brown color for hamburger icon */
+	border : 5px solid #d9d5b8; /* Dark brown color for hamburger icon */
 }
 
 .vintage-navbar .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(101, 67, 33, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .vintage-navbar .ProfilePic {
@@ -71,7 +71,7 @@
 		top: 0;
 		right: -250px; /* Start off-screen */
 		width: 250px; /* Width of the sidebar */
-		height: 100vh;
+		height: 100vh; /* Full height */
 		background: #8B7355; /* Vintage brown color */
 		transition: right 1.5s ease-in-out; /* Smooth animation */
 		padding-top: 60px; /* Space for the logo */
@@ -79,6 +79,8 @@
 
 	.vintage-navbar .navbar-collapse.show {
 		position: fixed;
+		height: 100vh; /* Full height */
+		z-index: 9999999;
 		right: 0; /* Slide in from the right */
 	}
 

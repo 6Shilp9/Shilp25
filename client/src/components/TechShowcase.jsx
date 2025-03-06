@@ -16,6 +16,7 @@ function TechShowcase({ AllAuth, RegisteredEvents }) {
 					<Fade left>
 						<EventCard
 							name="ML Forge"
+							details="A machine learning competition where you can showcase your skills and compete with the best!"
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}
@@ -26,6 +27,8 @@ function TechShowcase({ AllAuth, RegisteredEvents }) {
 					<Fade bottom>
 						<EventCard
 							name="Codecraft"
+							details=" Dive into the intersection of civil engineering and cutting-edge
+							coding at our thrilling competition!"
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}
@@ -36,6 +39,7 @@ function TechShowcase({ AllAuth, RegisteredEvents }) {
 					<Fade right>
 						<EventCard
 							name="Codeblitz"
+							details="A coding competition that will test your coding skills and problem-solving abilities."
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}
@@ -46,6 +50,7 @@ function TechShowcase({ AllAuth, RegisteredEvents }) {
 					<Fade right>
 						<EventCard
 							name="3 Minute Thesis"
+							details="Present your research in a concise and engaging manner in just 3 minutes!"
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}

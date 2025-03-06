@@ -16,7 +16,7 @@
 }
 .body {
 	position: relative;
-	background: linear-gradient(to bottom, #d4b595, #4a2c2a); /* Background color similar to the image */
+	background: linear-gradient(to bottom, #d4b595, #4a2c2a); 
 
 	overflow-x: hidden;
 }

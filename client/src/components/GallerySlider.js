@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules'; // Import Autoplay module
 import '../links/css/GallerySlider.css';
 
 const GallerySlider = ({ images }) => {
@@ -14,6 +14,11 @@ const GallerySlider = ({ images }) => {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={'auto'}
+        loop={true}  
+        autoplay={{   
+          delay: 2000, 
+          disableOnInteraction: false,
+        }}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -22,7 +27,7 @@ const GallerySlider = ({ images }) => {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, Autoplay]} // Add Autoplay module
         className="mySwiper"
       >
         {images.map((img, index) => (

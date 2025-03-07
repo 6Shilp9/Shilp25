@@ -292,7 +292,6 @@
 
     .team-container .team-card {
         width: 90%;
-        height: auto;
         margin: 10px 0;
     }
 
@@ -326,6 +325,5 @@
 
     .team-container .team-card {
         width: 95%;
-        height: auto;
     }
 }

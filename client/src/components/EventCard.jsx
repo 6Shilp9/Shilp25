@@ -135,21 +135,40 @@ function EventCard(props) {
 				>
 					Explore
 				</Link>
-				<p
+				<Link
+					to={
+						props.name === "ML Forge"
+						? "https://unstop.com/p/nexus-ml-competition-shilp25-iit-bhu-1419778"
+						:
+						props.name === "Codeblitz"
+							? "https://unstop.com/p/codeblitz-shilp25-iit-bhu-1421360"
+							: 
+							props.name === "Codecraft"
+							? "https://unstop.com/p/codecraft-shilp25-iit-bhu-1421366"
+							:
+							props.name === "Capture The Snap"
+							? "https://unstop.com/p/capture-the-snap-shilp25-iit-bhu-1421381"
+							:
+							"#"
+					}
 					className={
 						"button" +
 						(RegisteredEvents.includes(props.name) || isRegistred
 							? " registered"
 							: "")
 					}
-					onClick={() => {
-						RegisterEvent(props.name);
-					}}
+					onClick={
+						(props.name !== "ML Forge" && props.name !== "Codeblitz" && props.name !== "Codecraft" && props.name !== "Capture The Snap")
+							? () => {
+									RegisterEvent(props.name);
+							  }
+							: null
+					}
 				>
 					{RegisteredEvents.includes(props.name) || isRegistred
 						? "Registered"
 						: "Register"}
-				</p>
+				</Link>
 				{RegisteredEvents.includes(props.name) || isRegistred ? (
 					<p
 						className="button unregister"

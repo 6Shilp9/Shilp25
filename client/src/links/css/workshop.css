@@ -1,9 +1,10 @@
 
     .workshopHeading{
-        background: linear-gradient(45deg,rgb(70, 30, 88),rgb(26, 13, 32));
-        border-top: 5px solid rgba(255, 255, 255, 0.118);
+        /* background: linear-gradient(45deg, rgb(176, 96, 43), rgba(198, 133, 68, 0.436));  */
+        border-top: 5px solid rgba(255, 235, 205, 0.2); 
         position: relative;
-        height: 13vh;width: 80%;
+        height: 13vh;
+        width: 80%;
         margin: auto;
         margin-top: 13vh;
         display: flex;
@@ -11,13 +12,14 @@
         align-items: center;
         font-size: 4rem;
         font-weight: 700;
-        border-radius: 50px;
-        color: #D12156;
+        border-radius: 30px; 
+        color: #8B3A3A; 
+        
     }
     .workshopTitle{
-        background: linear-gradient(45deg,#d80032,rgb(121, 3, 154),#d80032,rgb(121, 3, 154),#d80032,rgb(121, 3, 154));
-    -webkit-background-clip: text;
+        background: linear-gradient(45deg, #8B3A3A, rgb(139, 69, 19), #8B3A3A, rgb(139, 69, 19), #ac4747, rgb(174, 112, 67));    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'BasheqVintage', serif;
     }
 
 .cards{
@@ -29,7 +31,7 @@
     padding: 10vh 5px;
     margin: 10vw;
     margin-top: 5vh;
-    background: rgb(46, 21, 58);
+    background: rgba(126, 101, 19, 0.833);
     opacity: 0.8;
     border-top: 5px solid rgba(255, 255, 255, 0.118);
 }
@@ -37,11 +39,11 @@
     position: relative;
     margin-top: 5vh;
     height: 100%;
-    color: rgb(213, 152, 224);
+    color: rgb(62, 60, 57);
 }
 .workshopPrice span{
     font-weight: bolder;
-    color: rgb(234, 18, 61);
+    color: rgb(191, 109, 74);
 }
 
 @media screen and (max-width: 456px) {

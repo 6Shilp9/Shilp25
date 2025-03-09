@@ -7,18 +7,57 @@ import Contacts from "../components/Contact Information";
 import Loader from "../components/LoadingScreen";
 
 const convenors = [
+    // "id": 8,
+    //     "Team": "Convenors",
+    //     "team": [
+    //         {
+    //             "Designation": "Co-Convenor",
+    //             "data": [
+    //                 {
+    //                     "url": "./TeamPhotos/III Year/MUGDHA_CHATURVEDI_CO_CONVENOR.webp",
+    //                     "Name": "Mugdha Chaturvedi",
+    //                     "Email": "mugdha.chaturvedi.civ22@itbhu.ac.in",
+    //                     "Instagram": "https://www.instagram.com/mugdha__chaturvedi?igsh=Nm1kZmR3M2Z6ZmFr",
+    //                     "Linkedin": "https://www.linkedin.com/in/mugdha-chaturvedi-096853258",
+    //                     "MobileNo": ""
+    //                 },
+    //                 {
+    //                     "url": "./TeamPhotos/III Year/PARAM_SRIVASTAVA_CO_CONVENOR.webp",
+    //                     "Name": "Param Srivastava",
+    //                     "Email": "param.srivastava.civ21@itbhu.ac.in",
+    //                     "Instagram": "",
+    //                     "Linkedin": "https://www.linkedin.com/in/param-srivastava-016ba6261",
+    //                     "MobileNo": ""
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             "Designation": "Convenor",
+    //             "data": [
+                    // {
+                    //     "url": "./TeamPhotos/III Year/DEVESH_SINDHI_CONVENOR.webp",
+                    //     "Name": "Devesh Sindhi",
+                    //     "Email": "devesh.sindhi.civ21@itbhu.ac.in",
+                    //     "Instagram": "",
+                    //     "Linkedin": "",
+                    //     "MobileNo": ""
+                    // }
+    //             ]
+    //         }
+    //     ]
+    // },
     {
         id: 1,
         Designation: "Convenor",
         data: [
             {
-                url: "./TeamPhotos/IV Year/Ashutosh Gupta_ Convenor.webp",
-                Name: "Ashutosh Gupta",
-                Email: "ashutosh.gupta.civ20@iitbhu.ac.in",
-                Instagram: "https://www.instagram.com/interesting10ashu",
-                Linkedin: "https://www.linkedin.com/in/ashutosh-gupta-3a7577203",
-                MobileNo: "7458842288",
-            },
+                "url": "./TeamPhotos/IV Year/DEVESH_SINDHI_CONVENOR",
+                "Name": "Devesh Sindhi",
+                "Email": "devesh.sindhi.civ21@itbhu.ac.in",
+                "Instagram": "",
+                "Linkedin": "",
+                "MobileNo": ""
+            }
         ],
     },
     {
@@ -27,21 +66,21 @@ const convenors = [
                 Designation: "Co-Convenor",
                 data: [
                     {
-                        "url": "./TeamPhotos/Co_Convenor.webp",
-                        "Name": "Param Srivastava",
-                        "Email": "param.srivastava.civ21@itbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "https://www.linkedin.com/in/param-srivastava-016ba6261",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/III Year/MUGDHA_CHATURVEDI_CO_CONVENER.webp",
-                        "Name": "MUGDHA CHATURVEDI",
-                        "Email": "mugdha.chaturvedi.civ22@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/mugdha__chaturvedi?igsh=Nm1kZmR3M2Z6ZmFr",
-                        "Linkedin": "https://www.linkedin.com/in/mugdha-chaturvedi-096853258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-                        "MobileNo": ""
-                    }
+                                            "url": "./TeamPhotos/III Year/MUGDHA_CHATURVEDI_CO_CONVENER.webp",
+                                            "Name": "Mugdha Chaturvedi",
+                                            "Email": "mugdha.chaturvedi.civ22@itbhu.ac.in",
+                                            "Instagram": "https://www.instagram.com/mugdha__chaturvedi?igsh=Nm1kZmR3M2Z6ZmFr",
+                                            "Linkedin": "https://www.linkedin.com/in/mugdha-chaturvedi-096853258",
+                                            "MobileNo": ""
+                                        },
+                                        {
+                                            "url": "./TeamPhotos/IV Year/PARAM_SRIVASTAVA_CO_CONVENOR",
+                                            "Name": "Param Srivastava",
+                                            "Email": "param.srivastava.civ21@itbhu.ac.in",
+                                            "Instagram": "",
+                                            "Linkedin": "https://www.linkedin.com/in/param-srivastava-016ba6261",
+                                            "MobileNo": ""
+                                        }
                 ]
     }
 ];
@@ -89,10 +128,10 @@ const Team = ({ AllAuth }) => {
                         </div>
                         </div>
 
-                        {Contacts.map((team) => (
-                            <div className="team-box" key={team.id}>
-                                <div className="team-title">{team.Team}</div>
-                                {team.team.map((role) => (
+                        {Contacts.map((t) => (
+                            <div className="team-box" key={t.id}>
+                                <div className="team-title">{t.Team}</div>
+                                {t.team.map((role) => (
                                     <>
                                         <div className="team-subheading">{role.Designation}</div>
                                         <div className="team-container">

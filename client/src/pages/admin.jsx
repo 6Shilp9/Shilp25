@@ -241,7 +241,7 @@ const Admin = ({ AllAuth }) => {
 												<th> Events</th>
 												<th className="px-4">Paid</th>
 											</tr>
-											{RegisteredEvents.length ? (
+											
 												<>
 													<tr>
 														<td>
@@ -266,9 +266,6 @@ const Admin = ({ AllAuth }) => {
 														</td>
 													</tr>
 												</>
-											) : (
-												<></>
-											)}
 											{RegisteredEvents.map(
 												(event, i) => {
 													return (

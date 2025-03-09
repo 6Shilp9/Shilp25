@@ -295,7 +295,7 @@ const Profile = ({ AllAuth }) => {
                       </MDBCol> */}
                                   <MDBCol size="6" className="mb-3">
                                     <MDBTypography tag="h6">
-                                      Phone
+                                      Phone <span style={{color:"red"}}>*</span>
                                     </MDBTypography>
                                     <MDBCardText className="text-muted">
                                       <input
@@ -310,7 +310,7 @@ const Profile = ({ AllAuth }) => {
                                   </MDBCol>
                                   <MDBCol size="6" className="mb-3">
                                     <MDBTypography tag="h6">
-                                      College
+                                      College <span style={{color:"red"}}>*</span>
                                     </MDBTypography>
                                     <MDBCardText className="text-muted">
                                       <input
@@ -329,7 +329,7 @@ const Profile = ({ AllAuth }) => {
                                 <hr className="mt-0 mb-4" />
                                 <MDBRow className="pt-1">
                                   <MDBCol size="6" className="mb-3">
-                                    <MDBTypography tag="h6">Year</MDBTypography>
+                                    <MDBTypography tag="h6">Year <span style={{color:"red"}}>*</span></MDBTypography>
                                     <MDBCardText className="text-muted">
                                       <input
                                         type="text"
@@ -446,7 +446,6 @@ const Profile = ({ AllAuth }) => {
                                       Paid
                                     </th>
                                   </tr>
-                                  {RegisteredEvents.length ? (
                                     <>
                                       <tr
                                         style={{
@@ -486,9 +485,6 @@ const Profile = ({ AllAuth }) => {
                                         </td>
                                       </tr>
                                     </>
-                                  ) : (
-                                    <></>
-                                  )}
                                   {RegisteredEvents.map((event, i) => {
                                     return (
                                       <tr key={i}>

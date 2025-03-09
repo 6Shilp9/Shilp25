@@ -36,6 +36,12 @@ function EventCard(props) {
 	}, []);
 
 	const unstopp = async(eventName) => {
+		if (!isProf) {
+			toast.message("Please complete your profile");
+			navigate("../profile");
+			return;
+		}
+
 		if(!paidRegistration){
 			toast.error("Please pay the registration fee to register for this event");
 			return;
@@ -60,6 +66,7 @@ function EventCard(props) {
 
 		let data;
 		if (!isProf) {
+			toast.message("Please complete your profile");
 			navigate("../profile");
 			return;
 		}

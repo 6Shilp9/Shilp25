@@ -13,7 +13,7 @@ const Guests = ({ AllAuth }) => {
 	useEffect(() => {
 		setTimeout(() => {
 			setLoading(false);
-		}, 5000);
+		}, 3000);
 	}, []);
 
 	return (
@@ -34,7 +34,7 @@ const Guests = ({ AllAuth }) => {
 					Guests
 				</div>
 				<div className="guestContainer">
-				<h1 style={{fontStyle:"italic"}}>
+				<h1>
 					Chief Guest
 				</h1>
 				<div className="guestCards">

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { db } from "../firebase";
 import { doc, setDoc, getDoc } from "firebase/firestore";
 import { toast } from "react-toastify";
+import exportFirestoreData from "../utils/exportFirestore";
 
 // import NavBar from "../components/NavBar";
 
@@ -116,6 +117,7 @@ const Admin = ({ AllAuth }) => {
 								/>
 								<input type="submit" value="Fetch User Data" />
 							</form>
+							<button onClick={exportFirestoreData}>Export Firestore Data</button>
 
 							{isUserData ? (
 								<div>
@@ -239,7 +241,7 @@ const Admin = ({ AllAuth }) => {
 												<th> Events</th>
 												<th className="px-4">Paid</th>
 											</tr>
-											{RegisteredEvents.length ? (
+											
 												<>
 													<tr>
 														<td>
@@ -264,9 +266,6 @@ const Admin = ({ AllAuth }) => {
 														</td>
 													</tr>
 												</>
-											) : (
-												<></>
-											)}
 											{RegisteredEvents.map(
 												(event, i) => {
 													return (

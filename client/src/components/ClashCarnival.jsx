@@ -14,6 +14,7 @@ function ClashCarnival({ AllAuth, RegisteredEvents }) {
 					<Fade left>
 						<EventCard
 							name="Feast For Brains"
+							details="A quiz competition that will test your knowledge and wit!"
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}
@@ -24,6 +25,7 @@ function ClashCarnival({ AllAuth, RegisteredEvents }) {
 					<Fade bottom>
 						<EventCard
 							name="Capture The Snap"
+							details="A photography competition where you can showcase your photography skills!"
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}

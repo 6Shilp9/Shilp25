@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../links/css/EventCard.css";
 import { Link, useNavigate } from "react-router-dom";
 // import { pdfjs } from 'react-pdf';
@@ -17,10 +17,56 @@ function EventCard(props) {
 	const isProf = props.AllAuth.isProf;
 	const RegisteredEvents = props.RegisteredEvents;
 	const [isRegistred, setIsRegistered] = useState(false);
+	const [paidRegistration, setPaidRegistration] = useState(false);
+
+	useEffect(() => {
+		let data;
+		const docRef = doc(db, "userProfile", localStorage.getItem("UID"));
+		getDoc(docRef).then(async (docSnap) => {
+			if (docSnap.exists()) {
+				data = docSnap.data();
+				if(data.accommodationStatus === "IIT BHU Student"){
+					setPaidRegistration(true);
+				}
+				else if(data.PaidRegistration){
+					setPaidRegistration(true);
+				}
+			}
+		});
+	}, []);
+
+	const unstopp = async(eventName) => {
+		if (!isProf) {
+			toast.message("Please complete your profile");
+			navigate("../profile");
+			return;
+		}
+
+		if(!paidRegistration){
+			toast.error("Please pay the registration fee to register for this event");
+			return;
+		}
+		if(paidRegistration){
+			if(eventName === "ML Forge"){
+				window.open("https://unstop.com/p/nexus-ml-competition-shilp25-iit-bhu-1419778","_blank");
+			}
+			if(eventName === "Codecraft"){
+				window.open("https://unstop.com/p/codecraft-shilp25-iit-bhu-1421366","_blank");
+			}
+			if(eventName === "Codeblitz"){
+				window.open("https://unstop.com/p/codeblitz-shilp25-iit-bhu-1421360", "_blank");
+			}
+			if(eventName === "Capture The Snap"){
+				window.open("https://unstop.com/p/capture-the-snap-shilp25-iit-bhu-1421381", "_blank");
+			}
+		}
+	}
 
 	const RegisterEvent = async (EventId) => {
+
 		let data;
 		if (!isProf) {
+			toast.message("Please complete your profile");
 			navigate("../profile");
 			return;
 		}
@@ -143,6 +189,10 @@ function EventCard(props) {
 							: "")
 					}
 					onClick={() => {
+						props.name === "ML Forge" || props.name === "Codecraft" || props.name === "Codeblitz" || props.name === "Capture The Snap"
+						?
+						unstopp(props.name)
+						:
 						RegisterEvent(props.name);
 					}}
 				>

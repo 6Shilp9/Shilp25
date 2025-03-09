@@ -17,7 +17,7 @@ const Accommodation = ({ AllAuth }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 3000);
   }, []);
 
   const buttonStyle = {

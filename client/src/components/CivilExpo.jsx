@@ -14,6 +14,7 @@ function CivilExpo({ AllAuth, RegisteredEvents }) {
 					<Fade left>
 						<EventCard
 							name="Cartodraft"
+							details="A map-making competition where you can showcase your skills and compete with the best!"
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}
@@ -24,6 +25,7 @@ function CivilExpo({ AllAuth, RegisteredEvents }) {
 					<Fade right>
 						<EventCard
 							name="Vintage Visionaries"
+							details="A photography competition where you can showcase your photography skills!"
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}
@@ -35,6 +37,7 @@ function CivilExpo({ AllAuth, RegisteredEvents }) {
 					<Fade left>
 						<EventCard
 							name="Surveyor's Hunt"
+							details="A treasure hunt competition that will test your knowledge and wit!"
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}
@@ -45,6 +48,7 @@ function CivilExpo({ AllAuth, RegisteredEvents }) {
 					<Fade right>
 						<EventCard
 							name="BridgeIt"
+							details="A bridge-building competition that will test your engineering and creativity skills."
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}

@@ -7,7 +7,7 @@ const EventSchedule = () => {
 
   const schedule = {
     "Day 1": [
-      { title: "orkshop 1", location: "Online/ABLT2", time: "10:00 AM - 1:00 PM" },
+      { title: "Workshop 1", location: "Online/ABLT2", time: "10:00 AM - 1:00 PM" },
       { title: "Opening Cerenomy", location: "ABLT4", time: "11:00 AM - 1:00 PM" },
       { title: "Vintage Visionaries", location: "Civil Department", time: "2:00 PM - 5:00 PM" },
       { title: "Code Craft", location: "Online", time: "5:30 PM - 7:30 PM" },

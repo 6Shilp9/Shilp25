@@ -1,150 +1,171 @@
 .vintage-navbar {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	background: rgba(0, 0, 0, 0.587); /* Vintage brown color */
-	padding-bottom: 0px;
-	z-index: 9999999;
-	font-family: 'Old Standard TT', serif; /* Vintage-style font */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.587); 
+    padding-bottom: 0px;
+    z-index: 9999999;
+    font-family: 'Old Standard TT', serif; 
 }
 
 .vintage-navbar .navbar-brand img {
-	height: 60px;
-	width: 60px;
+    height: 60px;
+    width: 60px;
 }
 
 .vintage-navbar .nav-item {
-	font-size: 1.2vw;
-	font-weight: 600;
-	color: #FFF8DC; /* Vintage off-white color */
-	margin: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #FFF8DC; 
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .vintage-navbar .navbar-toggler {
-	margin-right: 15px;
-	border : 5px solid #d9d5b8; /* Dark brown color for hamburger icon */
+    margin-right: 15px;
+    border: 5px solid #d9d5b8;
 }
 
 .vintage-navbar .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .vintage-navbar .ProfilePic {
-	width: 40px;
-	height: 40px;
-	border-radius: 50px;
-	justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    justify-content: center;
 }
 
-/* Close Icon */
+
 .close-icon {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	background: none;
-	border: none;
-	color: #FFF8DC;
-	font-size: 24px;
-	cursor: pointer;
-	display: none; /* Hidden by default */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #FFF8DC;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; 
 }
-.dropdown .show{
-	padding: 0px;
-	border-radius: 10px;
-	background-color: #8B7355;
+
+
+.navbar .dropdown-menu {
+    background-color: #8B7355; 
+    border-radius: 10px;
+    padding: 0;
+    margin-top: 0.5rem; 
+    top: 100%;
 }
-.dropdown .show a, .dropdown-item{
-	border: 1px solid white !important;
-	color: #FFF8DC !important;
+
+.dropdown .show {
+    padding: 0px;
+    border-radius: 10px;
+    background-color: #8B7355;
 }
-/* Mobile Styles */
+
+.dropdown .show a, .dropdown-item {
+    border: 1px solid white !important;
+    color: #FFF8DC !important;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    color: #FFF8DC;
+    background: #8B7355;
+    border: none;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background: #654321; 
+}
+
+
 @media screen and (max-width: 1200px) {
-	.vintage-navbar {
-		background: transparent; /* Background-less navbar */
-	}
+    .vintage-navbar {
+        background: transparent; 
+    }
 
-	.vintage-navbar .navbar-collapse {
-		position: fixed;
-		top: 0;
-		right: -250px; /* Start off-screen */
-		width: 250px; /* Width of the sidebar */
-		height: 100vh; /* Full height */
-		background: #8B7355; /* Vintage brown color */
-		transition: right 1.5s ease-in-out; /* Smooth animation */
-		padding-top: 60px; /* Space for the logo */
-	}
+    .vintage-navbar .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: -250px; 
+        width: 250px;
+        height: 100vh; 
+        background: #8B7355; 
+        transition: right 1.5s ease-in-out;
+        padding-top: 60px; 
+    }
 
-	.vintage-navbar .navbar-collapse.show {
-		position: fixed;
-		height: 100vh; /* Full height */
-		z-index: 9999999;
-		right: 0; /* Slide in from the right */
-	}
+    .vintage-navbar .navbar-collapse.show {
+        position: fixed;
+        height: 100vh; 
+        z-index: 9999999;
+        right: 0; 
+    }
 
-	.vintage-navbar .close-icon {
-		display: block; /* Show close icon when sidebar is open */
-	}
+    .vintage-navbar .close-icon {
+        display: block; 
+    }
 
-	.vintage-navbar .nav-item {
-		font-size: 18px;
-	}
+    .vintage-navbar .nav-item {
+        font-size: 18px;
+    }
 
-	.vintage-navbar .nav-link {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: #FFF8DC; /* Vintage off-white color */
-	}
+    .vintage-navbar .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF8DC; 
+    }
 
-	.vintage-navbar .ProfilePic {
-		display: flex;
-		margin: auto;
-	}
+    .vintage-navbar .ProfilePic {
+        display: flex;
+        margin: auto;
+    }
 
-	/* Hide dropdown on mobile */
-	.desktop-dropdown {
-		display: none;
-	}
+    .desktop-dropdown {
+        display: none;
+    }
 }
 
-/* Desktop Styles */
+
 @media screen and (min-width: 1201px) {
-	.vintage-navbar .navbar-collapse {
-		justify-content: flex-end; /* Align nav items to the right */
-	}
+    .vintage-navbar .navbar-collapse {
+        justify-content: flex-end; 
+    }
 
-	.vintage-navbar .navbar-brand {
-		margin-right: auto; /* Push logo to the left */
-	}
+    .vintage-navbar .navbar-brand {
+        margin-right: auto; 
+    }
 
-	/* Profile Dropdown */
-	.desktop-dropdown {
-		position: relative;
-	}
+  
+    .desktop-dropdown {
+        position: relative;
+    }
 
-	.desktop-dropdown .dropdown-menu {
-		position: absolute;
-		right: 0;
-		top: 100%;
-		background: #8B7355;
-		border: none;
-	}
+    .desktop-dropdown .dropdown-menu {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background: #8B7355;
+        border: none;
+    }
 
-	.desktop-dropdown .dropdown-item {
-		color: #FFF8DC;
-		padding: 10px 20px;
-		background: #8B7355;
-	}
+    .desktop-dropdown .dropdown-item {
+        color: #FFF8DC;
+        padding: 10px 20px;
+        background: #8B7355;
+    }
 
-	.desktop-dropdown .dropdown-item:hover {
-		background: #654321;
-	}
+    .desktop-dropdown .dropdown-item:hover {
+        background: #654321;
+    }
 
-	/* Hide mobile profile and logout on desktop */
-	.mobile-profile {
-		display: none;
-	}
+    .mobile-profile {
+        display: none;
+    }
 }

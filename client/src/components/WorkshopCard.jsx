@@ -87,7 +87,7 @@ function WorkshopCard(props) {
 
 	const UnRegisterWorkshop = async (WorkshopId) => {
 		let data;
-		// let workshops;
+		
 		const docRef = doc(db, "userProfile", localStorage.getItem("UID"));
 		getDoc(docRef).then(async (docSnap) => {
 			if (docSnap.exists()) {

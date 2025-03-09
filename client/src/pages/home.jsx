@@ -7,17 +7,9 @@ import Shilp from "../components/shilp";
 import About from "../components/About";
 import ExploreMore from "../components/ExploreMore";
 import EventSchedule from "../components/EventSchedule";
-// import ContactInformation from "../components/ContactInformation";
-// import ParticleBackground from "../components/ParticleBackground";
-// import PacmanLoader from "react-spinners/PacmanLoader";
+
 import Loader from "../components/LoadingScreen"
 
-// const override = {
-// 	display: "flex",
-// 	justifyContent: "center",
-// 	alignItems: "center",
-// 	borderColor: "red",
-//   };
 
 const Home = ({ AllAuth }) => {
 

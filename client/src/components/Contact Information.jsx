@@ -7,7 +7,7 @@ const Contacts = [
                 "Designation": "Senior Advisor",
                 "data": [
                     {
-                        "url": "./TeamPhotos/IV Year/AMAN_SRIVASTAVA_SENIOR_ADVISOR",
+                        "url": "./TeamPhotos/IV Year/AMAN_SRIVASTAVA_SENIOR_ADVISOR.webp",
                         "Name": "Aman Srivastava",
                         "Email": "aman.srivastava.civ21@itbhu.ac.in",
                         "Instagram": "Dhoondh lo (follow nahi karte kya?)",
@@ -15,7 +15,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/IV Year/NANDINI_BHIMSARIA_SENIOR_ADVISOR",
+                        "url": "./TeamPhotos/IV Year/NANDINI_BHIMSARIA_SENIOR_ADVISOR.webp",
                         "Name": "Nandini Bhimsaria",
                         "Email": "nandini.bhimsaria.civ21@itbhu.ac.in",
                         "Instagram": "",
@@ -34,7 +34,7 @@ const Contacts = [
                 "Designation": "Tech Advisor",
                 "data": [
                     {
-                        "url": "./TeamPhotos/IV Year/MAYANK_TECH_ADVISOR.png",
+                        "url": "./TeamPhotos/IV Year/MAYANK_TECH_ADVISOR.webp",
                         "Name": "Mayank Gupta",
                         "Email": "mayankmani.nathgupta.cd.civ21@itbhu.ac.in",
                         "Instagram": "https://www.instagram.com/guptamayank1206",
@@ -109,7 +109,7 @@ const Contacts = [
                 "Designation": "Branding Advisor",
                 "data": [
                     {
-                        "url": "./TeamPhotos/IV Year/MANSI_BRANDING_ADVISOR",
+                        "url": "./TeamPhotos/IV Year/MANSI_BRANDING_ADVISOR.webp",
                         "Name": "Mansi Pandharpure",
                         "Email": "mansi.pandharpure.civ21@itbhu.ac.in",
                         "Instagram": "mansi__7603",
@@ -117,7 +117,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/IV Year/ANKIT_KUMAR_BRANDING_ADVISOR",
+                        "url": "./TeamPhotos/IV Year/ANKIT_KUMAR_BRANDING_ADVISOR.webp",
                         "Name": "Ankit Kumar",
                         "Email": "ankit.kumar.civ21@itbhu.ac.in",
                         "Instagram": "arre_ankit",
@@ -125,7 +125,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/IV Year/ASHWANI_KUMAR_SHARMA_BRANDING_ADVISOR",
+                        "url": "./TeamPhotos/IV Year/ASHWANI_KUMAR_SHARMA_BRANDING_ADVISOR.webp",
                         "Name": "Ashwani Kumar Sharma",
                         "Email": "ashwani.krsharma.civ21@itbhu.ac.in",
                         "Instagram": "ashwani.kumar.sharma",
@@ -167,7 +167,7 @@ const Contacts = [
                 "Designation": "Branding Executive",
                 "data": [
                     {
-                        "url": "./TeamPhotos/II Year/DEVRAJ_MAHAWAR_BRANDING_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/DEVRAJ_MAHAWAR_BRANDING_EXECUTIVE.webp",
                         "Name": "Devraj Mahawar",
                         "Email": "devraj.mahawar.civ23@itbhu.ac.in",
                         "Instagram": "devrajmahawar12",
@@ -175,7 +175,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/ABHISHEK_KUMAR_BRANDING_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/ABHISHEK_KUMAR_BRANDING_EXECUTIVE.webp",
                         "Name": "Abhishek Kumar",
                         "Email": "abhishek.kumar.cd.civ23@itbhu.ac.in",
                         "Instagram": "https://www.instagram.com/___abhi___singh___0/",
@@ -194,7 +194,7 @@ const Contacts = [
                 "Designation": "Event Advisor",
                 "data": [
                     {
-                        "url": "./TeamPhotos/IV Year/PRATIK_NAND_EVENT_ADVISOR",
+                        "url": "./TeamPhotos/IV Year/PRATIK_NAND_EVENT_ADVISOR.webp",
                         "Name": "Pratik Nand",
                         "Email": "pratik.nand.civ21@itbhu.ac.in",
                         "Instagram": "https://www.instagram.com/pratik_nand5?igsh=c3M0czFoaHc4dnUw",
@@ -202,7 +202,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/IV Year/RADHIKA_EVENT_ADVISOR",
+                        "url": "./TeamPhotos/IV Year/RADHIKA_EVENT_ADVISOR.webp",
                         "Name": "Radhika Singh Rajawat",
                         "Email": "radhikas.rajawat.civ21@itbhu.ac.in",
                         "Instagram": "",
@@ -252,7 +252,7 @@ const Contacts = [
                 "Designation": "Events' Team Executive",
                 "data": [
                     {
-                        "url": "./TeamPhotos/II Year/PRANJAL_EVENTS_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/PRANJAL_EVENTS_EXECUTIVE.webp",
                         "Name": "Pranjal Gupta",
                         "Email": "pranjal.gupta.civ23@itbhu.ac.in",
                         "Instagram": "https://www.instagram.com/pranjal0_06/",
@@ -260,7 +260,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/PRAKHAR_SRIVASTAVA_EVENTS_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/PRAKHAR_SRIVASTAVA_EVENTS_EXECUTIVE.webp",
                         "Name": "Prakhar Srivastava",
                         "Email": "prakhar.srivastava.civ23@itbhu.ac.in",
                         "Instagram": "",
@@ -268,7 +268,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/SHUBHAM_EVENTS_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/SHUBHAM_KUMAR_EVENTS_EXECUTIVE.webp",
                         "Name": "Shubham Kumar",
                         "Email": "shubham.kumar.civ23@itbhu.ac.in",
                         "Instagram": "Shubham_Kumar_Singh",
@@ -276,7 +276,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/DIPESH_EVENTS_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/DIPESH_EVENTS_EXECUTIVE.webp",
                         "Name": "Dipesh",
                         "Email": "dipeshiitbhu@gmail.com",
                         "Instagram": "",
@@ -284,7 +284,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/SUMIT_KUMAR_INDLIA_EVENTS_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/SUMIT_KUMAR_INDLIA_EVENTS_EXECUTIVE.webp",
                         "Name": "Sumit Kumar Indlia",
                         "Email": "sumitkr.indlia.civ23@itbhu.ac.in",
                         "Instagram": "https://www.instagram.com/im_sumit26?igsh=ZXZseTFydzJyZ2d5",
@@ -292,7 +292,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/VAIBHAV_EVENTS_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/VAIBHAV_EVENTS_EXECUTIVE.webp",
                         "Name": "Vaibhav Rajvardhan",
                         "Email": "vaibhav.rajvardhan.civ23@itbhu.ac.in",
                         "Instagram": "vaibhav_rajput_2528",
@@ -300,7 +300,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/YASH_KUMAR_SAHA_EVENTS_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/YASH_KUMAR_SAHA_EVENTS_EXECUTIVE.webp",
                         "Name": "Yash Kumar Saha",
                         "Email": "yashkr.saha.civ23@itbhu.ac.in",
                         "Instagram": "https://www.instagram.com/yash_saha_/",
@@ -308,7 +308,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/PRAVEEN_KUMAR_EVENTS_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/PRAVEEN_KUMAR_EVENTS_EXECUTIVE.webp",
                         "Name": "Praveen Kumar",
                         "Email": "praveen.kumar.civ23@itbhu.ac.in",
                         "Instagram": "",
@@ -327,7 +327,7 @@ const Contacts = [
                 "Designation": "Public Relations Advisor",
                 "data": [
                     {
-                        "url": "./TeamPhotos/IV Year/SARTHAK_ANAND_PUBLIC_RELATIONS_ADVISOR",
+                        "url": "./TeamPhotos/IV Year/SARTHAK_ANAND_PUBLIC_RELATIONS_ADVISOR.webp",
                         "Name": "Sarthak Anand",
                         "Email": "sarthak.anand.civ21@itbhu.ac.in",
                         "Instagram": "",
@@ -361,7 +361,7 @@ const Contacts = [
                 "Designation": "Public Relations Executive",
                 "data": [
                     {
-                        "url": "./TeamPhotos/II Year/SARTHAK_CHAUHAN_PUBLIC_RELATIONS_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/SARTHAK_CHAUHAN_PUBLIC_RELATIONS_EXECUTIVE.webp",
                         "Name": "Sarthak Chauhan",
                         "Email": "sarthak.chauhan.civ23@itbhu.ac.in",
                         "Instagram": "https://www.instagram.com/sarthak.chauhan.07?igsh=MXRvbDFrOXpseW9xZA==",
@@ -377,7 +377,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/GAURAV_PUBLIC_RELATIONS_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/GAURAV_PUBLIC_RELATIONS_EXECUTIVE.webp",
                         "Name": "Gaurav Agarwal",
                         "Email": "gaurav.agarwal.civ23@itbhu.ac.in",
                         "Instagram": "a.garwal_gaurav",
@@ -385,7 +385,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/BISHNU_VIMAL_JHA_PUBLIC_RELATIONS_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/BISHNU_VIMAL_JHA_PUBLIC_RELATIONS_EXECUTIVE.webp",
                         "Name": "Bishnu Vimal Jha",
                         "Email": "bishnuvimal.jha.civ23@iitbhu.ac.in",
                         "Instagram": "https://www.instagram.com/bishnuhere?igsh=ZWFpdHVzMnAwanQz",
@@ -393,7 +393,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/KARTIKEYA_KULHARI_PUBLIC_RELATIONS_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/KARTIKEYA_KULHARI_PUBLIC_RELATIONS_EXECUTIVE.webp",
                         "Name": "Kartikeya kulhari",
                         "Email": "kartikeya.kulhari.cd.civ23@itbhu.ac.in",
                         "Instagram": "https://www.instagram.com/kartik.eya_1505?igsh=MXNucnE4ZDZzNzc2ag==",
@@ -412,7 +412,7 @@ const Contacts = [
                 "Designation": "Publicity Advisor",
                 "data": [
                     {
-                        "url": "./TeamPhotos/IV Year/ANSHIKA_PUBLICITY_ADVISOR",
+                        "url": "./TeamPhotos/IV Year/ANSHIKA_PUBLICITY_ADVISOR.webp",
                         "Name": "Anshika Singh",
                         "Email": "anshika.singh.civ21@itbhu.ac.in",
                         "Instagram": "",
@@ -420,7 +420,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/IV Year/VISHU_RAJ_PUBLICITY_ADVISOR",
+                        "url": "./TeamPhotos/IV Year/VISHU_RAJ_PUBLICITY_ADVISOR.webp",
                         "Name": "Vishu Raj",
                         "Email": "vishu.raj.civ21@itbhu.ac.in",
                         "Instagram": "https://www.instagram.com/vishu_kashyap_01?igsh=MXFsejl6aGMzdTBlOA==",
@@ -454,7 +454,7 @@ const Contacts = [
                 "Designation": "Publicity Executive",
                 "data": [
                     {
-                        "url": "./TeamPhotos/II Year/BINEET_GUPTA_PUBLICITY_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/BINEET_GUPTA_PUBLICITY_EXECUTIVE.webp",
                         "Name": "Bineet Gupta",
                         "Email": "bineet.gupta.civ23@itbhu.ac.in",
                         "Instagram": "https://www.instagram.com/bineet_1729?igsh=MWFnNjc3eWt2amllOQ==",
@@ -462,7 +462,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/AARTI_MEENA_PUBLICITY_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/AARTI_MEENA_PUBLICITY_EXECUTIVE.webp",
                         "Name": "Aarti Meena",
                         "Email": "aarti.meena.civ23@itbhu.ac.in",
                         "Instagram": "https://www.instagram.com/aarti_23csb?igsh=aDk1OGp2NncxMjI3",
@@ -470,21 +470,13 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/KRISHNAKANT_TELANGE_PUBLICITY_EXECUTIVE.jpg",
+                        "url": "./TeamPhotos/II Year/KRISHNAKANT_TELANGE_PUBLICITY_EXECUTIVE.webp",
                         "Name": "Krishnakant Kiran Telange",
                         "Email": "telange.krishnakantk.civ23@itbhu.ac.in",
                         "Instagram": "https://www.instagram.com/krishnakant_.06?igsh=anFpdTI5cnY0dzVs",
                         "Linkedin": "https://www.linkedin.com/in/krishnakant-telange-38804b304",
                         "MobileNo": ""
                     },
-                    {
-                        "url": "./TeamPhotos/II Year/SHUBHAM_KUMAR_PUBLICITY_EXECUTIVE.jpg",
-                        "Name": "Shubham Kumar",
-                        "Email": "shubham.kumar.civ23@itbhu.ac.in",
-                        "Instagram": "Shubham_Kumar_Singh",
-                        "Linkedin": "https://www.linkedin.com/in/shubham-kumar-8257142a8",
-                        "MobileNo": ""
-                    }
                 ]
             },
         ]

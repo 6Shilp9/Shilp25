@@ -51,7 +51,7 @@ const convenors = [
         Designation: "Convenor",
         data: [
             {
-                "url": "./TeamPhotos/IV Year/DEVESH_SINDHI_CONVENOR",
+                "url": "./TeamPhotos/IV Year/DEVESH_SINDHI_CONVENOR.webp",
                 "Name": "Devesh Sindhi",
                 "Email": "devesh.sindhi.civ21@itbhu.ac.in",
                 "Instagram": "",
@@ -74,7 +74,7 @@ const convenors = [
                                             "MobileNo": ""
                                         },
                                         {
-                                            "url": "./TeamPhotos/IV Year/PARAM_SRIVASTAVA_CO_CONVENOR",
+                                            "url": "./TeamPhotos/IV Year/PARAM_SRIVASTAVA_CO_CONVENOR.webp",
                                             "Name": "Param Srivastava",
                                             "Email": "param.srivastava.civ21@itbhu.ac.in",
                                             "Instagram": "",

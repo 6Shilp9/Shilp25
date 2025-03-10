@@ -22,7 +22,7 @@ const Admin = ({ AllAuth }) => {
 		useState("Unaccommodated");
 
 	const [RegisteredEvents, setRegisteredEvents] = useState([]);
-	const [RegisteredEventsPaid, setRegisteredEventsPaid] = useState({});
+	// const [RegisteredEventsPaid, setRegisteredEventsPaid] = useState({});
 
 	const [RegisteredWorkshops, setRegisteredWorkshops] = useState([]);
 
@@ -45,17 +45,18 @@ const Admin = ({ AllAuth }) => {
 				if (data.Events) {
 					setRegisteredEvents(data.Events);
 					console.log(data.Events);
-					let paid = {};
-					for (let event of data.Events) {
-						const eventDoc = doc(db, event, userId);
-						await getDoc(eventDoc).then((eventDocSnap) => {
-							if (eventDocSnap.exists()) {
-								const eventData = eventDocSnap.data();
-								paid[event] = eventData.paid;
-							}
-						});
-					}
-					setRegisteredEventsPaid(paid);
+					// let paid = {};
+					// for (let event of data.Events) {
+					// 	// const eventDoc = doc(db, event, userId);
+					// 	// await getDoc(eventDoc).then((eventDocSnap) => {
+					// 	// 	if (eventDocSnap.exists()) {
+					// 	// 		const eventData = eventDocSnap.data();
+					// 	// 		paid[event] = eventData.paid;
+					// 	// 	}
+					// 	// });
+					// 	paid[event] = data.PaidRegistration;
+					// }
+					// setRegisteredEventsPaid(paid);
 				}
 				setDisplayName(data.Name);
 				setEmail(data.Email);
@@ -75,14 +76,6 @@ const Admin = ({ AllAuth }) => {
 
 	const saveDetails = async (e) => {
 		e.preventDefault();
-		for (let event of RegisteredEvents) {
-			const data = {
-				isRegistered: true,
-				paid: RegisteredEventsPaid[event],
-				uid: userId,
-			};
-			await setDoc(doc(db, event, userId), data);
-		}
 		const data = {
 			uid: userId,
 			Name: displayName,
@@ -97,6 +90,15 @@ const Admin = ({ AllAuth }) => {
 			PaidRegistration: paidRegistration,
 		};
 		await setDoc(doc(db, "userProfile", userId), data);
+
+		for (let event of RegisteredEvents) {
+			const data = {
+				isRegistered: true,
+				paid: paidRegistration,
+				uid: userId,
+			};
+			await setDoc(doc(db, event, userId), data);
+		}
 		toast.success("Profile Successfully Updated!");
 	};
 	return (
@@ -271,30 +273,6 @@ const Admin = ({ AllAuth }) => {
 													return (
 														<tr key={i}>
 															<td>{event}</td>
-															<td>
-																<input
-																	type="checkbox"
-																	name={event}
-																	defaultChecked={
-																		RegisteredEventsPaid[
-																			event
-																		]
-																	}
-																	onChange={(
-																		e
-																	) => {
-																		let paid =
-																			RegisteredEventsPaid;
-																		paid[
-																			event
-																		] =
-																			e.target.checked;
-																		setRegisteredEventsPaid(
-																			paid
-																		);
-																	}}
-																/>
-															</td>
 														</tr>
 													);
 												}

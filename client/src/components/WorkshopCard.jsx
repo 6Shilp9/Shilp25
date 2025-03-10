@@ -11,7 +11,7 @@ function WorkshopCard(props) {
 	const isProf = props.AllAuth.isProf;
 	const RegisteredWorkshops = props.RegisteredWorkshops;
 
-	const [isRegistred, setIsRegistered] = useState(false);
+	const [isRegistered, setIsRegistered] = useState(false);
 	const [staad, setStaad] = React.useState(false);
 	const [bim, setBim] = React.useState(false);
 
@@ -70,10 +70,10 @@ function WorkshopCard(props) {
 				if (!workshopData) {
 					workshopData = {
 						uid: localStorage.getItem("UID"),
-						isRegistred: true,
+						isRegistered: true,
 					};
 				} else {
-					workshopData.isRegistred = true;
+					workshopData.isRegistered = true;
 				}
 				await setDoc(
 					doc(db, WorkshopId, localStorage.getItem("UID")),
@@ -121,7 +121,7 @@ function WorkshopCard(props) {
 					workshopData = docSnap.data();
 				}
 				if (workshopData) {
-					workshopData.isRegistred = false;
+					workshopData.isRegistered = false;
 				}
 				await setDoc(
 					doc(db, WorkshopId, localStorage.getItem("UID")),
@@ -245,7 +245,7 @@ function WorkshopCard(props) {
 						className={
 							"button" +
 							(RegisteredWorkshops.includes(props.name) ||
-							isRegistred
+							isRegistered
 								? " registered"
 								: "")
 						}
@@ -253,11 +253,11 @@ function WorkshopCard(props) {
 							RegisterWorkshop(props.name);
 						}}
 					>
-						{RegisteredWorkshops.includes(props.name) || isRegistred
+						{RegisteredWorkshops.includes(props.name) || isRegistered
 							? "Registered"
 							: "Register"}
 					</p>
-					{RegisteredWorkshops.includes(props.name) || isRegistred ? (
+					{RegisteredWorkshops.includes(props.name) || isRegistered ? (
 						<p
 							className="button unregister"
 							onClick={() => {

@@ -1,22 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "../links/css/EventCard.css";
 import { Link, useNavigate } from "react-router-dom";
-// import { pdfjs } from 'react-pdf';
-import "../links/css/pdf.css";
 import { getDoc, setDoc, doc } from "@firebase/firestore";
 import { db } from "../firebase";
 import { toast } from "react-toastify";
-
-// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-//     'pdfjs-dist/build/pdf.worker.min.js',
-//     import.meta.url,
-//   ).toString();
 
 function EventCard(props) {
 	const navigate = useNavigate();
 	const isProf = props.AllAuth.isProf;
 	const RegisteredEvents = props.RegisteredEvents;
-	const [isRegistred, setIsRegistered] = useState(false);
+	const [isRegistered, setIsRegistered] = useState(false);
 	const [paidRegistration, setPaidRegistration] = useState(false);
 
 	useEffect(() => {
@@ -31,9 +24,12 @@ function EventCard(props) {
 				else if(data.PaidRegistration){
 					setPaidRegistration(true);
 				}
+				if (data.Events && data.Events.includes(props.name)) {
+					setIsRegistered(true);
+				}
 			}
 		});
-	}, []);
+	}, [props.name]);
 
 	const unstopp = async(eventName) => {
 		if (!isProf) {
@@ -106,11 +102,12 @@ function EventCard(props) {
 				if (!eventData) {
 					eventData = {
 						uid: localStorage.getItem("UID"),
-						paid: false,
-						isRegistred: true,
+						paid: paidRegistration,
+						isRegistered: true,
 					};
 				} else {
-					eventData.isRegistred = true;
+					eventData.isRegistered = true;
+					eventData.paid = paidRegistration;
 				}
 				await setDoc(
 					doc(db, EventId, localStorage.getItem("UID")),
@@ -124,7 +121,6 @@ function EventCard(props) {
 
 	const UnRegisterEvent = async (EventId) => {
 		let data;
-		// let events;
 		const docRef = doc(db, "userProfile", localStorage.getItem("UID"));
 		getDoc(docRef).then(async (docSnap) => {
 			if (docSnap.exists()) {
@@ -153,7 +149,7 @@ function EventCard(props) {
 					eventData = docSnap.data();
 				}
 				if (eventData) {
-					eventData.isRegistred = false;
+					eventData.isRegistered = false;
 				}
 				await setDoc(
 					doc(db, EventId, localStorage.getItem("UID")),
@@ -184,7 +180,7 @@ function EventCard(props) {
 				<p
 					className={
 						"button" +
-						(RegisteredEvents.includes(props.name) || isRegistred
+						(RegisteredEvents.includes(props.name) || isRegistered
 							? " registered"
 							: "")
 					}
@@ -196,11 +192,11 @@ function EventCard(props) {
 						RegisterEvent(props.name);
 					}}
 				>
-					{RegisteredEvents.includes(props.name) || isRegistred
+					{RegisteredEvents.includes(props.name) || isRegistered
 						? "Registered"
 						: "Register"}
 				</p>
-				{RegisteredEvents.includes(props.name) || isRegistred ? (
+				{RegisteredEvents.includes(props.name) || isRegistered ? (
 					<p
 						className="button unregister"
 						onClick={() => {

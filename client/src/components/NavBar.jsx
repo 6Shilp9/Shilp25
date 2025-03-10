@@ -124,6 +124,18 @@ const NavBar = ({ AllAuth }) => {
                                 Accommodations
                             </Link>
                         </li>
+                           
+                    <li className="nav-item px-2 mx-2">
+                            <Link
+                                className={
+                               "nav-link" +
+                                  (location.pathname === "/guests" ? " active" : "")
+                                          }
+                                 to="/guests"
+                           >
+                                  Guests
+                          </Link>
+                        </li>
                         <li className="nav-item px-2 mx-2">
                             <Link
                                 className={

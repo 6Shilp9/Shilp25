@@ -19,15 +19,17 @@ const Competitions = ({ AllAuth }) => {
 		}, 3000);
 	}, []);
 	useEffect(() => {
-		const docRef = doc(db, "userProfile", localStorage.getItem("UID"));
-		getDoc(docRef).then(async (docSnap) => {
-			if (docSnap.exists()) {
-				const data = docSnap.data();
-				if (data.Workshops) {
-					setRegisteredWorkshops(data.Workshops);
+		if(AllAuth.isAuth){
+			const docRef = doc(db, "userProfile", localStorage.getItem("UID"));
+			getDoc(docRef).then(async (docSnap) => {
+				if (docSnap.exists()) {
+					const data = docSnap.data();
+					if (data.Workshops) {
+						setRegisteredWorkshops(data.Workshops);
+					}
 				}
-			}
-		});
+			});
+		}
 	}, []);
 	return (
 		<div className="App">

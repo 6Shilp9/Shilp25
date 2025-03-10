@@ -8,30 +8,38 @@ import { toast } from "react-toastify";
 function EventCard(props) {
 	const navigate = useNavigate();
 	const isProf = props.AllAuth.isProf;
+	const isAuth = props.AllAuth.isAuth;
 	const RegisteredEvents = props.RegisteredEvents;
 	const [isRegistered, setIsRegistered] = useState(false);
 	const [paidRegistration, setPaidRegistration] = useState(false);
 
 	useEffect(() => {
 		let data;
-		const docRef = doc(db, "userProfile", localStorage.getItem("UID"));
-		getDoc(docRef).then(async (docSnap) => {
-			if (docSnap.exists()) {
-				data = docSnap.data();
-				if(data.accommodationStatus === "IIT BHU Student"){
-					setPaidRegistration(true);
+		if(isAuth){
+			const docRef = doc(db, "userProfile", localStorage.getItem("UID"));
+			getDoc(docRef).then(async (docSnap) => {
+				if (docSnap.exists()) {
+					data = docSnap.data();
+					if(data.accommodationStatus === "IIT BHU Student"){
+						setPaidRegistration(true);
+					}
+					else if(data.PaidRegistration){
+						setPaidRegistration(true);
+					}
+					if (data.Events && data.Events.includes(props.name)) {
+						setIsRegistered(true);
+					}
 				}
-				else if(data.PaidRegistration){
-					setPaidRegistration(true);
-				}
-				if (data.Events && data.Events.includes(props.name)) {
-					setIsRegistered(true);
-				}
-			}
-		});
+			});
+	}
 	}, [props.name]);
 
 	const unstopp = async(eventName) => {
+		if( !isAuth ){
+			toast.error("Please login to register for this event");
+			navigate("../login");
+			return;
+		}
 		if (!isProf) {
 			toast.message("Please complete your profile");
 			navigate("../profile");
@@ -59,7 +67,11 @@ function EventCard(props) {
 	}
 
 	const RegisterEvent = async (EventId) => {
-
+		if( !isAuth ){
+			toast.error("Please login to register for this event");
+			navigate("../login");
+			return;
+		}
 		let data;
 		if (!isProf) {
 			toast.message("Please complete your profile");

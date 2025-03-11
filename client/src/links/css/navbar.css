@@ -169,3 +169,12 @@
         display: none;
     }
 }
+.event-workshop .dropdown-item{
+    display: block;
+}
+.event-workshop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

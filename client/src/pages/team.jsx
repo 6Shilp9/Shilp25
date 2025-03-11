@@ -107,7 +107,7 @@ const Team = ({ AllAuth }) => {
                             <h1>Meet Our SHILP Team</h1>
                         </header>
                         <div className="conveynor-box">
-                        <div className="conveynor-title">Conveynor</div>
+                        <div className="conveynor-title">Convenor</div>
                         <div className="conveynor-container">
                         {convenors.map((e) => (
                             <div className="box" key={e.id}>

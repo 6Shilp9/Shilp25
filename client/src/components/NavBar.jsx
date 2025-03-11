@@ -88,7 +88,7 @@ const NavBar = ({ AllAuth }) => {
                         </li>
 
                         {/* Dropdown for Programs (Workshops & Events) */}
-                        <li className="nav-item dropdown px-2 mx-2">
+                        <li className="nav-item dropdown px-2 mx-2 event-workshop">
                             <button
                                 className="nav-link dropdown-toggle"
                                 type="button"

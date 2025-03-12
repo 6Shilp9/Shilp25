@@ -20,8 +20,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [isProfileComplete, setIsProfileComplete] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
+  const [isProfileComplete, setIsProfileComplete] = useState(true);
 
   const AllAuth = {
     setAuth: setIsAuthenticated,

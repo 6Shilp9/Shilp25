@@ -6,14 +6,7 @@ const Contacts = [
             {
                 "Designation": "Senior Advisor",
                 "data": [
-                    {
-                        "url": "./TeamPhotos/IV Year/AMAN_SRIVASTAVA_SENIOR_ADVISOR.webp",
-                        "Name": "Aman Srivastava",
-                        "Email": "aman.srivastava.civ21@itbhu.ac.in",
-                        "Instagram": "Dhoondh lo (follow nahi karte kya?)",
-                        "Linkedin": "Dhoond lo",
-                        "MobileNo": ""
-                    },
+                    
                     {
                         "url": "./TeamPhotos/IV Year/NANDINI_BHIMSARIA_SENIOR_ADVISOR.webp",
                         "Name": "Nandini Bhimsaria",
@@ -79,6 +72,19 @@ const Contacts = [
         "Team": "Marketing Team",
         "team": [
             {
+                "Designation": "Marketing Advisor",
+                "data": [
+                    {
+                        "url": "./TeamPhotos/IV Year/AMAN_SRIVASTAVA_MARKETING_ADVISOR.webp",
+                        "Name": "Aman Srivastava",
+                        "Email": "aman.srivastava.civ21@itbhu.ac.in",
+                        "Instagram": "https://www.instagram.com/aman_sriv.25?igsh=MXdqdDhuemNhaTNkaA==",
+                        "Linkedin": "https://www.linkedin.com/in/aman-srivastava-7a916b223/",
+                        "MobileNo": ""
+                    }
+                ]
+            },
+            {
                 "Designation": "Marketing Head",
                 "data": [
                     {
@@ -99,6 +105,27 @@ const Contacts = [
                     }
                 ]
             },
+            {
+                "Designation": "Marketing Executive",
+                "data": [
+                    {
+                        "url": "./TeamPhotos/II Year/GAURAV_MARKETING_EXECUTIVE.webp",
+                        "Name": "Gaurav Agarwal",
+                        "Email": "gaurav.agarwal.civ23@itbhu.ac.in",
+                        "Instagram": "a.garwal_gaurav",
+                        "Linkedin": "",
+                        "MobileNo": ""
+                    },
+                    {
+                        "url": "./TeamPhotos/II Year/KARTIKEYA_KULHARI_MARKETING_EXECUTIVE.webp",
+                        "Name": "Kartikeya kulhari",
+                        "Email": "kartikeya.kulhari.cd.civ23@itbhu.ac.in",
+                        "Instagram": "https://www.instagram.com/kartik.eya_1505?igsh=MXNucnE4ZDZzNzc2ag==",
+                        "Linkedin": "www.linkedin.com/in/ kartikeyakulhari15",
+                        "MobileNo": ""
+                    }
+                ]
+            }
         ]
     },
     {
@@ -330,8 +357,8 @@ const Contacts = [
                         "url": "./TeamPhotos/IV Year/SARTHAK_ANAND_PUBLIC_RELATIONS_ADVISOR.webp",
                         "Name": "Sarthak Anand",
                         "Email": "sarthak.anand.civ21@itbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "",
+                        "Instagram": "https://www.instagram.com/__chuntaro?igsh=MTlyajYyazhqeDliaw==",
+                        "Linkedin": "https://www.linkedin.com/in/sarthakanand12/",
                         "MobileNo": ""
                     }
                 ]
@@ -377,27 +404,11 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/GAURAV_PUBLIC_RELATIONS_EXECUTIVE.webp",
-                        "Name": "Gaurav Agarwal",
-                        "Email": "gaurav.agarwal.civ23@itbhu.ac.in",
-                        "Instagram": "a.garwal_gaurav",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
                         "url": "./TeamPhotos/II Year/BISHNU_VIMAL_JHA_PUBLIC_RELATIONS_EXECUTIVE.webp",
                         "Name": "Bishnu Vimal Jha",
                         "Email": "bishnuvimal.jha.civ23@iitbhu.ac.in",
                         "Instagram": "https://www.instagram.com/bishnuhere?igsh=ZWFpdHVzMnAwanQz",
                         "Linkedin": "https://www.linkedin.com/in/bishnu-vimal-jha-a87708281",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/KARTIKEYA_KULHARI_PUBLIC_RELATIONS_EXECUTIVE.webp",
-                        "Name": "Kartikeya kulhari",
-                        "Email": "kartikeya.kulhari.cd.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/kartik.eya_1505?igsh=MXNucnE4ZDZzNzc2ag==",
-                        "Linkedin": "www.linkedin.com/in/ kartikeyakulhari15",
                         "MobileNo": ""
                     }
                 ]

@@ -1,25 +1,5 @@
 const Contacts = [
     {
-        "id": 7,
-        "Team": "Senior Advisors",
-        "team": [
-            {
-                "Designation": "Senior Advisor",
-                "data": [
-                    
-                    {
-                        "url": "./TeamPhotos/IV Year/NANDINI_BHIMSARIA_SENIOR_ADVISOR.webp",
-                        "Name": "Nandini Bhimsaria",
-                        "Email": "nandini.bhimsaria.civ21@itbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "id": 1,
         "Team": "Tech Team",
         "team": [
@@ -144,7 +124,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/IV Year/ANKIT_KUMAR_BRANDING_ADVISOR.webp",
+                        "url": "./TeamPhotos/Avatar.webp",
                         "Name": "Ankit Kumar",
                         "Email": "ankit.kumar.civ21@itbhu.ac.in",
                         "Instagram": "arre_ankit",
@@ -208,6 +188,38 @@ const Contacts = [
                         "Instagram": "https://www.instagram.com/___abhi___singh___0/",
                         "Linkedin": "https://www.linkedin.com/in/abhishek-kumar-17444b282/",
                         "MobileNo": ""
+                    },
+                    {
+                        "url": "./TeamPhotos/II Year/NAIDU VAMSHIKRISHNA_CONTENT AND BRANDING.webp",
+                        "Name": "Naidu Vamshikrishna",
+                        "Email": "naidu.vamshikrishna.civ23@itbhu.ac.in",
+                        "Instagram": "https://www.instagram.com/_vamshi_krishna3/",
+                        "Linkedin": "",
+                        "MobileNo": ""
+                    },
+                    {
+                        "url": "./TeamPhotos/avatar.webp",
+                        "Name": "Yashas Kumar Kalyani",
+                        "Email": "yashaskr.kalyani.civ23@itbhu.ac.in",
+                        "Instagram": "",
+                        "Linkedin": "",
+                        "MobileNo": ""
+                    },
+                    {
+                        "url": "./TeamPhotos/II Year/Nooka jathin swaroop_content and branding.webp",
+                        "Name": "Nooka Jathin Swaroop",
+                        "Email": "njathin.swaroop.civ23@itbhu.ac.in",
+                        "Instagram": "",
+                        "Linkedin": "",
+                        "MobileNo": ""
+                    },
+                    {
+                        "url": "./TeamPhotos/II Year/ROYYA_VAMSHI_RAM--BRANDING.webp",
+                        "Name": "Royya Vamshi Ram",
+                        "Email": "royyavamshi.ram.civ23@itbhu.ac.in",
+                        "Instagram": "https://www.instagram.com/vamshiroyya?igsh=MXZqN2puM3psemM5dQ==",
+                        "Linkedin": "",
+                        "MobileNo": ""
                     }
                 ]
             },
@@ -232,6 +244,22 @@ const Contacts = [
                         "url": "./TeamPhotos/IV Year/RADHIKA_EVENT_ADVISOR.webp",
                         "Name": "Radhika Singh Rajawat",
                         "Email": "radhikas.rajawat.civ21@itbhu.ac.in",
+                        "Instagram": "",
+                        "Linkedin": "",
+                        "MobileNo": ""
+                    },
+                    {
+                        "url": "./TeamPhotos/IV Year/PRACHI _EVENT_ADVISOR.webp",
+                        "Name": "Prachi Priya",
+                        "Email": "pravishagupta1184@gmail.com",
+                        "Instagram": "",
+                        "Linkedin": "",
+                        "MobileNo": ""
+                    },
+                    {
+                        "url": "./TeamPhotos/avatar.webp",
+                        "Name": "Nandini Bhimsaria",
+                        "Email": "nandini.bhimsaria.civ21@itbhu.ac.in",
                         "Instagram": "",
                         "Linkedin": "",
                         "MobileNo": ""
@@ -341,6 +369,14 @@ const Contacts = [
                         "Instagram": "",
                         "Linkedin": "",
                         "MobileNo": ""
+                    },
+                    {
+                        "url": "./TeamPhotos/II Year/KASHISH_KUMARI_EVENTS_ EXECUTIVE.webp",
+                        "Name": "Kashish Kumari",
+                        "Email": "kashish.kumari.civ23@itbhu.ac.in",
+                        "Instagram": "https://www.instagram.com/kcs07_05?igsh=MTBvMGRkcHNnbDlvbw==",
+                        "Linkedin": "",
+                        "MobileNo": ""
                     }
                 ]
             },
@@ -404,11 +440,27 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/II Year/BISHNU_VIMAL_JHA_PUBLIC_RELATIONS_EXECUTIVE.webp",
+                        "url": "./TeamPhotos/Avatar.webp",
                         "Name": "Bishnu Vimal Jha",
                         "Email": "bishnuvimal.jha.civ23@iitbhu.ac.in",
                         "Instagram": "https://www.instagram.com/bishnuhere?igsh=ZWFpdHVzMnAwanQz",
                         "Linkedin": "https://www.linkedin.com/in/bishnu-vimal-jha-a87708281",
+                        "MobileNo": ""
+                    },
+                    {
+                        "url": "./TeamPhotos/II Year/KARTIKEY_TANWAR_PUBLIC_RELATIONS_EXECUTIVE.webp",
+                        "Name": "Kartikey Tanwar",
+                        "Email": "kartikey.tanwar.civ23@itbhu.ac.in",
+                        "Instagram": "https://www.instagram.com/tanwarkartikey?igsh=MXNiNWRoNGlxeHdtcw==",
+                        "Linkedin": "",
+                        "MobileNo": ""
+                    },
+                    {
+                        "url": "./TeamPhotos/II Year/GARVIT_JAIN_PUBLIC_RELATIONS_EXECUTIVE.webp",
+                        "Name": "Garvit Jain",
+                        "Email": "garvit.jain.civ23@itbhu.ac.in",
+                        "Instagram": "https://www.instagram.com/garvit16_jain/",
+                        "Linkedin": "",
                         "MobileNo": ""
                     }
                 ]
@@ -436,6 +488,14 @@ const Contacts = [
                         "Email": "vishu.raj.civ21@itbhu.ac.in",
                         "Instagram": "https://www.instagram.com/vishu_kashyap_01?igsh=MXFsejl6aGMzdTBlOA==",
                         "Linkedin": "https://www.linkedin.com/in/vishu-raj-940438226",
+                        "MobileNo": ""
+                    },
+                    {
+                        "url": "./TeamPhotos/IV Year/GUNJIT_PUBLICITY_ADVISOR.webp",
+                        "Name": "Gunjit Dhakar",
+                        "Email": "gunjitkumar.dhakar.civ21@itbhu.ac.in",
+                        "Instagram": "https://www.instagram.com/_gunjit_dhakar?igsh=MW5iYW5oMDhpejZvNw==",
+                        "Linkedin": "",
                         "MobileNo": ""
                     }
                 ]
@@ -488,6 +548,22 @@ const Contacts = [
                         "Linkedin": "https://www.linkedin.com/in/krishnakant-telange-38804b304",
                         "MobileNo": ""
                     },
+                    {
+                        "url": "./TeamPhotos/II Year/Screenshot_2025-03-13-21-11-35-59_6012fa4d4ddec268fc5c7112cbb265e7.webp",
+                        "Name": "Aditya Bhardwaj",
+                        "Email": "aditya.bhardwaj.civ23@itbhu.ac.in",
+                        "Instagram": "adityabhardwaj9291",
+                        "Linkedin": "",
+                        "MobileNo": ""
+                    },
+                    {
+                        "url": "./TeamPhotos/Avatar.webp",
+                        "Name": "B. Nayan Preetham",
+                        "Email": "bnayan.preetham.civ23@itbhu.ac.in",
+                        "Instagram": "https://www.instagram.com/nayan_thelion?igsh=bmdzcGxidWgxbHZj",
+                        "Linkedin": "",
+                        "MobileNo": ""
+                    }
                 ]
             },
         ]

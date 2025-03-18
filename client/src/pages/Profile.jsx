@@ -303,9 +303,7 @@ const Profile = ({ AllAuth }) => {
                                   }}
                                 >
                                   <th>
-                                    All statuses of the payment would be
-                                    updated once verified. Please wait for
-                                    some time.
+                                    Payment will open soon !
                                   </th>
                                 </tr>
                                 <tr>

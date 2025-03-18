@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import "../links/css/workshop.css";
 import Fade from "react-reveal/Fade";
 
-import WorkshopCard from "../components/WorkshopCard";
+// import WorkshopCard from "../components/WorkshopCard";
 
 import { getDoc, doc } from "@firebase/firestore";
 import { db } from "../firebase";
@@ -54,7 +54,8 @@ const Competitions = ({ AllAuth }) => {
 						</div>
 
 						<div className="cards">
-							<WorkshopCard
+							<h1 classname = "cumming">COMING SOON...</h1>
+							{/* <WorkshopCard
 								name="STAAD Pro"
 								details="Explore STAAD Pro in our 3-4 hour workshop. Gain hands-on experience and receive a course certificate!"
 								AllAuth={AllAuth}
@@ -65,7 +66,7 @@ const Competitions = ({ AllAuth }) => {
 								details="Discover BIM in just 1-2 hours. Get a certificate upon completion and Elevate your skills with us!"
 								AllAuth={AllAuth}
 								RegisteredWorkshops={RegisteredWorkshops}
-							/>
+							/> */}
 						</div>
 						<Fade bottom>
 							<Footer></Footer>

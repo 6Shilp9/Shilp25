@@ -41,7 +41,7 @@ function EventCard(props) {
 			return;
 		}
 		if (!isProf) {
-			toast.message("Please complete your profile");
+			toast.warn("Please complete your profile");
 			navigate("../profile");
 			return;
 		}
@@ -74,11 +74,16 @@ function EventCard(props) {
 		}
 		let data;
 		if (!isProf) {
-			toast.message("Please complete your profile");
+			toast.warn("Please complete your profile");
 			navigate("../profile");
 			return;
 		}
 		if (RegisteredEvents.includes(props.name)) {
+			return;
+		}
+		if(!paidRegistration){
+			toast.error("Please pay the registration fee to register for this event");
+			navigate("../profile");
 			return;
 		}
 		const docRef = doc(db, "userProfile", localStorage.getItem("UID"));
@@ -97,9 +102,11 @@ function EventCard(props) {
 					data
 				).then(() => {
 					setIsRegistered(true);
-					toast.success(
-						"Successfully registered for Event: " + EventId
-					);
+					if(paidRegistration){
+						toast.success(
+							"Successfully registered for Event: " + EventId
+						);
+					}
 				});
 			}
 		});

@@ -4,13 +4,12 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBmu8HyGZY1bWury4t1yCNL_1M8HMdWTiw",
-  authDomain: "shilp-25.firebaseapp.com",
-  projectId: "shilp-25",
-  storageBucket: "shilp-25.firebasestorage.app",
-  messagingSenderId: "1067390759528",
-  appId: "1:1067390759528:web:ac80ee7b9ba9a3bfb741dd",
-  measurementId: "G-XBTE40Y5RP"
+  apiKey: "AIzaSyAyT9uG7JgGm7-3BosAVm_FhfIBpEEcRDo",
+  authDomain: "shilp25.firebaseapp.com",
+  projectId: "shilp25",
+  storageBucket: "shilp25.firebasestorage.app",
+  messagingSenderId: "548967400537",
+  appId: "1:548967400537:web:73f75812ad30c877e51d48"
 };
 
 // Initialize Firebase

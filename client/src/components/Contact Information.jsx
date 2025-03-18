@@ -36,6 +36,14 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
+                        "url": "./TeamPhotos/avatar.webp",
+                        "Name": "Abhijeet Mankani",
+                        "Email": "abhijeet.mankani.civ22@itbhu.ac.in",
+                        "Instagram": "https://www.instagram.com/abhijeet_mankani/",
+                        "Linkedin": "https://in.linkedin.com/in/abhijeet-mankani-22ab411b1",
+                        "MobileNo": ""
+                    },
+                    {
                         "url": "./TeamPhotos/III Year/SAKET_MEHTA_TECH_HEAD.webp",
                         "Name": "Saket Mehta",
                         "Email": "saket.mehta.civ22@itbhu.ac.in",
@@ -55,11 +63,11 @@ const Contacts = [
                 "Designation": "Marketing Advisor",
                 "data": [
                     {
-                        "url": "./TeamPhotos/IV Year/AMAN_SRIVASTAVA_MARKETING_ADVISOR.webp",
+                        "url": "./TeamPhotos/avatar.webp",
                         "Name": "Aman Srivastava",
                         "Email": "aman.srivastava.civ21@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/aman_sriv.25?igsh=MXdqdDhuemNhaTNkaA==",
-                        "Linkedin": "https://www.linkedin.com/in/aman-srivastava-7a916b223/",
+                        "Instagram": "Dhoondh lo (follow nahi karte kya?)",
+                        "Linkedin": "Dhoond lo",
                         "MobileNo": ""
                     }
                 ]

@@ -25,7 +25,7 @@ function CivilExpo({ AllAuth, RegisteredEvents }) {
 					<Fade right>
 						<EventCard
 							name="Vintage Visionaries"
-							details="A photography competition where you can showcase your photography skills!"
+							details="Explore historical civil engineering marvels and present innovative solutions to judges!"
 							className="eventCard"
 							AllAuth={AllAuth}
 							RegisteredEvents={RegisteredEvents}

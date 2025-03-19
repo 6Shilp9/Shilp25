@@ -63,7 +63,7 @@ const Contacts = [
                 "Designation": "Marketing Advisor",
                 "data": [
                     {
-                        "url": "./TeamPhotos/avatar.webp",
+                        "url": "./TeamPhotos/IV Year/AMAN_SRIVASTAVA_MARKETING_ADVISOR.webp",
                         "Name": "Aman Srivastava",
                         "Email": "aman.srivastava.civ21@itbhu.ac.in",
                         "Instagram": "Dhoondh lo (follow nahi karte kya?)",
@@ -132,7 +132,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/Avatar.webp",
+                        "url": "./TeamPhotos/avatar.webp",
                         "Name": "Ankit Kumar",
                         "Email": "ankit.kumar.civ21@itbhu.ac.in",
                         "Instagram": "arre_ankit",
@@ -448,7 +448,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/Avatar.webp",
+                        "url": "./TeamPhotos/avatar.webp",
                         "Name": "Bishnu Vimal Jha",
                         "Email": "bishnuvimal.jha.civ23@iitbhu.ac.in",
                         "Instagram": "https://www.instagram.com/bishnuhere?igsh=ZWFpdHVzMnAwanQz",
@@ -565,7 +565,7 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
-                        "url": "./TeamPhotos/Avatar.webp",
+                        "url": "./TeamPhotos/avatar.webp",
                         "Name": "B. Nayan Preetham",
                         "Email": "bnayan.preetham.civ23@itbhu.ac.in",
                         "Instagram": "https://www.instagram.com/nayan_thelion?igsh=bmdzcGxidWgxbHZj",

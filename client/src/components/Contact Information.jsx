@@ -36,6 +36,14 @@ const Contacts = [
                         "MobileNo": ""
                     },
                     {
+                        "url": "./TeamPhotos/III Year/SAKET_MEHTA_TECH_HEAD.webp",
+                        "Name": "Saket Mehta",
+                        "Email": "saket.mehta.civ22@itbhu.ac.in",
+                        "Instagram": "https://www.instagram.com/mehtasakett/",
+                        "Linkedin": "https://www.linkedin.com/in/saket-mehta-6a9ba0256",
+                        "MobileNo": ""
+                    },
+                    {
                         "url": "./TeamPhotos/avatar.webp",
                         "Name": "Abhijeet Mankani",
                         "Email": "abhijeet.mankani.civ22@itbhu.ac.in",
@@ -43,14 +51,6 @@ const Contacts = [
                         "Linkedin": "https://in.linkedin.com/in/abhijeet-mankani-22ab411b1",
                         "MobileNo": ""
                     },
-                    {
-                        "url": "./TeamPhotos/III Year/SAKET_MEHTA_TECH_HEAD.webp",
-                        "Name": "Saket Mehta",
-                        "Email": "saket.mehta.civ22@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/mehtasakett/",
-                        "Linkedin": "https://www.linkedin.com/in/saket-mehta-6a9ba0256",
-                        "MobileNo": ""
-                    }
                 ]
             },
         ]

@@ -24,7 +24,7 @@ function ClashCarnival({ AllAuth, RegisteredEvents }) {
 					{/* Event-2 */}
 					<Fade bottom>
 						<EventCard
-							name="Capture The Snap"
+							name="Capture the snap"
 							details="A photography competition where you can showcase your photography skills!"
 							className="eventCard"
 							AllAuth={AllAuth}

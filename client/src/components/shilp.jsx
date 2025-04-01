@@ -77,7 +77,7 @@ function Shilp() {
                     <div className="stat-item">
                         <FaTrophy className="icon" style={{ color: 'gold' }}/>
                         <h2 ref={prizeRef}>
-                            ₹<CountUp start={0} end={showPrize ? 10 : 0} duration={2.5} decimals={1} />K+
+                            ₹<CountUp start={0} end={showPrize ? 100 : 0} duration={2.5} decimals={1} />K+
                         </h2>
                         <p>Prize pool</p>
                     </div>

@@ -118,10 +118,12 @@ function EventCard(props) {
 						uid: localStorage.getItem("UID"),
 						paid: paidRegistration,
 						isRegistered: true,
+						Name: data.Name,
 					};
 				} else {
 					eventData.isRegistered = true;
 					eventData.paid = paidRegistration;
+					eventData.Name = data.Name;
 				}
 				await setDoc(
 					doc(db, EventId, localStorage.getItem("UID")),

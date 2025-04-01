@@ -93,6 +93,7 @@ const Admin = ({ AllAuth }) => {
 				isRegistered: true,
 				paid: paidRegistration,
 				uid: userId,
+				name: displayName,
 			};
 			await setDoc(doc(db, event, userId), data);
 		}

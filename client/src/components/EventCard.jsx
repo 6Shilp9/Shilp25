@@ -47,10 +47,8 @@ function EventCard(props) {
 		}
 
 		if(!paidRegistration){
-			toast.error("Please pay the registration fee to register for this event");
-			return;
+			toast.error("Please Pay the registration fee to register for this event");
 		}
-		if(paidRegistration){
 			if(eventName === "ML Forge"){
 				window.open("https://unstop.com/p/nexus-ml-competition-shilp25-iit-bhu-1419778","_blank");
 			}
@@ -63,7 +61,6 @@ function EventCard(props) {
 			if(eventName === "Capture The Snap"){
 				window.open("https://unstop.com/p/capture-the-snap-shilp25-iit-bhu-1421381", "_blank");
 			}
-		}
 	}
 
 	const RegisterEvent = async (EventId) => {
@@ -82,9 +79,7 @@ function EventCard(props) {
 			return;
 		}
 		if(!paidRegistration){
-			toast.error("Please pay the registration fee to register for this event");
-			navigate("../profile");
-			return;
+			toast.error("Please pay the registration fee to completely register for this event");
 		}
 		const docRef = doc(db, "userProfile", localStorage.getItem("UID"));
 		getDoc(docRef).then(async (docSnap) => {

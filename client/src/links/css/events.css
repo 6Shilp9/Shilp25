@@ -1,10 +1,14 @@
 .Container{
     height: 100%;width: 100%;
-    padding-top: 6vw;
+    padding-top: 3vw;
 }
 .events-body{
     background-color: #f4ecd8; 
     background-image: url('../img/download.jpg');
     color: #4a3b2e;
     font-family: 'Georgia', serif; 
+}
+.note-payment{
+    color:red;
+    font-size: 2rem;
 }

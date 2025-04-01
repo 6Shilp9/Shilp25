@@ -32,7 +32,7 @@ function ExploreMore() {
         <Fade right delay={200}>
         <div className="event">
           <Link to="/events" className="no-underline">
-            <img src="./EventPhotos/Capture The Snap.webp" alt="Competition" />
+            <img src="./EventPhotos/Capture The snap.webp" alt="Competition" />
             <h3>Capture The Snap</h3>
             {/* <p>Test your skills</p> */}
           </Link>

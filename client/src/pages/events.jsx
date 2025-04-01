@@ -80,6 +80,7 @@ const Events = ({ AllAuth }) => {
         <div className="body events-body">
           <NavBar AllAuth={AllAuth} />
           <InnovationOdyssey />
+          <div className = "note-payment"> Pay the Registration fee for complete registration</div> 
           <div className="Container">
             <TechShowcase
               AllAuth={AllAuth}

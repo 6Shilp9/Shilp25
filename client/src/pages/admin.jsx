@@ -17,7 +17,6 @@ const Admin = ({ AllAuth }) => {
 	const [mobile, setMobile] = useState("");
 	const [year, setYear] = useState("");
 	const [college, setCollege] = useState("");
-	const [referralCode, setReferralCode] = useState("");
 	const [accommodationStatus, setAccommodationStatus] =
 		useState("Unaccommodated");
 
@@ -62,7 +61,6 @@ const Admin = ({ AllAuth }) => {
 				setEmail(data.Email);
 				setMobile(data.Mobile);
 				setCollege(data.College);
-				setReferralCode(data.Referral);
 				setYear(data.Year);
 				setIsUserData(true);
 				setAccommodationStatus(data.accommodationStatus);
@@ -83,7 +81,6 @@ const Admin = ({ AllAuth }) => {
 			Mobile: mobile,
 			College: college,
 			Year: year,
-			Referral: referralCode,
 			Events: RegisteredEvents,
 			Workshops: RegisteredWorkshops,
 			accommodationStatus: accommodationStatus,
@@ -124,81 +121,69 @@ const Admin = ({ AllAuth }) => {
 							{isUserData ? (
 								<div>
 									<table>
-										<tr>
-											<td htmlFor="name">Name&nbsp; </td>
-											<td>
-												<input
-													type="text"
-													name="name"
-													value={displayName}
-													disabled
-												></input>
-											</td>
-										</tr>
-										<tr>
-											<td htmlFor="email">
-												Email&nbsp;{" "}
-											</td>
-											<td>
-												<input
-													type="text"
-													name="email"
-													value={email}
-													disabled
-												></input>
-											</td>
-										</tr>
-										<tr>
-											<td htmlFor="mobile">
-												Mobile No.&nbsp;{" "}
-											</td>
-											<td>
-												<input
-													type="text"
-													name="mobile"
-													defaultValue={mobile}
-													disabled
-												></input>
-											</td>
-										</tr>
-										<tr>
-											<td htmlFor="college">
-												College&nbsp;{" "}
-											</td>
-											<td>
-												<input
-													type="text"
-													name="college"
-													defaultValue={college}
-													disabled
-												></input>
-											</td>
-										</tr>
-										<tr>
-											<td htmlFor="year">Year&nbsp; </td>
-											<td>
-												<input
-													type="text"
-													name="year"
-													defaultValue={year}
-													disabled
-												></input>
-											</td>
-										</tr>
-
-										<tr>
-											<td htmlFor="referralCode">
-												Referral Code &nbsp;{" "}
-											</td>
-											<td>
-												<input
-													type="text"
-													name="referralCode"
-													defaultValue={referralCode}
-													disabled
-												></input>
-											</td>
-										</tr>
+										<tbody>
+											<tr>
+												<td htmlFor="name">Name&nbsp; </td>
+												<td>
+													<input
+														type="text"
+														name="name"
+														value={displayName}
+														disabled
+													></input>
+												</td>
+											</tr>
+											<tr>
+												<td htmlFor="email">
+													Email&nbsp;{" "}
+												</td>
+												<td>
+													<input
+														type="text"
+														name="email"
+														value={email}
+														disabled
+													></input>
+												</td>
+											</tr>
+											<tr>
+												<td htmlFor="mobile">
+													Mobile No.&nbsp;{" "}
+												</td>
+												<td>
+													<input
+														type="text"
+														name="mobile"
+														defaultValue={mobile}
+														disabled
+													></input>
+												</td>
+											</tr>
+											<tr>
+												<td htmlFor="college">
+													College&nbsp;{" "}
+												</td>
+												<td>
+													<input
+														type="text"
+														name="college"
+														defaultValue={college}
+														disabled
+													></input>
+												</td>
+											</tr>
+											<tr>
+												<td htmlFor="year">Year&nbsp; </td>
+												<td>
+													<input
+														type="text"
+														name="year"
+														defaultValue={year}
+														disabled
+													></input>
+												</td>
+											</tr>
+										</tbody>
 									</table>
 									<form onSubmit={saveDetails}>
 										<label
@@ -230,53 +215,52 @@ const Admin = ({ AllAuth }) => {
 											</option>
 										</select>
 										<table>
-											<tr>
-												<th
-													style={{
-														fontSize: "25px",
-													}}
-												>
-													Events Registered
-												</th>
-											</tr>
-											<tr>
-												<th> Events</th>
-												<th className="px-4">Paid</th>
-											</tr>
-											
-												<>
-													<tr>
-														<td>
-															Registration Fees
-														</td>
-														<td>
-															<input
-																type="checkbox"
-																name="registration"
-																defaultChecked={
-																	paidRegistration
-																}
-																onChange={(
-																	e
-																) => {
-																	setPaidRegistration(
-																		e.target
-																			.checked
-																	);
-																}}
-															/>
-														</td>
-													</tr>
-												</>
-											{RegisteredEvents.map(
-												(event, i) => {
-													return (
-														<tr key={i}>
-															<td>{event}</td>
+											<tbody>
+												<tr>
+													<th
+														style={{
+															fontSize: "25px",
+														}}
+													>
+														Events Registered
+													</th>
+												</tr>
+												<tr>
+													<th> Events</th>
+													<th className="px-4">Paid</th>
+												</tr>
+														<tr>
+															<td>
+																Registration Fees
+															</td>
+															<td>
+																<input
+																	type="checkbox"
+																	name="registration"
+																	defaultChecked={
+																		paidRegistration
+																	}
+																	onChange={(
+																		e
+																	) => {
+																		setPaidRegistration(
+																			e.target
+																				.checked
+																		);
+																	}}
+																/>
+															</td>
 														</tr>
-													);
-												}
-											)}
+												{RegisteredEvents.map(
+													(event, i) => {
+														return (
+															<tr key={i}>
+																<td>{event}</td>
+															</tr>
+														);
+													}
+												)}
+											</tbody>
 										</table>
 										<input type="submit" value="Save" />
 									</form>

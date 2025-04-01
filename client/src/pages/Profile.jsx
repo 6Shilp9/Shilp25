@@ -27,7 +27,6 @@ const Profile = ({ AllAuth }) => {
   const [mobile, setMobile] = useState("");
   const [year, setYear] = useState("");
   const [college, setCollege] = useState("");
-  const [referralCode, setReferralCode] = useState("");
   const [RegisteredEvents, setRegisteredEvents] = useState([]);
   const [RegisteredWorkshops, setRegisteredWorkshops] = useState([]);
   const [isIITBHUser, setIsIITBHUser] = useState(false);
@@ -59,9 +58,6 @@ const Profile = ({ AllAuth }) => {
         if (data.College) {
           setCollege(data.College);
         }
-        if (data.Referral) {
-          setReferralCode(data.Referral);
-        }
         if (data.Year) {
           setYear(data.Year);
         }
@@ -87,7 +83,6 @@ const Profile = ({ AllAuth }) => {
         Mobile: mobile,
         College: college,
         Year: year,
-        Referral: referralCode,
         Events: RegisteredEvents,
         Workshops: RegisteredWorkshops,
         accommodationStatus: isIITBHUser
@@ -95,9 +90,6 @@ const Profile = ({ AllAuth }) => {
           : accommodationStatus,
         PaidRegistration: paidRegistration,
       };
-      if (!referralCode) {
-        data.Referral = "";
-      }
 
       if (!data.Mobile || !data.College || !data.Year) {
         setFailureMessage("Fill All Details");
@@ -235,19 +227,6 @@ const Profile = ({ AllAuth }) => {
                                   </MDBCardText>
                                 </MDBCol>
                                 <MDBCol size="6" className="mb-3">
-                                  <MDBTypography tag="h6">
-                                    Referral Code
-                                  </MDBTypography>
-                                  <MDBCardText className="text-muted">
-                                    <input
-                                      type="text"
-                                      name="referralCode"
-                                      defaultValue={referralCode}
-                                      onChange={(e) => {
-                                        setReferralCode(e.target.value);
-                                      }}
-                                    ></input>
-                                  </MDBCardText>
                                 </MDBCol>
 
                                 <MDBCol size="6" className="mb-3">

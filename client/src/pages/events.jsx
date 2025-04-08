@@ -99,6 +99,16 @@ const Events = ({ AllAuth }) => {
             />
           </div>
           <Button
+               name={
+                <span style={{ lineHeight: "1.1", display: "inline-block", textAlign: "center" }}>
+                  PROBLEM<br />
+                  STATEMENTS
+                </span>
+              }
+            url="https://drive.google.com/drive/folders/1N0Iu1560CG_ik86UBG63AxU03Sck2G1c?usp=sharing"
+            target="_blank"
+          />
+          <Button
             name="RULEBOOK"
             url="/pdfs/RULEBOOK(Main Events).pdf"
             target="_blank"

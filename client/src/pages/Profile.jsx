@@ -508,38 +508,6 @@ const Profile = ({ AllAuth }) => {
                                           border: "2px solid purple",
                                         }}
                                       >
-                                        Only Accommodation for 3 days
-                                      </td>
-                                      <td
-                                        style={{
-                                          border: "2px solid purple",
-                                          fontWeight: "600",
-                                        }}
-                                      >
-                                        499/-
-                                      </td>
-                                      <td
-                                        style={{
-                                          border: "2px solid purple",
-                                          fontWeight: "600",
-                                        }}
-                                      >
-                                        {accommodationStatus ===
-                                        "Accommodation"
-                                          ? "✓"
-                                          : "✖"}
-                                      </td>
-                                    </tr>
-                                    <tr
-                                      style={{
-                                        border: "2px solid purple",
-                                      }}
-                                    >
-                                      <td
-                                        style={{
-                                          border: "2px solid purple",
-                                        }}
-                                      >
                                         Accommodation + Food for 3 days
                                       </td>
                                       <td
@@ -548,7 +516,7 @@ const Profile = ({ AllAuth }) => {
                                           fontWeight: "600",
                                         }}
                                       >
-                                        899/-
+                                        799/-
                                       </td>
                                       <td
                                         style={{

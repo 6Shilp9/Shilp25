@@ -12,6 +12,7 @@ import Media from "./pages/media";
 import LoginPage from "./pages/loginPage";
 import Admin from "./pages/admin";
 import Gallery from "./pages/Gallery";
+import Patreons from "./pages/Patreons";
 import Profile from "./pages/Profile";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { auth, db } from "./firebase";
@@ -88,6 +89,7 @@ function App() {
         <Route exact path="/team" element={<Team AllAuth={AllAuth} />} />
         <Route exact path="/media" element={<Media AllAuth={AllAuth} />} />
         <Route exact path="/gallery" element={<Gallery AllAuth={AllAuth} />} />
+        <Route exact path="/patreons" element={<Patreons AllAuth={AllAuth} />} />
 
         {/* Protected Routes */}
         <Route

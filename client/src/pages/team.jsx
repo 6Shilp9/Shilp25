@@ -109,7 +109,7 @@ const Team = ({ AllAuth }) => {
                         </header>
 
                         <div className="conveynor-box">
-                        <div className="conveynor-title">Convenor</div>
+                        <div className="conveynor-title">Helm</div>
                         <div className="conveynor-container">
                         {convenors.map((e) => (
                             <div className="box" key={e.id}>

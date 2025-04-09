@@ -158,7 +158,7 @@ const NavBar = ({ AllAuth }) => {
                                 Gallery
                             </Link>
                         </li>
-                        <li className="nav-item px-2 mx-2">
+                        {/* <li className="nav-item px-2 mx-2">
                             <Link
                                 className={
                                     "nav-link" +
@@ -168,7 +168,7 @@ const NavBar = ({ AllAuth }) => {
                             >
                                 Patreons
                             </Link>
-                        </li>
+                        </li> */}
                         <li className="nav-item px-2 mx-2">
                             <Link
                                 className={

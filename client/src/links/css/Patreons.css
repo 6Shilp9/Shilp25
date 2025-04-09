@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&family=Roboto:wght@100;900&display=swap');
+@font-face {
+    font-family: 'BasheqVintage';
+    src: url('../fonts/BasheqVintage.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.group-title{
+    font-weight: bold;
+    font-size: 3.5rem;
+    font-family: 'BasheqVintage';
+}

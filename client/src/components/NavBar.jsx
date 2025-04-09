@@ -158,6 +158,17 @@ const NavBar = ({ AllAuth }) => {
                                 Gallery
                             </Link>
                         </li>
+                        {/* <li className="nav-item px-2 mx-2">
+                            <Link
+                                className={
+                                    "nav-link" +
+                                    (location.pathname === "/patreons" ? " active" : "")
+                                }
+                                to="/patreons"
+                            >
+                                Patreons
+                            </Link>
+                        </li> */}
                         <li className="nav-item px-2 mx-2">
                             <Link
                                 className={

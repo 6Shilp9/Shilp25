@@ -281,9 +281,29 @@ const Profile = ({ AllAuth }) => {
                                     flex: "wrap",
                                   }}
                                 >
-                                  <th>
-                                    
-                                  </th>
+                                <th style={{ textAlign: 'center' }}>
+                                  <a 
+                                    href="https://docs.google.com/forms/d/e/1FAIpQLScYfcwt-Rq_IV7kK9yM7obCdoyv-EHAgIcJYLfjNi_rmfFQpA/viewform?usp=header" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onClick={(e) => e.stopPropagation()} 
+                                  >
+                                    <button 
+                                      type="button" 
+                                      style={{
+                                        backgroundColor: '#4CAF50',
+                                        color: 'white',
+                                        padding: '10px 20px',
+                                        border: 'none',
+                                        borderRadius: '5px',
+                                        cursor: 'pointer',
+                                        fontSize: '16px'
+                                      }}
+                                    >
+                                      Pay Now
+                                    </button>
+                                  </a>
+                                </th>
                                 </tr>
                                 <tr>
                                   <th

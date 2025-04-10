@@ -282,7 +282,7 @@ const Profile = ({ AllAuth }) => {
                                   }}
                                 >
                                   <th>
-                                    Payment will open soon !
+                                    
                                   </th>
                                 </tr>
                                 <tr>
@@ -363,6 +363,36 @@ const Profile = ({ AllAuth }) => {
                                   <></>
                                 )}
                               </MDBCardText>
+
+                              <MDBCardText
+															className="text-muted"
+															style={{
+																marginTop:
+																	"15px",
+															}}
+														>
+															<a
+																className="btn btn-outline-dark"
+																href="https://docs.google.com/forms/d/e/1FAIpQLScYfcwt-Rq_IV7kK9yM7obCdoyv-EHAgIcJYLfjNi_rmfFQpA/viewform"
+																target="_blank"
+																rel="noreferrer"
+															>
+																Fee Payment
+															</a>
+															{FailureMessage ? (
+																<Alert
+																	severity="error"
+																	className="mt-2"
+																>
+																	{
+																		FailureMessage
+																	}
+																</Alert>
+															) : (
+																<></>
+															)}
+														</MDBCardText>
+
 
                               <table
                                 style={{
@@ -497,6 +527,40 @@ const Profile = ({ AllAuth }) => {
                                       >
                                         Status
                                       </th>
+                                    </tr>
+                                    <tr
+                                      style={{
+                                        border: "2px solid purple",
+                                        paddingBottom : "5px",
+                                      }}
+                                    >
+                                      <td
+                                        style={{
+                                          border: "2px solid purple",
+                    
+                                        }}
+                                      >
+                                        Accommodation only
+                                      </td>
+                                      <td
+                                        style={{
+                                          border: "2px solid purple",
+                                          fontWeight: "600",
+                                        }}
+                                      >
+                                        499/-
+                                      </td>
+                                      <td
+                                        style={{
+                                          border: "2px solid purple",
+                                          fontWeight: "600",
+                                        }}
+                                      >
+                                        {accommodationStatus ===
+                                        "Accommodation + Food"
+                                          ? "✓"
+                                          : "✖"}
+                                      </td>
                                     </tr>
                                     <tr
                                       style={{

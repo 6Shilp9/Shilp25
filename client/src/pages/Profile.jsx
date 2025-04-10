@@ -540,7 +540,7 @@ const Profile = ({ AllAuth }) => {
                     
                                         }}
                                       >
-                                        Accommodation only
+                                        Accommodation Only
                                       </td>
                                       <td
                                         style={{
@@ -557,7 +557,7 @@ const Profile = ({ AllAuth }) => {
                                         }}
                                       >
                                         {accommodationStatus ===
-                                        "Accommodation + Food"
+                                        "Accommodation Only"
                                           ? "✓"
                                           : "✖"}
                                       </td>

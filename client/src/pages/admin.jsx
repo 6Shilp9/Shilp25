@@ -205,6 +205,9 @@ const Admin = ({ AllAuth }) => {
 											<option value="Unaccommodated">
 												Unaccommodated
 											</option>
+											<option value="Accommodation Only">
+												Accommodation Only
+											</option>
 											<option value="Accommodation + Food">
 												Accommodation + Food
 											</option>

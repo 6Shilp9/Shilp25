@@ -269,9 +269,11 @@ const Profile = ({ AllAuth }) => {
                                     className="fs-2 profileHeader"
                                     style={{
                                       fontSize: "25px",
+                                      color: "red"
                                     }}
                                   >
-                                    Dashboard
+                                    {/* Dashboard */}
+                                    Registrations are closed !
                                   </th>
                                 </tr>
                                 <tr>
@@ -353,7 +355,7 @@ const Profile = ({ AllAuth }) => {
                                 )}
                               </MDBCardText>
 
-                              <MDBCardText
+                              {/* <MDBCardText
 															className="text-muted"
 															style={{
 																marginTop:
@@ -380,7 +382,7 @@ const Profile = ({ AllAuth }) => {
 															) : (
 																<></>
 															)}
-														</MDBCardText>
+														</MDBCardText> */}
 
 
                               <table

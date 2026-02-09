@@ -80,9 +80,9 @@ const Events = ({ AllAuth }) => {
         <div className="body events-body">
           <NavBar AllAuth={AllAuth} />
           <InnovationOdyssey />
-          <div className = "note-payment"> Pay the Registration fee for complete registration</div> 
+          {/* <div className = "note-payment"> Pay the Registration fee for complete registration</div>  */}
           <div className="Container">
-            <TechShowcase
+            {/* <TechShowcase
               AllAuth={AllAuth}
               RegisteredEvents={RegisteredEvents}
               onRegister={handleRegister} // Pass the handleRegister function
@@ -96,9 +96,9 @@ const Events = ({ AllAuth }) => {
               AllAuth={AllAuth}
               RegisteredEvents={RegisteredEvents}
               onRegister={handleRegister} // Pass the handleRegister function
-            />
+            /> */}
           </div>
-          <Button
+          {/* <Button
                name={
                 <span style={{ lineHeight: "1.1", display: "inline-block", textAlign: "center" }}>
                   PROBLEM<br />
@@ -112,7 +112,7 @@ const Events = ({ AllAuth }) => {
             name="RULEBOOK"
             url="/pdfs/RULEBOOK(Main Events).pdf"
             target="_blank"
-          />
+          /> */}
           <div className="Bottom">
             <Fade bottom>
               <Footer />

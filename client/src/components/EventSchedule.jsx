@@ -34,9 +34,10 @@ const EventSchedule = () => {
     <div className="event-schedule">
       <Fade top>
       <h2 className="title">Event Schedule</h2>
+      <h2 className="title">Cooming Soon</h2>
       </Fade>
       {/* Tabs */}
-      <div className="tabs">
+      {/* <div className="tabs">
         {Object.keys(schedule).map((day) => (
           <button
             key={day}
@@ -46,15 +47,15 @@ const EventSchedule = () => {
             {day}
           </button>
         ))}
-      </div>
+      </div> */}
 
       {/* Progress Bar */}
-      <div className="progress-bar-schedule">
+      {/* <div className="progress-bar-schedule">
         <div className="progress-schedule" style={{ width: `${progressWidth}%` }}></div>
-      </div>
+      </div> */}
 
       {/* Schedule Details */}
-      <div className="schedule-details">
+      {/* <div className="schedule-details">
         {schedule[activeDay].map((event, index) => (
           <Fade {...(index % 2 === 0 ? { left: true, delay: index * 100 } : { right: true, delay: index * 100 })}>
           <div key={index} className="event-card">
@@ -69,7 +70,7 @@ const EventSchedule = () => {
           </div>
           </Fade>
         ))}
-      </div>
+      </div> */}
     </div>
     </div>
   );

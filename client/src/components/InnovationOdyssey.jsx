@@ -8,11 +8,12 @@ function InnovationOdyssey() {
     <div className='innovation-odyssey'>
         <LightSpeed left>
         <div className="heading">
-            <div><br /></div><span>Vintage vistas</span>
+            {/* <div><br /></div><span>Vintage vistas</span> */}
+            <div><br /></div><span>Coming Soon</span>
         </div>
         </LightSpeed>
         <LightSpeed right>
-        <div className="desc">
+        {/* <div className="desc">
         Why vintage vistas ? 
         Shilp ’25, organized by the Civil Engineering Society of IIT BHU, embraces the theme 
         <strong> “Vintage Vistas”</strong> to celebrate the grandeur and ingenuity of ancient architecture. This theme 
@@ -27,7 +28,7 @@ function InnovationOdyssey() {
         sustainable, aesthetically rich spaces that honor history while embracing innovation. By 
         revisiting the past, we aim to draw inspiration for the future, ensuring that the legacy of 
         architectural excellence continues to thrive.
-        </div>
+        </div> */}
         </LightSpeed>
     </div>
   )

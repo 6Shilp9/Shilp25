@@ -30,17 +30,18 @@ const Guests = ({ AllAuth }) => {
 				
 				<NavBar AllAuth={AllAuth} />
 				
-				<div className=" Guesttitle">
+				{/* <div className=" Guesttitle">
 					Guests
-				</div>
+				</div> */}
+				<div className=" Guesttitle">Coming Soon</div>
 				<div className="guestContainer">
-				<h1>
+				{/* <h1>
 					Chief Guest
-				</h1>
+				</h1> */}
 				<div className="guestCards">
 						<GuestCard name="Mr. Abhishek Yadav" desig="CPWD, Govt. Of India" desc="AIR 2, UPSC ESE 2022 (CIVIL) Experienced Officer with a demonstrated history of working in the oil & energy industry. Skilled in AutoCAD, Structural Engineering, Structural Analysis and STAAD-Pro. Strong professional with a Bachelor’s Degree focused in Civil Engineering and Master's in Structural Engineering from Indian Institute of Technology (Banaras Hindu University), Varanasi." url="./guests/guest1.jpeg"/>
 						<GuestCard name="Mr. Anupam Awasthi" desig="Deputy Chief Project Manager,NHSRCL" desc="Deputy Chief Project Manager at the National High-Speed Rail Corporation Ltd (NHSRCL). He is also an alumnus of IIT (BHU). Recognized as the recipient of the Furuichi Award from the University of Tokyo and has received a dean's award after completion of master's." url="./guests/guest2.webp"/>
-					</div>
+				</div>
 					
 				</div>	
 			</div>

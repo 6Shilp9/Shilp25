@@ -4,10 +4,10 @@ import "../links/css/guests.css";
 function GuestCard({name,desig, desc, url}) {
   return (
     <div className="content">
-					<div className="Guestcard">
-						<div className="card__side card__side--front" >
+					{/* <div className="Guestcard">
+						<div className="card__side card__side--front" > */}
 						{/* <!-- Front Content --> */}
-						<div className="card__cont">
+						{/* <div className="card__cont">
                             <img src={url} alt="" />
 							<pre className='name'>
                                 <h3>{`${name}`}</h3>
@@ -19,16 +19,16 @@ function GuestCard({name,desig, desc, url}) {
                             </pre>
 						</div>
 						</div>
-						<div className="card__side card__side--back">
+						<div className="card__side card__side--back"> */}
 						{/* <!-- Back Content --> */}
-                        <header>   
+                        {/* <header>   
                             <img src={url} alt="" />
                             <div className="card__cta">
                                 <p><span className="purple">{desc}</span></p>
                             </div>
                         </header>
 						</div>
-					</div>	
+					</div>	 */}
 				</div>
   )
 }

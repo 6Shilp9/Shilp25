@@ -35,7 +35,7 @@ const Home = ({ AllAuth }) => {
 			<Hero />
 			<Shilp />
 			<About />
-			<ExploreMore />
+			{/* <ExploreMore /> */}
 			<EventSchedule />
 			{/* <ContactInformation/> */}
 			<Footer />

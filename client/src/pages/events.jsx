@@ -3,18 +3,23 @@ import "../links/css/home.css";
 import "../links/css/events.css";
 import NavBar from "../components/NavBar";
 import InnovationOdyssey from "../components/InnovationOdyssey";
+// eslint-disable-next-line no-unused-vars
 import TechShowcase from "../components/TechShowcase";
+// eslint-disable-next-line no-unused-vars
 import CivilExpo from "../components/CivilExpo";
+// eslint-disable-next-line no-unused-vars
 import ClashCarnival from "../components/ClashCarnival";
 import Footer from "../components/Footer";
 import Fade from "react-reveal/Fade";
 import Loader from "../components/LoadingScreen";
+// eslint-disable-next-line no-unused-vars
 import Button from "../components/Button";
 import { doc, getDoc } from "@firebase/firestore";
 import { db } from "../firebase";
 import { useNavigate } from "react-router-dom";
 
 const Events = ({ AllAuth }) => {
+  // eslint-disable-next-line no-unused-vars
   const [RegisteredEvents, setRegisteredEvents] = useState([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
@@ -47,6 +52,7 @@ const Events = ({ AllAuth }) => {
   }, []);
 
   // Function to handle registration
+  // eslint-disable-next-line no-unused-vars
   const handleRegister = () => {
     const uid = localStorage.getItem("UID");
 

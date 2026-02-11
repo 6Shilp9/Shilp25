@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import Shilp from "../components/shilp";
 import About from "../components/About";
+// eslint-disable-next-line no-unused-vars
 import ExploreMore from "../components/ExploreMore";
 import EventSchedule from "../components/EventSchedule";
 

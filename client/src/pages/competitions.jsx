@@ -12,6 +12,7 @@ import Loader from "../components/LoadingScreen";
 
 const Competitions = ({ AllAuth }) => {
 	const [loading, setLoading] = useState(true);
+	// eslint-disable-next-line no-unused-vars
 	const [RegisteredWorkshops, setRegisteredWorkshops] = useState([]);
 	useEffect(() => {
 		setTimeout(() => {
@@ -30,6 +31,7 @@ const Competitions = ({ AllAuth }) => {
 				}
 			});
 		}
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	return (
 		<div className="App">

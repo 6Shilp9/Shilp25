@@ -3,6 +3,7 @@ import "../links/css/EventSchedule.css";
 import Fade from "react-reveal/Fade"
 
 const EventSchedule = () => {
+  // eslint-disable-next-line no-unused-vars
   const [activeDay, setActiveDay] = useState("Day 1");
 
   const schedule = {
@@ -27,6 +28,7 @@ const EventSchedule = () => {
   };
 
   // Progress Bar Width Calculation
+  // eslint-disable-next-line no-unused-vars
   const progressWidth = (Object.keys(schedule).indexOf(activeDay) + 1) / Object.keys(schedule).length * 100;
 
   return (

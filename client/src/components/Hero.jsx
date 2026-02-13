@@ -8,28 +8,36 @@ import Fade from "react-reveal/Fade";
 function Hero() {
   return (
     <div className="hero-container" id="home">
+        <Fade top duration={1000}>
+          <div className="hero-left"></div> 
+        </Fade>
+        <Fade top duration={1000}>
+          <div className="hero-right"></div>  
+        </Fade>
       <div className="hero-content">
-        <Fade left>
-        <div className="hero-left"></div>
-        </Fade>
-        <Fade right>
-        <div className="hero-right"></div>
-        </Fade>
-        <Fade top delay={1400}>
-        <h1 className="hero-title">SHILP'26</h1>
-        <h2 className="hero-subtitle">Civil Engineering Society</h2>
-        </Fade>
-        <Fade delay={1000}>
-        <img src={ShilpLogo} alt="Shilp Logo" className="hero-logo" />
-        </Fade>
-      </div>
-      <div className="hero-bottom">
-        <Fade bottom delay = {1600}>
-        <h3 className="hero-date">3-5 April, 2025</h3>
-        <div className="countdown-timer">
-          <Timer />
+        <div>
+          <Fade left delay={1400}>
+            <h1 className="hero-title">SHILP'26</h1>
+          </Fade>
+          <Fade left delay={1500}>
+            <h2 className="hero-subtitle">Civil Engineering Society</h2>
+          </Fade>
+          <div className="hero-bottom">
+            <Fade bottom delay = {1600}>
+              <h3 className="hero-date">3-5 April, 2026</h3>
+            </Fade>
+            <Fade bottom delay={1700}>
+              <div className="countdown-timer">
+                <Timer />
+              </div>
+            </Fade>
+          </div>
         </div>
-        </Fade>
+        <div>
+          <Fade right delay={1000}>
+            <img src={ShilpLogo} alt="Shilp Logo" className="hero-logo" />
+          </Fade>
+        </div>
       </div>
     </div>
   );

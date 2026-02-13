@@ -53,12 +53,14 @@
 
 .hero-content {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
-	justify-content: center;
-	gap: 10px;
-	margin-top: 0vh; /* Reduce gap between navbar and title */
+	justify-content: space-between;
+	width: 80%;
+	/* gap: 10px; */
+	margin-top: 5vh; /* Reduce gap between navbar and title */
 	z-index: 2; /* Make sure the content appears above the overlay */
+	max-width: 1200px;
 }
 
 .hero-title {
@@ -77,9 +79,9 @@
 
 
 .hero-logo {
-	width: 250px;
+	width: 350px;
 	height: auto;
-	margin-top: 15px;
+	/* margin-top: 15px; */
 }
 
 .hero-bottom {

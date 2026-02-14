@@ -5,7 +5,8 @@
     flex-wrap: wrap;
     padding: 5%;
     min-height: 100vh;
-    background: url("../img/hero-bg.png"); /* Light brown background */
+    /* background: url("../img/hero-bg.png"); Light brown background */
+    background-image: linear-gradient(to bottom right, rgba(25, 25, 25, 0.967) ,#311537f6, rgb(25, 25, 25,0.967));
     align-items: center;
     justify-content: center;
     text-align: left;
@@ -21,7 +22,7 @@
     left: 0;
     width: 100%;
     height: 10%; /* Controls shadow height */
-    background: linear-gradient(to bottom, rgb(73, 41, 8), transparent); /* Dark brown fading */
+    /* background: linear-gradient(to bottom, rgb(73, 41, 8), transparent); Dark brown fading */
     pointer-events: none; /* Ensures it doesn't block interactions */
 }
 
@@ -33,7 +34,7 @@
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.8rem;
-    color: #4a1f1f; /* Dark brown text */
+    color: hsla(0, 0%, 100%, 0.678); /* Dark brown text */
     max-width: 600px;
     text-align: justify;
 }
@@ -42,8 +43,8 @@
 .shilp-logo img{
     flex: 0 0 auto;
     margin-right: 40px;
-    width: 350px;
-    height: 350px;
+    width: clamp(5rem, 100vw, 30rem);
+    height: clamp(5rem, 100vh, 30rem);;
 }
 
 /* 🌟 Stats Section */
@@ -73,7 +74,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: rgba(255, 255, 255, 0.521); /* Light opacity box */
+    background: rgba(255, 255, 255, 0.384); /* Light opacity box */
     padding: 15px;
     border-radius: 10px;
     min-width: 160px;
@@ -92,13 +93,15 @@
 .stat-item h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #4a1f1f; /* Dark brown */
+    color: #381717; /* Dark brown */
     margin: 5px 0;
 }
 
 .stat-item p {
     font-size: 1rem;
-    color: #4a1f1f;
+    color: #381717; /* Dark brown */
+    font-weight: 450;
+
 }
 
 .icon {
@@ -106,6 +109,16 @@
     color: #4a1f1f;
 }
 
+.people {
+    color: rgb(73, 73, 73);
+}
+
+.cult{
+    color: rgba(255, 0, 0, 0.553);
+}
+.prize{
+    color: rgba(255, 217, 0, 0.63);
+}
 /* 🌟 Responsive Design */
 
 /* 📌 Tablets (768px - 1024px) */

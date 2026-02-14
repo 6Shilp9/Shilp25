@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import CountUp from "react-countup";  
 import '../links/css/shilp.css'
-import shilp_logo from '../links/img/Shilp-logo.png'
+import shilp_logo from '../links/img/SHILPLOGOWHITE.png'
 import { FaUsers, FaCalendarAlt, FaTrophy } from "react-icons/fa";
 import Fade from "react-reveal/Fade";
 
@@ -54,7 +54,7 @@ function Shilp() {
             <div className="description">
                 <Fade right delay={350}>
                 <p>
-                    <strong style={{ fontFamily: 'Times New Roman', fontWeight:"800", fontSize:"1.6rem" }}>Shilp</strong>, the annual fest by the Civil Engineering Society, is a dynamic celebration of creativity and innovation in the field. Serving as a pivotal platform, Shilp fosters collaboration, promotes innovation, and values inclusivity. 
+                    <strong style={{ fontFamily: 'Times New Roman', fontWeight:"800", fontSize:"1.8rem" }}>Shilp</strong>, the annual fest by the Civil Engineering Society, is a dynamic celebration of creativity and innovation in the field. Serving as a pivotal platform, Shilp fosters collaboration, promotes innovation, and values inclusivity. 
                 </p>
                 </Fade>
 
@@ -62,7 +62,7 @@ function Shilp() {
                 <div className="stats">
                     <Fade delay={650} duration={500}>
                         <div className="stat-item">
-                            <FaTrophy className="icon" style={{ color: 'gold' }}/>
+                            <FaTrophy className="icon prize"/>
                             <h2 ref={prizeRef}>
                                 ₹<CountUp start={0} end={showPrize ? 100 : 0} duration={2.5} decimals={1} />K+
                             </h2>
@@ -71,7 +71,7 @@ function Shilp() {
                     </Fade>
                     <Fade delay={450} duration={500}>
                         <div className="stat-item">
-                            <FaUsers className="icon" style={{ color: 'grey' }}/>
+                            <FaUsers className="icon people"/>
                             <h2 ref={participantsRef}>
                                 <CountUp start={0} end={showParticipants ? 200 : 0} duration={2.5} />+
                             </h2>
@@ -80,7 +80,7 @@ function Shilp() {
                     </Fade>
                     <Fade delay={550} duration={500}>
                         <div className="stat-item culture">
-                            <FaCalendarAlt className="icon" style={{ color: 'red' }}/>
+                            <FaCalendarAlt className="icon cult" />
                             <h2 ref={eventsRef}>
                                 <CountUp start={0} end={showEvents ? 15 : 0} duration={2.5} />+
                             </h2>

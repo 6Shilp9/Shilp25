@@ -45,7 +45,7 @@ const Accommodation = ({ AllAuth }) => {
           <Fade top>
             <div className="accommodation-heading">
               <h1>
-                <span>ACCOMMODATION</span> AT{" "}
+                <span>ACCOMMODATION AT</span>
                 <div className="desktop-view">SHILP IIT BHU</div>
               </h1>
             </div>

@@ -34,7 +34,7 @@
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.8rem;
-    color: hsla(0, 0%, 100%, 0.678); /* Dark brown text */
+    color: hsla(0, 0%, 100%, 0.678);
     max-width: 600px;
     text-align: justify;
 }

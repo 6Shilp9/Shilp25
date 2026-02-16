@@ -3,9 +3,7 @@
 .about-ces {
     min-height: 100vh;  /* Changed from height to min-height for better responsiveness */
     width: 100%;
-    /* background-color: #2e1633; Dark purple background */
-    background-image: linear-gradient(to bottom right, rgba(25, 25, 25, 0.967) ,#311537f6, rgb(25, 25, 25,0.967));
-
+    background-color: #2e1633; /* Dark purple background */
     display: flex;
     flex-direction: column;
     align-items: center;

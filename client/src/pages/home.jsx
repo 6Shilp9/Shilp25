@@ -35,9 +35,9 @@ const Home = ({ AllAuth }) => {
 			<NavBar AllAuth={AllAuth} />
 			<Hero />
 			<Shilp />
-			<EventSchedule />
 			<About />
 			{/* <ExploreMore /> */}
+			<EventSchedule />
 			{/* <ContactInformation/> */}
 			<Footer />
 		</div>

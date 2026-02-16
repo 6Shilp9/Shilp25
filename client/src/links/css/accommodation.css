@@ -1,16 +1,15 @@
 
 .body {
     background-color: #f4ecd8; /* Parchment-like color */
-    /* background-image: url('../img/download.jpg'); Optional vintage texture */
-    background-image: linear-gradient(to bottom right, rgba(25, 25, 25, 0.967), #311537f6, rgba(25, 25, 25, 0.967));
+    background-image: url('../img/download.jpg'); /* Optional vintage texture */
     color: #4a3b2e; /* Dark brown text */
     font-family: 'Georgia', serif; /* Serif font for vintage look */
   }
   
   /* Heading */
   .accommodation-heading {
-    background: rgba(255, 255, 255, 0.1); /* Vintage parchment color */
-    /* color: #4a3b2e; Darker brown */
+    background: rgba(221, 194, 160, 0.9); /* Vintage parchment color */
+    color: #4a3b2e; /* Darker brown */
     margin-top: 15vh;
     border-radius: 30px;
     padding: 2vw;
@@ -22,9 +21,10 @@
     font-size: 5vw;
   }
   
-  .accommodation-heading span, .desktop-view  {
-    color: rgba(255, 255, 255, 0.6); 
+  .accommodation-heading span {
+    color: #b87333; 
   }
+  
   
   .accommodation-tabs .buttons {
     display: flex;

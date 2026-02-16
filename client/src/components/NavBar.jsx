@@ -43,7 +43,7 @@ const NavBar = ({ AllAuth }) => {
     };
 
     return (
-        <Fade top>
+        <Fade top delay={800}>
             <nav
                 className="navbar navbar-dark navbar-expand-xl vintage-navbar"
                 style={{
@@ -75,119 +75,142 @@ const NavBar = ({ AllAuth }) => {
                     </button>
                     <ul className="navbar-nav">
                         <li className="nav-item px-2 mx-2">
-                            <Link
-                                className={
-                                    "nav-link" +
-                                    (location.pathname === "/" ? " active" : "")
-                                }
-                                aria-current="page"
-                                to="/"
-                            >
-                                Home
-                            </Link>
+                            <Fade delay={1150}>
+                                <Link
+                                    className={
+                                        "nav-link" +
+                                        (location.pathname === "/" ? " active" : "")
+                                    }
+                                    aria-current="page"
+                                    to="/"
+                                >
+                                    Home
+                                </Link>
+                            </Fade>
                         </li>
 
                         {/* Dropdown for Programs (Workshops & Events) */}
-                        <li className="nav-item dropdown px-2 mx-2 event-workshop">
-                            <button
-                                className="nav-link dropdown-toggle"
-                                type="button"
-                                onClick={toggleProgramsDropdown}
-                                aria-expanded={isProgramsDropdownOpen ? "true" : "false"}
-                            >
-                                Programs
-                            </button>
-                            <div
-                                className={`dropdown-menu ${
-                                    isProgramsDropdownOpen ? "show" : ""
-                                }`}
-                                aria-labelledby="navbarDropdown"
-                                style={{ top: "100%" }} 
-                            >
-                                <Link className="dropdown-item" to="/competitions">
-                                    Workshops
-                                </Link>
-                                <Link className="dropdown-item" to="/events">
-                                    Events
-                                </Link>
-                            </div>
-                        </li>
+                        <Fade delay={1200}>
+                            <li className="nav-item dropdown px-2 mx-2 event-workshop">
+                                <button
+                                    className="nav-link dropdown-toggle"
+                                    type="button"
+                                    onClick={toggleProgramsDropdown}
+                                    aria-expanded={isProgramsDropdownOpen ? "true" : "false"}
+                                >
+                                    Programs
+                                </button>
+                                <div
+                                    className={`dropdown-menu ${
+                                        isProgramsDropdownOpen ? "show" : ""
+                                    }`}
+                                    aria-labelledby="navbarDropdown"
+                                    style={{ top: "100%" }} 
+                                >
+                                    <Link className="dropdown-item" to="/competitions">
+                                        Workshops
+                                    </Link>
+                                    <Link className="dropdown-item" to="/events">
+                                        Events
+                                    </Link>
+                                </div>
+                            </li>
+                        </Fade>
 
-                        <li className="nav-item px-2 mx-2">
-                            <Link
-                                className={
-                                    "nav-link" +
-                                    (location.pathname === "/accommodations" ? " active" : "")
-                                }
-                                to="/accommodations"
-                            >
-                                Accommodations
-                            </Link>
-                        </li>
+                        <Fade delay={1250}>
+                            <li className="nav-item px-2 mx-2">
+                                <Link
+                                    className={
+                                        "nav-link" +
+                                        (location.pathname === "/accommodations" ? " active" : "")
+                                    }
+                                    to="/accommodations"
+                                >
+                                    Accommodations
+                                </Link>
+                            </li>
+                        </Fade>
                            
-                    <li className="nav-item px-2 mx-2">
-                            <Link
-                                className={
-                               "nav-link" +
-                                  (location.pathname === "/guests" ? " active" : "")
-                                          }
-                                 to="/guests"
-                           >
-                                  Guests
-                          </Link>
-                        </li>
-                        <li className="nav-item px-2 mx-2">
-                            <Link
-                                className={
-                                    "nav-link" +
-                                    (location.pathname === "/team" ? " active" : "")
-                                }
-                                to="/team"
+                        <Fade delay={1300}>
+                            <li className="nav-item px-2 mx-2">
+                                <Link
+                                    className={
+                                "nav-link" +
+                                    (location.pathname === "/guests" ? " active" : "")
+                                            }
+                                    to="/guests"
                             >
-                                Team
+                                    Guests
                             </Link>
-                        </li>
-                        <li className="nav-item px-2 mx-2">
-                            <Link
-                                className={
-                                    "nav-link" +
-                                    (location.pathname === "/gallery" ? " active" : "")
-                                }
-                                to="/gallery"
-                            >
-                                Gallery
-                            </Link>
-                        </li>
-                        <li className="nav-item px-2 mx-2">
-                            {/* <Link
-                                className={
-                                    "nav-link" +
-                                    (location.pathname === "/patreons" ? " active" : "")
-                                }
-                                to="/patreons"
-                            >
-                                Patreons
-                            </Link> */}
-                        </li>
-                        <li className="nav-item px-2 mx-2">
-                            <Link
-                                className={
-                                    "nav-link" +
-                                    (location.pathname === "/contacts" ? " active" : "")
-                                }
-                                to="/contacts"
-                            >
-                                Contacts
-                            </Link>
-                        </li>
-                        {/* <li className="nav-item px-2 mx-2">
-                            <Link
-                                className="nav-link"
-                                to="https://forms.gle/oaFRmu7GhyRPuwqy6"
-                            >
-                                CA
-                            </Link>
-                        </li> */}
+                            </li>
+                        </Fade>
+
+                        <Fade delay={1350}>
+                            <li className="nav-item px-2 mx-2">
+                                <Link
+                                    className={
+                                        "nav-link" +
+                                        (location.pathname === "/team" ? " active" : "")
+                                    }
+                                    to="/team"
+                                >
+                                    Team
+                                </Link>
+                            </li>
+                        </Fade>
+
+                        <Fade delay={1400}>
+                            <li className="nav-item px-2 mx-2">
+                                <Link
+                                    className={
+                                        "nav-link" +
+                                        (location.pathname === "/gallery" ? " active" : "")
+                                    }
+                                    to="/gallery"
+                                >
+                                    Gallery
+                                </Link>
+                            </li>
+                        </Fade>
+
+                        <Fade delay={1450}>
+                            <li className="nav-item px-2 mx-2">
+                                {/* <Link
+                                    className={
+                                        "nav-link" +
+                                        (location.pathname === "/patreons" ? " active" : "")
+                                    }
+                                    to="/patreons"
+                                >
+                                    Patreons
+                                </Link> */}
+                            </li>
+                        </Fade>
+
+                        <Fade delay={1500}>
+                            <li className="nav-item px-2 mx-2">
+                                <Link
+                                    className={
+                                        "nav-link" +
+                                        (location.pathname === "/contacts" ? " active" : "")
+                                    }
+                                    to="/contacts"
+                                >
+                                    Contacts
+                                </Link>
+                            </li>
+                        </Fade>
+
+                        <Fade delay={1550}>
+                            {/* <li className="nav-item px-2 mx-2">
+                                <Link
+                                    className="nav-link"
+                                    to="https://forms.gle/oaFRmu7GhyRPuwqy6"
+                                >
+                                    CA
+                                </Link>
+                            </li> */}
+                        </Fade>
 
                         {/* Profile Dropdown */}
                         {isAuth ? (
@@ -205,28 +228,34 @@ const NavBar = ({ AllAuth }) => {
                                     </button>
                                     {isProfileDropdownOpen && (
                                         <div className="dropdown-menu show">
-                                            <Link className="dropdown-item" to="/profile">
-                                                Profile
-                                            </Link>
-                                            <button className="dropdown-item" onClick={onLogout}>
-                                                Logout
-                                            </button>
+                                            <Fade delay={1600}>
+                                                <Link className="dropdown-item" to="/profile">
+                                                    Profile
+                                                </Link>
+                                            </Fade>
+                                            <Fade delay={1650}>
+                                                <button className="dropdown-item" onClick={onLogout}>
+                                                    Logout
+                                                </button>
+                                            </Fade>
                                         </div>
                                     )}
                                 </div>
                             </li>
                         ) : (
-                            <li className="nav-item px-2 mx-2">
-                                <Link
-                                    className={
-                                        "nav-link" +
-                                        (location.pathname === "/login" ? " active" : "")
-                                    }
-                                    to="/login"
-                                >
-                                    Sign In
-                                </Link>
-                            </li>
+                            <Fade delay={1600}>
+                                <li className="nav-item px-2 mx-2">
+                                    <Link
+                                        className={
+                                            "nav-link" +
+                                            (location.pathname === "/login" ? " active" : "")
+                                        }
+                                        to="/login"
+                                    >
+                                        Sign In
+                                    </Link>
+                                </li>
+                            </Fade>
                         )}
                     </ul>
                 </div>

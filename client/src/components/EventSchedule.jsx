@@ -36,7 +36,7 @@ const EventSchedule = () => {
     <div className="event-schedule">
       <Fade top>
       <h2 className="title">Event Schedule</h2>
-      <h2 className="title">Cooming Soon</h2>
+      <h2 className="title">Coming Soon</h2>
       </Fade>
       {/* Tabs */}
       {/* <div className="tabs">

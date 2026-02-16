@@ -6,7 +6,7 @@
     padding: 5%;
     min-height: 100vh;
     /* background: url("../img/hero-bg.png"); Light brown background */
-    background-image: linear-gradient(to bottom right, rgba(25, 25, 25, 0.967) ,#311537f6, rgb(25, 25, 25,0.967));
+    background-image: linear-gradient(to bottom right, #277873, rgb(25, 25, 25,0.967));
     align-items: center;
     justify-content: center;
     text-align: left;

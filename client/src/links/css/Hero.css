@@ -17,7 +17,7 @@
 	object-fit: cover;
 	text-align: center;
 	/* background-image: url("../img/hero-bg.png"); */
-	background-image: linear-gradient(to bottom left, rgba(25, 25, 25, 0.967) ,#311537f6, rgb(25, 25, 25,0.967));
+	background-image: linear-gradient(to top right, #277873, rgb(25, 25, 25,0.967));
 	background-size: 100% 100%;
 	background-position: center;
 	padding-top: 10vh;

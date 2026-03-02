@@ -1,35 +1,64 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../links/css/innovationOdyssey.css'
-// import Zoom from 'react-reveal/Zoom';
-import LightSpeed from 'react-reveal/LightSpeed';
+import Fade from 'react-reveal/Fade';
+import { events, badgeColors } from './EventSchedule';
 
 function InnovationOdyssey() {
+    const [activeCategory, setActiveCategory] = useState("Technical");
+
   return (
     <div className='innovation-odyssey'>
-        <LightSpeed left>
-        <div className="heading">
-            {/* <div><br /></div><span>Vintage vistas</span> */}
-            <div><br /></div><span>Coming Soon</span>
+        <Fade top delay={200}>
+            <p className="events-label">SHILP'26</p>
+            <h1 className="events-heading">Our Events</h1>
+            <p className="events-tagline">Urban Alchemy · Smart Cities, Green Future</p>
+        </Fade>
+
+        {/* ── Tab Switcher ── */}
+        <Fade top delay={300}>
+            <div className="events-tabs">
+                {Object.keys(events).map((category) => (
+                    <button
+                        key={category}
+                        className={`events-tab ${activeCategory === category ? "active" : ""}`}
+                        onClick={() => setActiveCategory(category)}
+                    >
+                        {category}
+                    </button>
+                ))}
+            </div>
+        </Fade>
+
+        {/* ── Event Rows ── */}
+        <div className="events-list">
+            {events[activeCategory].map((event, index) => (
+                <Fade key={index} bottom delay={index * 100}>
+                    <div className={`events-row ${index % 2 !== 0 ? "reverse" : ""} ${event.badge === "Flagship" ? "flagship" : ""}`}>
+                        {!event.noImage && (
+                            <div className="events-row-image">
+                                {event.image ? (
+                                    <img src={event.image} alt={event.title} />
+                                ) : (
+                                    <div className="events-row-placeholder">
+                                        <span>{event.title[0]}</span>
+                                    </div>
+                                )}
+                            </div>
+                        )}
+                        <div className={`events-row-info ${event.noImage ? "full-width" : ""}`}>
+                            <span
+                                className="events-card-badge"
+                                style={{ background: badgeColors[event.badge] }}
+                            >
+                                {event.badge}
+                            </span>
+                            <h3 className="events-card-title">{event.title}</h3>
+                            <p className="events-card-description">{event.description}</p>
+                        </div>
+                    </div>
+                </Fade>
+            ))}
         </div>
-        </LightSpeed>
-        <LightSpeed right>
-        {/* <div className="desc">
-        Why vintage vistas ? 
-        Shilp ’25, organized by the Civil Engineering Society of IIT BHU, embraces the theme 
-        <strong> “Vintage Vistas”</strong> to celebrate the grandeur and ingenuity of ancient architecture. This theme 
-        is a tribute to the timeless engineering marvels that have shaped civilizations and continue to 
-        inspire modern construction. From the majestic temples of India to the intricate aqueducts of 
-        Rome, historical structures stand as testaments to the brilliance of early architects and 
-        engineers.  
-        Architecture is more than just structures; it is a reflection of culture, heritage, and identity. 
-        Vintage Vistas highlights the significance of preserving and understanding these historical 
-        masterpieces, as they offer insights into the evolution of design and construction. The fusion 
-        of traditional architectural principles with modern technology has the potential to create 
-        sustainable, aesthetically rich spaces that honor history while embracing innovation. By 
-        revisiting the past, we aim to draw inspiration for the future, ensuring that the legacy of 
-        architectural excellence continues to thrive.
-        </div> */}
-        </LightSpeed>
     </div>
   )
 }

@@ -14,7 +14,7 @@ import Cartodraft from "../links/img/EventPhotos/Cartodraft.png";
 import CivicAlchemy from "../links/img/EventPhotos/Case Clash.jpg";
 import CodeBlitz from "../links/img/EventPhotos/Codecraft.webp";
 
-const events = {
+export const events = {
     Technical: [
         {
             title: "Civic Alchemy",
@@ -95,7 +95,7 @@ const events = {
 ],
 };
 
-const badgeColors = {
+export const badgeColors = {
     Flagship: "#f0c040",
     Offline: "#4a9b6f",
     Online: "#7b6fe8",

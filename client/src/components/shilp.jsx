@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import CountUp from "react-countup";  
 import '../links/css/shilp.css'
-import shilp_logo from '../links/img/SHILPLOGOWHITE.png'
+import shilp_logo from '../links/img/Shilp-logo.png'
 import { FaUsers, FaCalendarAlt, FaTrophy } from "react-icons/fa";
 import Fade from "react-reveal/Fade";
 

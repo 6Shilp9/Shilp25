@@ -42,6 +42,7 @@ const Home = ({ AllAuth }) => {
 			<Marquee items={["Civil Engineering Society", "IIT BHU", "Est. 1949", "Innovation", "Collaboration", "Excellence"]}/>
 			<About />
 			{/* <ExploreMore /> */}
+			<EventSchedule />
 			{/* <ContactInformation/> */}
 			<Footer />
 		</div>

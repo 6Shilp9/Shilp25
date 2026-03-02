@@ -1,135 +1,149 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap");
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-container {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	object-fit: cover;
-	text-align: center;
-	/* background-image: url("../img/hero-bg.png"); */
-	background-image: linear-gradient(to top right, #277873, rgb(25, 25, 25,0.967));
-	background-size: 100% 100%;
-	background-position: center;
-	padding-top: 10vh;
-}
-/* .hero-left{
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 50%;
-	background-size: 100% 100%;
-	background-image: url("../img/hero-Left.jpg");
-}
-.hero-right{
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 100%;
-	width: 50%;
-	background-size: 100% 100%;
-	background-image: url("../img/hero-Right.jpg");
-} */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10vh;
+    overflow: hidden;
 
+    background: linear-gradient(180deg, #0f1f2e 0%, #1a2a3a 100%);
+    background-size: cover;
+    background-position: center;
+    /* background-image: url("../img/hero-bg.jpg"); */
+}
+
+/* ── Subtle geometric overlay for depth ── */
 .hero-container::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	/* background-color: rgba(151, 123, 123, 0.3); Lightens the image with a semi-transparent white overlay */
-	z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(74, 155, 111, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(74, 155, 111, 0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 1;
+
+    /* background: rgba(0, 0, 0, 0.5); */
+    /* background-image: Image dhundke daalenge; */
 }
 
+/* ── Hero Content ── */
 .hero-content {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	width: 80%;
-	/* gap: 10px; */
-	margin-top: 5vh; /* Reduce gap between navbar and title */
-	z-index: 2; /* Make sure the content appears above the overlay */
-	max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 5vh;
+    z-index: 2;
 }
 
+/* ── Typography ── */
 .hero-title {
-	font-family: "Times New Roman", sans-serif;
-	font-size: 12vh; 
-	font-weight: 700;
-	color: hsla(0, 0%, 100%, 0.678);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12vh;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 2px;
+    line-height: 1;
 }
 
 .hero-subtitle {
-	font-size: 5vh;
-	font-weight: 600;
-	color: hsla(0, 0%, 100%, 0.678);
-	font-family: 'BasheqVintage', serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.8vh;
+    font-weight: 600;
+    color: #4a9b6f;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 8px;
 }
 
-
-.hero-logo {
-	width: clamp(10rem, 100vw, 40rem)	;
-	height: auto;
-	/* margin-top: 15px; */
-}
-
-.hero-bottom {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 10px;
-	z-index: 2;
-}
-
+/* ── Date ── */
 .hero-date {
-	color: hsla(0, 0%, 100%, 0.678);
-	font-size: 3.5vh;
-	font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 2.4vh;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
+/* ── Bottom section ── */
+.hero-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+/* ── Countdown Timer ── */
 .countdown-timer {
-	color: #4a1f1f; /* Make the color lighter for better contrast */
-	font-size: 2.5vh;
-	font-weight: bolder;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
-	position: relative;
-	z-index: 2; 
-	background-color: rgba(194, 189, 189, 0.82); 
-	padding: 10px;
-	border-radius: 1000px; 
+    font-size: 2.2vh;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+    color: #1a2a3a;
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 10px 24px;
+    border-radius: 1000px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* ── Logo ── */
+.hero-logo {
+    width: clamp(24rem, 35vw, 72rem);
+    height: auto;
+    filter: drop-shadow(0 0 24px rgba(74, 155, 111, 0.3));
+}
 
-@media screen and (max-width: 768px) {
-	.hero-title {
-		font-size: 9vw;
-	}
-	.hero-subtitle {
-		font-size: 4.5vw;
-	}
-	.hero-logo {
-		width: 140px;
-	}
-	.hero-date {
-		font-size: 3vw;
-	}
-	.countdown-timer {
-		font-size: 2vw;
-		gap: 5px;
-	}
+/* ── Mobile ── */
+@media screen and (max-width: 1200px) {
+    .hero-content {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 14vw;
+    }
+
+    .hero-subtitle {
+        font-size: 3.5vw;
+    }
+
+    .hero-logo {
+        width: clamp(160px, 100vw, 360px);
+    }
+
+    .hero-date {
+        font-size: 3.2vw;
+    }
+
+    .countdown-timer {
+        font-size: 2.8vw;
+        gap: 6px;
+        padding: 8px 16px;
+    }
 }

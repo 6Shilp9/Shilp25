@@ -2,6 +2,7 @@ import {useState, useEffect} from "react";
 import "../links/css/home.css";
 import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
+import Marquee from "../components/Marquee";
 import Footer from "../components/Footer";
 import Shilp from "../components/shilp";
 import About from "../components/About";
@@ -34,8 +35,11 @@ const Home = ({ AllAuth }) => {
 			{/* <ParticleBackground /> */}
 			<NavBar AllAuth={AllAuth} />
 			<Hero />
+			<Marquee />
 			<Shilp />
+			<Marquee items={["Bridge IT", "CartoDraft", "Civic Alchemy", "ML Forge", "CodeBlitz", "Feast for Brains", "Capture the Snap"]} />
 			<EventSchedule />
+			<Marquee items={["Civil Engineering Society", "IIT BHU", "Est. 1949", "Innovation", "Collaboration", "Excellence"]}/>
 			<About />
 			{/* <ExploreMore /> */}
 			{/* <ContactInformation/> */}

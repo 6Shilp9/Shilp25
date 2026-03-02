@@ -8,12 +8,6 @@ import Fade from "react-reveal/Fade";
 function Hero() {
   return (
     <div className="hero-container" id="home">
-        {/* <Fade top duration={1000}>
-          <div className="hero-left"></div> 
-        </Fade>
-        <Fade top duration={1000}>
-          <div className="hero-right"></div>  
-        </Fade> */}
       <div className="hero-content">
         <div>
           <Fade left delay={400}>

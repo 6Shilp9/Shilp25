@@ -45,7 +45,7 @@ const NavBar = ({ AllAuth }) => {
     return (
         <Fade top delay={800}>
             <nav
-                className="navbar navbar-dark navbar-expand-xl vintage-navbar"
+                className="navbar navbar-dark navbar-expand-xl shilp-navbar"
                 style={{
                     position: isSidebarOpen ? "fixed" : "absolute",
                     width: "100%",

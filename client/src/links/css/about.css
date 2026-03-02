@@ -1,115 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap');
 
+/* ── Main Section ── */
 .about-ces {
-    min-height: 100vh;  /* Changed from height to min-height for better responsiveness */
+    min-height: 100vh;
     width: 100%;
-    /* background-color: #2e1633; Dark purple background */
-    background-image: linear-gradient(to bottom right, rgba(25, 25, 25, 0.967) ,#311537f6, rgb(25, 25, 25,0.967));
-
+    background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 50%, #1a0a2e 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 5vh 8vw;
+    padding: 80px 8vw;
     color: white;
+    position: relative;
 }
 
-/* 🌟 Title Styling */
+/* ── Grid overlay ── */
+.about-ces::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(74, 155, 111, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(74, 155, 111, 0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ── Content above overlay ── */
+.about-title,
+.logo,
+.about-description {
+    position: relative;
+    z-index: 1;
+}
+
+/* ── Title ── */
 .about-title {
-    font-family: 'BasheqVintage', serif;
-    letter-spacing: 0.3rem;
-    font-size: 7vh;
-    font-weight: 700;
-    margin-bottom: 3vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-bottom: 2rem;
 }
 
-/* 🌟 Logo Styling */
+/* ── Logo ── */
 .logo img {
     width: 18vw;
-    min-width: 150px;
-    max-width: 220px;
+    min-width: 140px;
+    max-width: 200px;
     object-fit: contain;
-    margin: 2vh 0;
+    margin: 1.5rem 0 2rem;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
 }
 
-/* 🌟 Description Text */
+/* ── Description ── */
 .about-description {
-    font-family: 'Times New Roman', sans-serif;
-    font-size: 2.5vh;
-    font-weight: 300;
-    line-height: 3.2vh;
-    max-width: 75vw;
-    margin-bottom: 3vh;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    font-weight: 400;
+    line-height: 1.9;
+    max-width: 720px;
+    color: rgba(255, 255, 255, 0.7);
 }
 
-/* 🌟 Responsive for Tablets (max-width: 1024px) */
+/* ── Responsive ── */
 @media screen and (max-width: 1024px) {
-    .about-title {
-        font-size: 6vh;
-    }
-
-    .about-description {
-        font-size: 2.2vh;
-        line-height: 3vh;
-        max-width: 80vw;
-    }
-
-    .logo img {
-        width: 22vw;
-    }
+    .about-ces { padding: 70px 6vw; }
 }
 
-/* 🌟 Responsive for Medium Devices (max-width: 768px) */
 @media screen and (max-width: 768px) {
-    .about-title {
-        font-size: 5vh;
-    }
-
-    .about-description {
-        font-size: 2vh;
-        line-height: 2.8vh;
-        max-width: 85vw;
-    }
+    .about-ces { padding: 60px 6vw; }
 
     .logo img {
         width: 25vw;
-        max-width: 180px;
-    }
-}
-
-/* 🌟 Responsive for Small Mobile Devices (max-width: 480px) */
-@media screen and (max-width: 480px) {
-    .about-title {
-        font-size: 4.5vh;
-    }
-
-    .about-description {
-        font-size: 1.8vh;
-        line-height: 2.5vh;
-        max-width: 90vw;
-    }
-
-    .logo img {
-        width: 30vw;
         max-width: 160px;
     }
 }
 
-/* 🌟 Responsive for Very Small Devices (max-width: 360px) */
-@media screen and (max-width: 360px) {
-    .about-title {
-        font-size: 4vh;
-    }
-
-    .about-description {
-        font-size: 1.6vh;
-        line-height: 2.2vh;
-        max-width: 95vw;
-    }
+@media screen and (max-width: 480px) {
+    .about-ces { padding: 50px 5vw; }
 
     .logo img {
-        width: 35vw;
+        width: 30vw;
         max-width: 140px;
     }
 }

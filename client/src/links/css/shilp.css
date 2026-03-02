@@ -1,7 +1,7 @@
 /* ── Wrapper ── */
 .shilp-wrapper {
     width: 100%;
-    background: linear-gradient(135deg, #1a2a3a 0%, #1e3d2f 50%, #1a2a3a 100%);
+    background: linear-gradient(135deg, #1a3a5c 0%, #1a4d35 50%, #1a3a5c 100%);
     position: relative;
 }
 
@@ -14,8 +14,8 @@
     width: 100%;
     height: 100%;
     background-image:
-        linear-gradient(rgba(74, 155, 111, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(74, 155, 111, 0.05) 1px, transparent 1px);
+        linear-gradient(rgba(61, 220, 132, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(61, 220, 132, 0.05) 1px, transparent 1px);
     background-size: 60px 60px;
     pointer-events: none;
     z-index: 0;
@@ -39,7 +39,7 @@
     font-weight: 600;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: #4a9b6f;
+    color: #3ddc84;
     margin-bottom: 12px;
 }
 
@@ -79,7 +79,7 @@
     transform: translateX(-50%);
     width: 60px;
     height: 2px;
-    background: #4a9b6f;
+    background: #3ddc84;
     border-radius: 2px;
 }
 
@@ -172,7 +172,7 @@
 
 /* Icons */
 .icon { font-size: 2rem; }
-.people { color: #4a9b6f; }
+.people { color: #3ddc84; }
 .cult { color: #7b6fe8; }
 .prize { color: #f0c040; }
 

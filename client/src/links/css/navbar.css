@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: #1a2a3a;
+    background: #1a3a5c;
     z-index: 9999999;
     font-family: 'Inter', 'Segoe UI', sans-serif;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
@@ -38,13 +38,13 @@
     left: 0;
     width: 0%;
     height: 2px;
-    background: #4a9b6f;
+    background: #3ddc84;
     transition: width 0.25s ease;
 }
 
 .shilp-navbar .nav-link:hover,
 .shilp-navbar .nav-link.active {
-    color: #4a9b6f !important;
+    color: #3ddc84 !important;
 }
 
 .shilp-navbar .nav-link:hover::after,
@@ -55,7 +55,7 @@
 /* ── Toggler ── */
 .shilp-navbar .navbar-toggler {
     margin-right: 15px;
-    border: 2px solid #4a9b6f;
+    border: 2px solid #3ddc84;
     padding: 4px 8px;
 }
 
@@ -68,7 +68,7 @@
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    border: 2px solid #4a9b6f;
+    border: 2px solid #3ddc84;
     object-fit: cover;
 }
 
@@ -106,7 +106,7 @@
 
 .shilp-navbar .dropdown-menu .dropdown-item:hover {
     background: #2e4a61;
-    color: #4a9b6f;
+    color: #3ddc84;
 }
 
 .shilp-navbar .dropdown-toggle {
@@ -120,7 +120,7 @@
 }
 
 .shilp-navbar .dropdown-toggle:hover {
-    color: #4a9b6f !important;
+    color: #3ddc84 !important;
 }
 
 .event-workshop {
@@ -143,7 +143,7 @@
         right: -260px;
         width: 260px;
         height: 100vh;
-        background: #1a2a3a;
+        background: #1a3a5c;
         border-left: 1px solid #2e4a61;
         transition: right 0.3s ease;
         padding-top: 64px;

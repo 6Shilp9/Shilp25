@@ -18,7 +18,7 @@
     padding-top: 10vh;
     overflow: hidden;
 
-    background: linear-gradient(180deg, #0f1f2e 0%, #1a2a3a 100%);
+    background: linear-gradient(135deg, #112b48 50%, #1a4d35 100%);
     background-size: cover;
     background-position: center;
     /* background-image: url("../img/hero-bg.jpg"); */
@@ -33,8 +33,8 @@
     width: 100%;
     height: 100%;
     background-image: 
-        linear-gradient(rgba(74, 155, 111, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(74, 155, 111, 0.05) 1px, transparent 1px);
+        linear-gradient(rgba(61, 220, 132, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(61, 220, 132, 0.05) 1px, transparent 1px);
     background-size: 60px 60px;
     z-index: 1;
 
@@ -68,7 +68,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 2.8vh;
     font-weight: 600;
-    color: #4a9b6f;
+    color: #3ddc84;
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-top: 8px;
@@ -103,7 +103,7 @@
     gap: 10px;
     position: relative;
     z-index: 2;
-    color: #1a2a3a;
+    color: #1a3a5c;
     background-color: rgba(255, 255, 255, 0.88);
     padding: 10px 24px;
     border-radius: 1000px;

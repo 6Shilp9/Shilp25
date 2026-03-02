@@ -1,228 +1,142 @@
-.background{
-    background-position: center;
-    min-height: 110vh;width: 100%;
-    max-height: 100%;
-    background-image: url('../img/teamContainer.webp'); /* Vintage Paper */
-    
-    background-size: cover;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap');
+
+/* ── Background ── */
+.background {
+    min-height: 110vh;
+    width: 100%;
+    background: linear-gradient(135deg, #0d2137 0%, #1a3a5c 50%, #1a4d35 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.loginContainer{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 550px;
-    width: 75%;
-    transform: translate(-50%, -50%);
-	background-image: url("../img/Hero.webp");
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    margin-top: 2vh;
-    box-shadow: 10px 10px 5px 5px rgb(0, 0, 0);
-}
-.loginContainer::before{
+
+/* ── Grid overlay ── */
+.background::before {
     content: '';
     position: absolute;
-    top: 0;left: 0;
-    height:100% ;width: 100%;
-    box-shadow: 1px 1px 10px rgb(255, 255, 255);
-    border-radius: 20px;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(61, 220, 132, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(61, 220, 132, 0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
 }
 
-.loginContainer .content{
-    position: absolute;
-    left: 0;top: 0;
-    width: 58%;height: 100%;
-    background: transparent;
-    padding-bottom: 10vh;
+/* ── Content ── */
+.login-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    padding: 2rem 8%;
+    width: 100%;
+}
+
+/* ── Left Panel ── */
+.login-left {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1;
 }
-.loginContainer .content img {
-    width: 200px;
+
+/* ── Right Panel ── */
+.login-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    flex: 1;
+}
+
+/* ── Logo ── */
+.login-logo {
+    width: 320px;
     height: auto;
-    display: block;
-    margin: 0 auto 20px; /* Centers the logo and adds space below */
+    filter: drop-shadow(0 0 24px rgba(61, 220, 132, 0.4));
 }
 
-.loginContainer .content .text-sci h2{
-    font-size: 4vw;
-    font-weight: 900;
-    color: rgb(151, 85, 23);
-    text-align: left;
-    margin-left: 20px;
-    font-family: 'BasheqVintage', serif;
-}
-.loginContainer .content .text-sci h2 span{
-    font-size: 3vw;
-    font-weight: 600;
-}
-.loginContainer .content .text-sci h2 span:nth-child(1){
-    font-weight: 900;
-    background: linear-gradient(45deg,rgb(91, 54, 5),rgb(217, 158, 56));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.loginContainer .content .text-sci .social-icons{
-    text-align: left;
-    margin-left: 20px;
-}
-.loginContainer .content .text-sci .social-icons a{
-font-size: 2.4vw;
-color: white;
-}
-.loginContainer .content .text-sci .social-icons .linkedIn:hover{
-color: #6cc2f0;
-transform: scale(1.2);
-transition: 0.5s;
-}
-.loginContainer .content .text-sci .social-icons .instagram:hover{
-
-background: #f09433; 
-background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-border-radius: 15px 15px 15px 15px;
-transform: scale(1.2);
-transition: 0.5s;
-}
-.loginContainer .content .text-sci .social-icons .facebook:hover{
-color: 	#65b7ee;
-transform: scale(1.2);
-transition: 0.5s;
-}
-.youtube:hover{
-color: #d83c3c;
-transition: 0.3s;
-}
-
-
-
-.loginContainer .login{
-    position: absolute;
-    height: 100%;
-    width: calc(100% - 58%);
-    right: 0;top: 0;
-    background: transparent;
-}
-.loginContainer .login .form-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    color: white;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-.form-box h2{
-    font-size: 40px;
+/* ── Welcome Text ── */
+.login-welcome {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+    margin: 0;
     text-align: center;
-    color: #d800d2;
-}
-.loginContainer .login .form-box .input-box label{
-    font-size: 18px;
-    font-weight: 600;
-}
-.loginContainer .login .form-box .input-box .input span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 20px;
-}
-.loginContainer .login .form-box .input-box .input{
-    display: flex;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid white;
-    margin: 30px 0;
-    padding: 10px;
-}
-.loginContainer .login .form-box .input-box .input input{
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border: none;
-    background: transparent;
-    color: black;
-    font-size: 20px;
-    margin: 10px;
-}
-.input .btn{
-    font-size: 20px;
-    font-weight: 700;
-}
-.register-link{
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 700;
-    color: rgb(226, 196, 241);
-}
-.btn-success{
-    width: 80%;
-    background:#6809a3 !important;
 }
 
-@media screen and (max-width: 1153px) {
-    .loginContainer .content img{
-        width: 180px;
-        height: auto;
-        margin-bottom: 40px;
-    }
-    .background{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-    .loginContainer{
-        position: relative;
-        top: 0;left: 0;
-        transform: translateX(0) translateY(0) translateZ(100px) rotateX(0deg) rotateY(0deg) !important;
-        height: 70vh;
-        display: block;
-        margin:auto;
-        font-size: 2.9vh;
-    }
-    .loginContainer .login{
-        width: 100%;
-    }
-    .loginContainer .login label{
-        color: black;
-        font-weight: 800;
-    }
+.login-welcome span {
+    display: block;
+    font-size: clamp(1rem, 2.5vw, 1.8rem);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (max-width: 550px){
-    .loginContainer .content img{
-        width: 150px;
-        height: auto;
-        margin-bottom: 60px;
+
+.login-brand {
+    font-weight: 800 !important;
+    color: #3ddc84 !important;
+    display: inline !important;
+}
+
+/* ── Hint ── */
+.login-hint {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* ── Google Button ── */
+.google-button {
+    border-radius: 12px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    width: 260px !important;
+    height: 56px !important;
+    font-size: 1rem !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(61, 220, 132, 0.3) !important;
+    color: #ffffff !important;
+}
+
+.google-button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+    border-color: #3ddc84 !important;
+}
+
+/* ── Responsive ── */
+@media screen and (max-width: 768px) {
+    .login-content {
+        flex-direction: column;
+        gap: 3rem;
     }
-    .loginContainer .login .form-box .input-box label{
-        font-size: 15px;
+
+    .login-logo {
+        width: 160px;
     }
-    .loginContainer .content .text-sci h2{
-        font-size: 7vw;
-    }
-    .loginContainer .content .text-sci h2 span{
-        font-size: 3.5vw;
-    }
-    .loginContainer .content .text-sci .social-icons a{
-        font-size: 3.5vw;
-    }
-    
-    .form-box h2{
-        font-size: 30px;
-        color: #ff0000;
-    }
-    .loginContainer{
-        font-size:18px;
+
+    .google-button {
+        width: 220px !important;
     }
 }
 
+@media screen and (max-width: 400px) {
+    .login-logo {
+        width: 130px;
+    }
+}

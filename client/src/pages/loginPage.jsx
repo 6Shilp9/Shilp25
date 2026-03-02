@@ -3,6 +3,8 @@ import "../links/css/login.css";
 import Login from "../components/Login/Login";
 import NavBar from "../components/NavBar";
 import Loader from "../components/LoadingScreen";
+import Footer from "../components/Footer";
+
 
 const LoginPage = ({ AllAuth }) => {
 
@@ -26,6 +28,8 @@ const LoginPage = ({ AllAuth }) => {
 				<NavBar AllAuth={AllAuth} />
 
 				<Login className="loginComponent" AllAuth={AllAuth} />
+
+				<Footer />				
 			</div>
 			}
 		</div>

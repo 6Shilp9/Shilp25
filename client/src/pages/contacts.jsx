@@ -40,7 +40,7 @@ const Contacts = ({ AllAuth }) => {
                                     <p>📞 +91 6009193323</p>
                                 </div>
                             </Fade>
-                            <Fade bottom>
+                            <Fade right>
                                 <div className="contact">
                                     <h2>Sunil Parswal</h2>
                                     <a href="mailto:sunil.parswal.civ22@itbhu.ac.in" title="sunil.parswal.civ22@itbhu.ac.in">
@@ -50,7 +50,7 @@ const Contacts = ({ AllAuth }) => {
                                     <p>📞 +91 7976050475</p>
                                 </div>
                             </Fade>
-                            <Fade right>
+                            <Fade bottom>
                                 <div className="contact">
                                     <h2>Ayush Kumar</h2>
                                     <a href="mailto:ayush.kumar.civ22@itbhu.ac.in" title="ayush.kumar.civ22@itbhu.ac.in">

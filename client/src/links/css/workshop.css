@@ -1,54 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap');
 
-    .workshopHeading{
-        /* background: linear-gradient(45deg, rgb(176, 96, 43), rgba(198, 133, 68, 0.436));  */
-        border-top: 5px solid rgba(255, 235, 205, 0.2); 
-        position: relative;
-        height: 13vh;
-        width: 80%;
-        margin: auto;
-        margin-top: 13vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 4rem;
-        font-weight: 700;
-        border-radius: 30px; 
-        color: #8B3A3A; 
-        
-    }
-    .workshopTitle{
-        background: linear-gradient(45deg, #8B3A3A, rgb(139, 69, 19), #8B3A3A, rgb(139, 69, 19), #ac4747, rgb(174, 112, 67));    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'BasheqVintage', serif;
-    }
-
-.cards{
+/* ── Page Body ── */
+.workshop-body {
+    background: linear-gradient(135deg, #0d2137 0%, #1a3a5c 50%, #1a4d35 100%);
+    min-height: 100vh;
     position: relative;
+}
+
+/* ── Grid overlay ── */
+.workshop-body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(61, 220, 132, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(61, 220, 132, 0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ── Container ── */
+.workshop-container {
+    position: relative;
+    z-index: 1;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-radius: 50px;
-    padding: 10vh 5px;
-    margin: 10vw;
-    margin-top: 5vh;
-    background: rgba(126, 101, 19, 0.833);
-    opacity: 0.8;
-    border-top: 5px solid rgba(255, 255, 255, 0.118);
-}
-.workshopPrice{
-    position: relative;
-    margin-top: 5vh;
-    height: 100%;
-    color: rgb(62, 60, 57);
-}
-.workshopPrice span{
-    font-weight: bolder;
-    color: rgb(191, 109, 74);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 14vh 5% 4rem;
+    text-align: center;
 }
 
-@media screen and (max-width: 456px) {
-    .workshopHeading{
-        font-size: 14vw;
+/* ── Label ── */
+.workshop-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #3ddc84;
+    margin-bottom: 10px;
+}
+
+/* ── Heading ── */
+.workshop-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+}
+
+/* ── Coming Soon Box ── */
+.workshop-coming-soon {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(61, 220, 132, 0.2);
+    border-radius: 20px;
+    padding: 4rem 5rem;
+    max-width: 600px;
+    width: 100%;
+}
+
+.workshop-coming-soon h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800;
+    color: #3ddc84;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.workshop-coming-soon p {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ── Responsive ── */
+@media screen and (max-width: 600px) {
+    .workshop-coming-soon {
+        padding: 3rem 2rem;
     }
-    
+}
+
+@media screen and (max-width: 400px) {
+    .workshop-coming-soon {
+        padding: 2rem 1.5rem;
+    }
 }

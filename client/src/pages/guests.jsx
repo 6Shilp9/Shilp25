@@ -1,10 +1,12 @@
 import {useState, useEffect} from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+// eslint-disable-next-line no-unused-vars
 import GuestCard from "../components/GuestCard";
 import '../links/css/home.css';
 import '../links/css/guests.css';
 import Loader from "../components/LoadingScreen";
+import { Fade } from "react-reveal";
 
 const Guests = ({ AllAuth }) => {
 
@@ -18,37 +20,30 @@ const Guests = ({ AllAuth }) => {
 
 	return (
 		<>
-		{loading ? (
-			<div className="loader-container" style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100vh", background:"black"}}>
-			{/* <ParticleBackground /> */}
-			<Loader onComplete={() => setLoading(false)} />
-			</div>
-		) :
-		<div className="App">
-			
-			<div className="body guest-body">
-				
-				<NavBar AllAuth={AllAuth} />
-				
-				{/* <div className=" Guesttitle">
-					Guests
-				</div> */}
-				<div className=" Guesttitle">Coming Soon</div>
-				<div className="guestContainer">
-				{/* <h1>
-					Chief Guest
-				</h1> */}
-				<div className="guestCards">
-						<GuestCard name="Mr. Abhishek Yadav" desig="CPWD, Govt. Of India" desc="AIR 2, UPSC ESE 2022 (CIVIL) Experienced Officer with a demonstrated history of working in the oil & energy industry. Skilled in AutoCAD, Structural Engineering, Structural Analysis and STAAD-Pro. Strong professional with a Bachelor’s Degree focused in Civil Engineering and Master's in Structural Engineering from Indian Institute of Technology (Banaras Hindu University), Varanasi." url="./guests/guest1.jpeg"/>
-						<GuestCard name="Mr. Anupam Awasthi" desig="Deputy Chief Project Manager,NHSRCL" desc="Deputy Chief Project Manager at the National High-Speed Rail Corporation Ltd (NHSRCL). He is also an alumnus of IIT (BHU). Recognized as the recipient of the Furuichi Award from the University of Tokyo and has received a dean's award after completion of master's." url="./guests/guest2.webp"/>
+			{loading ? (
+				<div className="loader-container" style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100vh", background:"black"}}>
+					<Loader onComplete={() => setLoading(false)} />
 				</div>
-					
-				</div>	
+			) :
+			<div className="App">
+				<div className="body guest-body">
+					<NavBar AllAuth={AllAuth} />
+					<div className="guest-container">
+						<Fade top delay={200}>
+							<p className="guest-label">SHILP'26</p>
+							<h1 className="guest-heading">Guests</h1>
+						</Fade>
+						<Fade bottom delay={400}>
+							<div className="guest-coming-soon">
+								<h2>Coming Soon</h2>
+								<p>Our distinguished guests will be announced shortly. Stay tuned!</p>
+							</div>
+						</Fade>
+					</div>
+				</div>
+				<Footer />
 			</div>
-			<Footer />
-		</div>
-		
-		}
+			}
 		</>
 	);
 };

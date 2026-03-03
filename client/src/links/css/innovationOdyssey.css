@@ -1,57 +1,252 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap');
 
-
-.innovation-odyssey{
-    background: linear-gradient(251.9deg, rgba(77, 53, 18, 0.65) -6.07%, rgba(27, 19, 4, 0.65) 47.04%, rgba(72, 58, 18, 0.65) 86.81%);    min-height: 65vh;
-    max-height: 100%;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 30px;
-    margin-top: 20vh;
-    border-radius: 50px;
-    padding-bottom: 1vw;
-    border-top:4px solid rgba(255, 255, 255, 0.06);
-}
-.innovation-odyssey .heading{
-    font-family: 'BasheqVintage', serif;
-    color: white;
-    font-size: 4.6vw;
-}
-.heading div{
-    display: none;
-}
-.innovation-odyssey .heading span{
-    color: rgb(209, 167, 16);
-}
-.innovation-odyssey .desc{
-    height : 100%;
-    width: 90%;
-    margin: auto;
-    padding-bottom : 10px;
-    font-family: 'Old Standard TT', serif;
-    font-size: 1.7vw;
-    font-weight: 400;
-    color: white;
+/* ── Outer Wrapper ── */
+.innovation-odyssey {
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 8% 80px;
+    background: linear-gradient(135deg, #0d2137 0%, #1a3a5c 50%, #1a4d35 100%);
+    position: relative;
 }
 
-@media screen and (max-width:800px) {
-    .innovation-odyssey .heading{
-        font-size: 4.8vw;
+/* ── Grid overlay ── */
+.innovation-odyssey::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(61, 220, 132, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(61, 220, 132, 0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ── Content above overlay ── */
+.events-label,
+.events-heading,
+.events-tagline,
+.events-tabs,
+.events-list {
+    position: relative;
+    z-index: 1;
+}
+
+/* ── Header ── */
+.events-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #3ddc84;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.events-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.events-tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+}
+
+/* ── Tabs ── */
+.events-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.events-tab {
+    padding: 0.7rem 2rem;
+    border: 1px solid rgba(61, 220, 132, 0.3);
+    border-radius: 20px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+}
+
+.events-tab:hover {
+    background: rgba(61, 220, 132, 0.1);
+    color: #ffffff;
+    border-color: #3ddc84;
+}
+
+.events-tab.active {
+    background: #3ddc84;
+    color: #1a3a5c;
+    border-color: #3ddc84;
+    font-weight: 700;
+}
+
+/* ── Events List ── */
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ── Event Row ── */
+.events-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(61, 220, 132, 0.15);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.events-row:hover {
+    background: rgba(61, 220, 132, 0.06);
+    transform: translateY(-3px);
+}
+
+.events-row.flagship {
+    border-color: #f0c040;
+    border-width: 2px;
+}
+
+/* ── Reverse (alternating) ── */
+.events-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* ── Row Image ── */
+.events-row-image {
+    width: 380px;
+    min-width: 380px;
+    height: 260px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.events-row-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.events-row:hover .events-row-image img {
+    transform: scale(1.05);
+}
+
+.events-row-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a3a5c, #2d1b4e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.events-row-placeholder span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Row Info ── */
+.events-row-info {
+    padding: 2rem 2rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex: 1;
+}
+
+.events-row.reverse .events-row-info {
+    padding: 2rem 0 2rem 2rem;
+}
+
+.events-row-info.full-width {
+    padding: 2rem;
+}
+
+/* ── Badge ── */
+.events-card-badge {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 20px;
+    color: #1a2a3a;
+    width: fit-content;
+}
+
+/* ── Title ── */
+.events-card-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* ── Description ── */
+.events-card-description {
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    line-height: 1.8;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+    .events-row,
+    .events-row.reverse {
+        flex-direction: column;
     }
-    .innovation-odyssey .desc{
-        font-size: 3.5vw;
+
+    .events-row-image {
+        width: 100%;
+        min-width: 100%;
+        height: 220px;
+    }
+
+    .events-row-info,
+    .events-row.reverse .events-row-info {
+        padding: 1.5rem;
     }
 }
-@media screen and (max-width:360px) {
-    .innovation-odyssey .heading{
-        font-size: 9vw;
+
+@media (max-width: 500px) {
+    .innovation-odyssey {
+        padding: 100px 4% 60px;
     }
-    .innovation-odyssey .heading div{
-        margin-top: -8vw;
-        display: block;
+
+    .events-tab {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
     }
-    .innovation-odyssey .desc{
-        margin-top: 10vw;
-        font-size: 4vw;
+
+    .events-row-image {
+        height: 180px;
     }
 }

@@ -1,108 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&family=Roboto:wght@100;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;600&display=swap');
 
-@font-face {
-    font-family: 'BasheqVintage';
-    src: url('../fonts/BasheqVintage.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* 🌟 Background Styling */
-.shilp-team { 
+/* ── Background ── */
+.shilp-team {
     margin-top: 15vh;
     padding: 5vh 0;
     min-height: 100vh;
+    background: linear-gradient(135deg, #0d2137 0%, #1a3a5c 50%, #1a4d35 100%);
+    position: relative;
 }
 
-/* 🌟 Team Header */
+/* ── Grid overlay ── */
+.shilp-team::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(61, 220, 132, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(61, 220, 132, 0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ── Team Header ── */
 .team-header {
     text-align: center;
     margin-bottom: 5vh;
+    position: relative;
+    z-index: 1;
 }
 
 .team-header h1 {
-    font-size: 5vw;
+    font-size: clamp(2rem, 5vw, 4rem);
     font-weight: 900;
-    font-family: 'BasheqVintage', serif;
-    color: #3b2c20;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    letter-spacing: 2px;
 }
 
-/* 🌟 Team Containers - Each team in its own box */
-.team-box {
-    background-image: url('../img/download.jpg');
-    background-size: cover;
-    background-repeat: repeat;
-    filter: sepia(10%) contrast(90%);
+/* ── Section Boxes ── */
+.team-box,
+.conveynor-box {
+    background: rgba(255, 255, 255, 0.04);
     border-radius: 10px;
-    border: 3px solid #6b4f3f;
+    border: 1px solid rgba(61, 220, 132, 0.15);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     padding: 30px;
     margin: 30px auto;
     width: 90%;
+    position: relative;
+    z-index: 1;
 }
-.conveynor-box{
-    background-image: url('../img/download.jpg');
-    background-size: cover;
-    background-repeat: repeat;
-    filter: sepia(10%) contrast(90%);
-    border-radius: 10px;
-    border: 3px solid #6b4f3f;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    padding: 30px;
-    margin: 30px auto;
-    width: 90%;
-}
-.conveynor-container{
+
+/* ── Conveynor Container ── */
+.conveynor-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     place-items: center;
 }
 
-/* 🌟 Team Title */
-.team-title, .conveynor-title {
+/* ── Section Titles ── */
+.team-title,
+.conveynor-title {
     text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 2.8rem; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
     font-weight: 900;
-    color: #4a2c15;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background-color: #dbb27de4;
+    background: rgba(61, 220, 132, 0.1);
     border-radius: 10px;
     padding: 15px 30px;
-    border: 3px solid #6b4f3f;
+    border: 1px solid rgba(61, 220, 132, 0.3);
     width: 50%;
     margin: auto;
 }
-.conveynor-title{
-    width:40%;
+
+.conveynor-title {
+    width: 40%;
 }
-.conveynor-subtitle{
+
+/* ── Subheadings ── */
+.conveynor-subtitle {
     margin-top: 20px;
     width: 100%;
-    background-color: #f2e0c2;
+    background: rgba(255, 255, 255, 0.05);
     font-size: 2rem;
     font-weight: 700;
-
 }
 
-/* 🟢 Team Subheadings (Roles like "Tech Head", "Marketing Head") */
 .team-subheading {
     text-align: center;
-    font-size: 2rem; 
+    font-size: 2rem;
     font-weight: 700;
-    color: #5b3a29; 
-    background-color: #f2e0c2;
+    color: #3ddc84;
+    background: rgba(255, 255, 255, 0.05);
     padding: 10px 20px;
     margin: 20px auto;
     width: 40%;
     border-radius: 5px;
-    border: 2px solid #4a2c15;
+    border: 1px solid rgba(61, 220, 132, 0.2);
 }
 
-/* 🟢 Team Cards (Restored to Original Design) */
+/* ── Team Containers ── */
 .team-container {
     display: flex;
     flex-wrap: wrap;
@@ -112,126 +114,14 @@
     margin: auto;
 }
 
-/* 🌟 Restored Team Card Design */
-.team-container .team-card {
-    width: 280px;
-    height: 380px;
-    margin: 20px;
-    background-image: url('../img/teamContainer.webp'); /* Vintage Paper */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 3px solid #6b4f3f;
-    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    padding: 15px;
-    transition: all 0.4s ease-in-out;
-}
-
-/* 🌟 Profile Picture Styling */
-.team-container .team-card .team-content .imgBx {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid #7a4c10; 
-    background: #c4a484; 
-    margin: auto;
-}
-
-/* 🌟 Profile Image */
-.team-container .team-card .team-content .imgBx img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* 🟢 Name Styling */
-.team-container .team-card .team-content .contentBx {
-    font-size: 18px;
-    font-family: 'BasheqVintage', serif;
-    color: #3b2c20;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-/* 🌟 Name */
-.team-container .team-card .team-content .contentBx .profile-Name {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-/* 🌟 Social Media Icons */
-.team-container .team-card .sci {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding-left: 0;
-    margin-top: 15px;
-}
-
-.team-container .team-card .sci li {
-    list-style: none;
-}
-.team-container .team-card .sci li .linkedIn:hover{
-    color: #0077b5;
-}
-.team-container .team-card .sci li .gmail:hover{
-    color: #de321b;
-}
-.team-container .team-card .sci li .instagram:hover{
-    color: #c13584;
-}
-
-.team-container .team-card .sci li a {
-    color: #8b5a2b;  
-    font-size: 22px;
-    transition: 0.3s ease-in-out;
-}
-
-.team-container .team-card .sci li a:hover {
-    transform: scale(1.2);
-}
-
-/* 🟢 Responsive Design */
-@media screen and (max-width: 768px) {
-    .team-header h1 {
-        font-size: 7vw;
-    }
-
-    .team-title {
-        font-size: 2.5rem;
-        width: 70%;
-    }
-
-    .team-subheading {
-        font-size: 1.5rem;
-        width: 60%;
-    }
-
-    .team-box {
-        width: 90%;
-    }
-
-    .team-container .team-card {
-        width: 230px;
-        height: 360px;
-    }
-
-    .team-container .team-card .team-content .imgBx {
-        width: 130px;
-        height: 130px;
-    }
-}
-/* 🟢 Responsive Design for Smaller Screens */
+/* ── Responsive ── */
 @media screen and (max-width: 1024px) {
     .team-header h1 {
         font-size: 6vw;
     }
 
-    .team-title, .conveynor-title {
+    .team-title,
+    .conveynor-title {
         font-size: 2.5rem;
         width: 80%;
     }
@@ -241,7 +131,8 @@
         width: 70%;
     }
 
-    .team-box, .conveynor-box {
+    .team-box,
+    .conveynor-box {
         width: 95%;
         padding: 20px;
     }
@@ -250,25 +141,15 @@
         flex-direction: row;
         justify-content: center;
     }
-
-    .team-container .team-card {
-        width: 220px;
-        height: 350px;
-    }
-
-    .team-container .team-card .team-content .imgBx {
-        width: 130px;
-        height: 130px;
-    }
 }
 
-/* 🟢 Further adjustments for mobile screens (below 768px) */
 @media screen and (max-width: 768px) {
     .team-header h1 {
         font-size: 7vw;
     }
 
-    .team-title, .conveynor-title {
+    .team-title,
+    .conveynor-title {
         font-size: 2rem;
         width: 90%;
         padding: 10px;
@@ -280,7 +161,8 @@
         padding: 8px;
     }
 
-    .team-box, .conveynor-box {
+    .team-box,
+    .conveynor-box {
         width: 95%;
         padding: 15px;
     }
@@ -290,24 +172,19 @@
         align-items: center;
     }
 
-    .team-container .team-card {
-        width: 90%;
-        margin: 10px 0;
-    }
-
     .conveynor-container {
         flex-direction: column;
         gap: 15px;
     }
 }
 
-/* 🟢 Smallest screen adjustments (below 480px) */
 @media screen and (max-width: 480px) {
     .team-header h1 {
         font-size: 8vw;
     }
 
-    .team-title, .conveynor-title {
+    .team-title,
+    .conveynor-title {
         font-size: 1.8rem;
         width: 95%;
         padding: 8px;
@@ -318,12 +195,9 @@
         width: 90%;
     }
 
-    .team-box, .conveynor-box {
+    .team-box,
+    .conveynor-box {
         width: 100%;
         padding: 10px;
-    }
-
-    .team-container .team-card {
-        width: 95%;
     }
 }

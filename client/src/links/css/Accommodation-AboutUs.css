@@ -1,125 +1,154 @@
-.outer-body{
-    background: rgb(40, 26, 37);
-    width: 95%;
-    min-height: 100vh;
-    max-height: 100%;
-    margin: auto;
-    margin-top: 6vh;
-    padding: 4vw;
-    margin-bottom: 5vh;
+/* ── Outer Body ── */
+.outer-body {
+    width: 90%;
+    max-width: 1000px;
+    margin: 4vh auto 6vh;
+    padding: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(61, 220, 132, 0.15);
 }
 
+/* ── Inner Body ── */
 .outer-body .inner-body {
-    background: linear-gradient(rgba(198, 190, 190, 0.5), rgba(145, 118, 61, 0.845)), 
-                url('../img/5217c521542d3c754a36fc825f23de6c.jpg') no-repeat center center;
-    background-size: cover;
-    font-weight: bolder;
-    min-height: 85vh;
-    max-height: 100%;
-    text-align: justify;
-    color: #030303; 
-    padding: 2vw;
+    background: rgba(255, 255, 255, 0.04);
+    min-height: 60vh;
+    padding: 3rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Inter', sans-serif;
 }
 
-.outer-body .inner-body p, 
-.outer-body .inner-body h1, 
-.outer-body .inner-body h2 {
-    color: #000000; 
+/* ── Section Heading ── */
+.section-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(61, 220, 132, 0.3);
 }
 
-.accordion-flush .accordion-item .accordion-button, 
+/* ── Policy List ── */
+.policy-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.policy-list li {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 1rem 1.2rem;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 10px;
+    border-left: 3px solid #3ddc84;
+    transition: background 0.25s ease;
+}
+
+.policy-list li:hover {
+    background: rgba(61, 220, 132, 0.08);
+}
+
+/* ── Accordion (FAQs) ── */
+.accordion-flush .accordion-item {
+    background: rgba(255, 255, 255, 0.04);
+    border: none !important;
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+}
+
+.accordion-flush .accordion-item .accordion-button,
 .accordion-flush .accordion-item .accordion-button.collapsed {
-    
-    margin-top: 5vh;
-    padding: 5vh  0 5vh 5vh;
-    background: linear-gradient(rgba(198, 190, 190, 0.5), rgba(145, 118, 61, 0.845)), 
-                url('../img/5217c521542d3c754a36fc825f23de6c.jpg') no-repeat center center;
-                background-size: cover;
-    font-weight: bolder;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding: 1.2rem 1.5rem;
+    border: none;
+    transition: background 0.25s ease;
+}
+
+.accordion-flush .accordion-item .accordion-button:not(.collapsed) {
+    background: rgba(61, 220, 132, 0.1);
+    color: #3ddc84;
+    box-shadow: none;
 }
 
 .accordion-button::after {
-    content: url('../img/plus-circle-svgrepo-com.svg'); 
-    margin-right: 1cm;
-    transition: transform 0.3s ease-in-out; 
+    filter: invert(1);
 }
-
-
 
 .accordion-body {
-    background: linear-gradient(rgba(198, 190, 190, 0.5), rgba(132, 102, 35, 0.845)), 
-                url('../img/Old-Vintage-Paper-Textured-background-Graphics-69135662-1.jpg') no-repeat center center;
-                background-size: cover;
-    text-align: justify;
-    color: #000000; 
+    background: rgba(255, 255, 255, 0.03);
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    padding: 1.2rem 1.5rem;
 }
 
-.accordion-flush .accordion-item {
-    background: linear-gradient(rgba(198, 190, 190, 0.5), rgba(145, 118, 61, 0.845)), 
-                url('../img/5217c521542d3c754a36fc825f23de6c.jpg') no-repeat center center;
-    border: none !important;
-}
-
+/* ── Contact Grid ── */
 .contact-inner-body {
-    max-height: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    background: rgba(54, 24, 68, 1) !important;
-    padding: 0 !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background: transparent !important;
+    padding: 1rem !important;
 }
 
 .contact-inner-body .contact {
-    margin: 2vw;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(61, 220, 132, 0.15);
+    border-radius: 12px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
+    transition: background 0.25s ease;
+}
+
+.contact-inner-body .contact:hover {
+    background: rgba(61, 220, 132, 0.08);
 }
 
 .contact-inner-body .contact a {
     text-decoration: none;
-    color: #222; /* Darker color for contact links */
-    margin-top: 1vh;
-    margin-bottom: -1.5vh;
+    color: #3ddc84;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    margin: 0;
 }
 
+/* ── Responsive ── */
 @media screen and (max-width: 970px) {
     .contact-inner-body {
-        height: 100% !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: rgba(54, 24, 68, 1) !important;
-        padding: 0 !important;
-    }
-    
-    .outer-body .contact-outer-body {
-        height: 100% !important;
-    }
-    
-    .contact-inner-body .contact {
-        margin: 2vw;
-        margin-top: 6vw;
-        background: rgba(0, 0, 0, 0.4);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 3vw;
+        grid-template-columns: 1fr;
     }
 
-    .contact-inner-body .contact a {
-        text-decoration: none;
-        color: #222; /* Darker color for contact links in media query */
-        margin-top: 1vh;
-        margin-bottom: -1.5vh;
+    .outer-body {
+        width: 95%;
+    }
+
+    .outer-body .inner-body {
+        padding: 2rem;
     }
 }
 
 @media screen and (max-width: 456px) {
     .contact-inner-body .contact a {
-        font-size: 4vw;
+        font-size: 0.85rem;
+    }
+
+    .outer-body .inner-body {
+        padding: 1.2rem;
     }
 }

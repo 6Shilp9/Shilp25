@@ -37,41 +37,26 @@ const Competitions = ({ AllAuth }) => {
 		<div className="App">
 			{loading ? (
 				<div className="loader-container" style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100vh", background:"black"}}>
-				{/* <ParticleBackground /> */}
-				<Loader onComplete={() => setLoading(false)} />
+					<Loader onComplete={() => setLoading(false)} />
 				</div>
 			) : (
 				<>
 					<div className="body workshop-body">
 						<NavBar AllAuth={AllAuth} />
-						<div className="workshopHeading">
-							<div className="workshopTitle">Workshops</div>
-						</div>
-						<div className="workshopPrice">
-							<h4>
-								<span>The price :</span> free with shilp
-								registration fee. Participants have to pay shilp
-								registration fee only
-							</h4>
-						</div>
-
-						<div className="cards">
-							<h1 classname = "cumming">COMING SOON...</h1>
-							{/* <WorkshopCard
-								name="STAAD Pro"
-								details="Explore STAAD Pro in our 3-4 hour workshop. Gain hands-on experience and receive a course certificate!"
-								AllAuth={AllAuth}
-								RegisteredWorkshops={RegisteredWorkshops}
-							/>
-							<WorkshopCard
-								name="BIM"
-								details="Discover BIM in just 1-2 hours. Get a certificate upon completion and Elevate your skills with us!"
-								AllAuth={AllAuth}
-								RegisteredWorkshops={RegisteredWorkshops}
-							/> */}
+						<div className="workshop-container">
+							<Fade top delay={200}>
+								<p className="workshop-label">SHILP'26</p>
+								<h1 className="workshop-heading">Workshops</h1>
+							</Fade>
+							<Fade bottom delay={400}>
+								<div className="workshop-coming-soon">
+									<h2>Coming Soon</h2>
+									<p>Workshop details will be announced shortly. Stay tuned!</p>
+								</div>
+							</Fade>
 						</div>
 						<Fade bottom>
-							<Footer></Footer>
+							<Footer />
 						</Fade>
 					</div>
 				</>

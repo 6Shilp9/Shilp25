@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import shilp from "../../links/img/SHILP.png";
 import GoogleButton from "react-google-button";
 import { signInWithPopup } from "firebase/auth";
@@ -7,19 +6,13 @@ import { doc, getDoc, setDoc } from "firebase/firestore";
 import { auth, provider, db } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import Fade from "react-reveal/Fade";
 
 const Login = ({ AllAuth }) => {
 	const setAuth = AllAuth.setAuth;
 	const setIsProf = AllAuth.setIsProf;
 	const navigate = useNavigate();
 
-	// Set initial position values
-	const initialX = -542;
-	const initialY = -255;
-	const x = useMotionValue(initialX);
-	const y = useMotionValue(initialY);
-	const rotateX = useTransform(y, [-338, -138], [20, -20]);
-	const rotateY = useTransform(x, [-642, -442], [-20, 20]);
 
 	const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
 
@@ -75,58 +68,34 @@ const Login = ({ AllAuth }) => {
 		}
 	};
 
-	// Handle mouse movement for hover effect
-	const handleMouseMove = (e) => {
-		const { clientX, clientY } = e;
-		const { innerWidth, innerHeight } = window;
-
-		// Update position based on cursor movement
-		x.set(initialX + (clientX - innerWidth / 2) / 20);
-		y.set(initialY + (clientY - innerHeight / 2) / 20);
-	};
-
-	// Reset smoothly when mouse leaves
-	const handleMouseLeave = () => {
-		animate(x, initialX, { type: "spring", stiffness: 100, damping: 15 });
-		animate(y, initialY, { type: "spring", stiffness: 100, damping: 15 });
-	};
-
 	return (
-		<>
-			<div className="background" style={{ perspective: 2000 }}>
-				<motion.div
-					style={{ x, y, rotateX, rotateY, z: 100 }}
-					onMouseMove={handleMouseMove}
-					onMouseLeave={handleMouseLeave}
-					className="loginContainer"
-				>
-					<div className="content">
-						<img src={shilp} alt="Shilp Logo" />
-						<div className="text-sci">
-							<h2>
-								Welcome! <br />
-								<span>
-									To the <span>Shilp</span>
-								</span>
-							</h2>
-						</div>
-					</div>
-
-					<div className="login">
-						<div className="form-box">
-							<GoogleButton
-								className="google-button"
-								disabled={submitButtonDisabled}
-								onClick={() => {
-									onFormSubmit();
-								}}
-								style={{ background: "#000" }}
-							/>
-						</div>
-					</div>
-				</motion.div>
+		<div className="background">
+			<div className="login-content">
+				<div className="login-left">
+					<Fade top delay={200}>
+						<img src={shilp} alt="Shilp Logo" className="login-logo" />
+					</Fade>
+					<Fade top delay={400}>
+						<h2 className="login-welcome">
+							Welcome!
+							<span> To <span className="login-brand">Shilp!</span></span>
+						</h2>
+					</Fade>
+				</div>
+				<div className="login-right">
+					<Fade right delay={600}>
+						<p className="login-hint">Sign in to continue</p>
+					</Fade>
+					<Fade right delay={800}>
+						<GoogleButton
+							className="google-button"
+							disabled={submitButtonDisabled}
+							onClick={() => onFormSubmit()}
+						/>
+					</Fade>
+				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

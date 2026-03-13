@@ -32,6 +32,10 @@ const Contacts = [
             url: "./TeamPhotos/II Year/aayushman_binodkumar_ranjan.jpg",
             Name: "Aayushman Ranjan",
           },
+          {
+            url: "./TeamPhotos/II Year/arush_moghe.jpeg",
+            Name: "Arush Moghe",
+          }
         ],
       },
     ],

@@ -1,59 +1,137 @@
-/* 🌟 Base Styles */
-.contain {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 5%;
-    min-height: 100vh;
-    background: url("../img/hero-bg.png"); /* Light brown background */
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    gap: 20px; /* Adds spacing between elements */
-    position: relative; /* Allows absolute positioning of shadow */
+/* ── Wrapper ── */
+.shilp-wrapper {
+    width: 100%;
+    background: linear-gradient(135deg, #1a3a5c 0%, #1a4d35 50%, #1a3a5c 100%);
+    position: relative;
 }
 
-/* Top Shadow Effect */
-.contain::before {
-    content: "";
+/* ── Grid overlay (carried over from hero) ── */
+.shilp-wrapper::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 10%; /* Controls shadow height */
-    background: linear-gradient(to bottom, rgb(73, 41, 8), transparent); /* Dark brown fading */
-    pointer-events: none; /* Ensures it doesn't block interactions */
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(61, 220, 132, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(61, 220, 132, 0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
 }
 
+/* ── Part 1: Theme Section ── */
+.theme-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 10% 80px;
+    position: relative;
+    z-index: 1;
+}
 
-/* Description Text */
-.description {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
+.theme-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #3ddc84;
+    margin-bottom: 12px;
+}
+
+.theme-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.theme-tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.4rem);
     font-weight: 500;
-    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.theme-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.65);
+    max-width: 680px;
+}
+
+/* ── Divider between sections ── */
+.theme-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: #3ddc84;
+    border-radius: 2px;
+}
+
+/* ── Part 2: About Shilp ── */
+.contain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 80px 5%;
+    min-height: 60vh;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.shilp-strong {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+/* Logo */
+.shilp-logo img {
+    flex: 0 0 auto;
+    margin-right: 40px;
+    width: clamp(5rem, 100vw, 28rem);
+    height: clamp(5rem, 100vh, 28rem);
+    filter: drop-shadow(0 0 20px rgba(74, 155, 111, 0.25));
+}
+
+/* Description */
+.description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
     line-height: 1.8rem;
-    color: #4a1f1f; /* Dark brown text */
+    color: rgba(255, 255, 255, 0.7);
     max-width: 600px;
     text-align: justify;
 }
 
-/* Logo Section */
-.shilp-logo img{
-    flex: 0 0 auto;
-    margin-right: 40px;
-    width: 350px;
-    height: 350px;
-}
-
-/* 🌟 Stats Section */
+/* ── Stats ── */
 .stats {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
-    gap: 14px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 30px;
+    width: 100%;
 }
 
 .stat-item {
@@ -61,155 +139,96 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: rgba(255, 255, 255, 0.521); /* Light opacity box */
-    padding: 15px;
-    border-radius: 10px;
-    min-width: 140px;
-    transition: transform 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(74, 155, 111, 0.2);
+    padding: 20px 15px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    width: 100%;
 }
 
 .stat-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
+    background: rgba(74, 155, 111, 0.1);
 }
 
 .stat-item h2 {
-    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
     font-weight: 700;
-    color: #4a1f1f; /* Dark brown */
-    margin: 5px 0;
+    color: #ffffff;
+    margin: 8px 0 4px;
 }
 
 .stat-item p {
-    font-size: 1rem;
-    color: #4a1f1f;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
 }
 
-.icon {
-    font-size: 2rem;
-    color: #4a1f1f;
+.culture {
+    grid-column: span 2;
 }
 
-/* 🌟 Responsive Design */
+/* Icons */
+.icon { font-size: 2rem; }
+.people { color: #3ddc84; }
+.cult { color: #7b6fe8; }
+.prize { color: #f0c040; }
 
-/* 📌 Tablets (768px - 1024px) */
+/* ── Responsive ── */
 @media screen and (max-width: 1024px) {
     .contain {
         flex-direction: column;
         text-align: center;
-        padding: 5%;
     }
 
-    .shilp-logo img{
+    .shilp-logo img {
         margin-right: 0;
         margin-bottom: 20px;
-        width: 300px;
-        height: 300px;
+        width: 260px;
+        height: 260px;
     }
 
     .description {
         text-align: center;
-        font-size: 1.1rem;
-        line-height: 1.6rem;
-        padding: 0 20px;
-    }
-
-    .stats {
-        flex-direction: row;
-        justify-content: center;
     }
 
     .stat-item {
-        min-width: 130px;
-        padding: 12px;
-    }
-
-    .stat-item h2 {
-        font-size: 1.4rem;
-    }
-
-    .stat-item p {
-        font-size: 0.9rem;
-    }
-
-    .icon {
-        font-size: 1.8rem;
+        grid-column: span 2;
     }
 }
 
-/* 📌 Mobile Devices (500px - 767px) */
 @media screen and (max-width: 768px) {
-    .description {
-        font-size: 1rem;
-        line-height: 1.5rem;
-        padding: 0 10px;
+    .theme-section {
+        padding: 70px 6% 60px;
     }
 
-    .shilp-logo img{
-        width: 280px;
-        height: 280px;
+    .contain {
+        padding: 60px 6%;
     }
 
-    .stats {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .stat-item {
-        width: 90%;
-        max-width: 250px;
-        padding: 10px;
-        margin-bottom: 15px;
-    }
-
-    .icon {
-        font-size: 1.6rem;
-    }
-
-    .stat-item h2 {
-        font-size: 1.3rem;
-    }
-
-    .stat-item p {
-        font-size: 0.9rem;
-    }
-}
-
-/* 📌 Small Mobile Devices (below 500px) */
-@media screen and (max-width: 500px) {
-    .contain{
-        padding: 15% 10px;
-    }
-    .description {
-        font-size: 0.9rem;
-        line-height: 1.4rem;
-        padding: 0 10px;
-    }
-
-    .shilp-logo img{
+    .shilp-logo img {
         width: 220px;
         height: 220px;
     }
 
-    .stats {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .stat-item {
-        width: 95%;
-        max-width: 200px;
-        padding: 8px;
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .theme-section {
+        padding: 60px 5% 50px;
     }
 
-    .icon {
-        font-size: 1.4rem;
+    .contain {
+        padding: 50px 5%;
     }
 
-    .stat-item h2 {
-        font-size: 1.2rem;
-    }
-
-    .stat-item p {
-        font-size: 0.8rem;
+    .shilp-logo img {
+        width: 180px;
+        height: 180px;
     }
 }

@@ -1,128 +1,179 @@
-.vintage-navbar {
-    position: absolute;
+/* ── Base Navbar ── */
+.shilp-navbar {
+    position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.587); 
-    padding-bottom: 0px;
+    background: #1a3a5c;
     z-index: 9999999;
-    font-family: 'Old Standard TT', serif; 
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 }
 
-.vintage-navbar .navbar-brand img {
-    height: 60px;
-    width: 60px;
+.shilp-navbar .navbar-brand img {
+    height: 56px;
+    width: 56px;
+    object-fit: contain;
 }
 
-.vintage-navbar .nav-item {
-    font-size: 1.2vw;
-    font-weight: 600;
-    color: #FFF8DC; 
-    margin: 0;
+/* ── Nav Items ── */
+.shilp-navbar .nav-item {
+    font-size: 0.95rem;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.vintage-navbar .navbar-toggler {
-    margin-right: 15px;
-    border: 5px solid #d9d5b8;
+.shilp-navbar .nav-link {
+    color: #e8edf2 !important;
+    padding: 0.5rem 0.25rem;
+    position: relative;
+    transition: color 0.2s ease;
 }
 
-.vintage-navbar .navbar-toggler-icon {
+.shilp-navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #3ddc84;
+    transition: width 0.25s ease;
+}
+
+.shilp-navbar .nav-link:hover,
+.shilp-navbar .nav-link.active {
+    color: #3ddc84 !important;
+}
+
+.shilp-navbar .nav-link:hover::after,
+.shilp-navbar .nav-link.active::after {
+    width: 100%;
+}
+
+/* ── Toggler ── */
+.shilp-navbar .navbar-toggler {
+    margin-right: 15px;
+    border: 2px solid #3ddc84;
+    padding: 4px 8px;
+}
+
+.shilp-navbar .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.vintage-navbar .ProfilePic {
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
+/* ── Profile Pic ── */
+.shilp-navbar .ProfilePic {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid #3ddc84;
+    object-fit: cover;
+}
+
+/* ── Close Icon (mobile) ── */
+.close-icon {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: none;
+    border: none;
+    color: #e8edf2;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    line-height: 1;
+}
+
+/* ── Dropdowns ── */
+.shilp-navbar .dropdown-menu {
+    background-color: #243748;
+    border: 1px solid #2e4a61;
+    border-radius: 8px;
+    padding: 4px 0;
+    margin-top: 0.5rem;
+}
+
+.shilp-navbar .dropdown-menu .dropdown-item {
+    color: #e8edf2;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border: none !important;
+    transition: all 0.2s ease, color 0.2s ease;
+}
+
+.shilp-navbar .dropdown-menu .dropdown-item:hover {
+    background: #2e4a61;
+    color: #3ddc84;
+}
+
+.shilp-navbar .dropdown-toggle {
+    color: #e8edf2 !important;
+    background: none;
+    border: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.shilp-navbar .dropdown-toggle:hover {
+    color: #3ddc84 !important;
+}
+
+.event-workshop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
-
-.close-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    color: #FFF8DC;
-    font-size: 24px;
-    cursor: pointer;
-    display: none; 
+.event-workshop .dropdown-item {
+    display: block;
 }
 
-
-.navbar .dropdown-menu {
-    background-color: #8B7355; 
-    border-radius: 10px;
-    padding: 0;
-    margin-top: 0.5rem; 
-    top: 100%;
-}
-
-.dropdown .show {
-    padding: 0px;
-    border-radius: 10px;
-    background-color: #8B7355;
-}
-
-.dropdown .show a, .dropdown-item {
-    border: 1px solid white !important;
-    color: #FFF8DC !important;
-}
-
-.dropdown-menu .dropdown-item {
-    padding: 10px 20px;
-    color: #FFF8DC;
-    background: #8B7355;
-    border: none;
-}
-
-.dropdown-menu .dropdown-item:hover {
-    background: #654321; 
-}
-
-
+/* ── Mobile (≤1200px) ── */
 @media screen and (max-width: 1200px) {
-    .vintage-navbar {
-        background: transparent; 
-    }
 
-    .vintage-navbar .navbar-collapse {
+    .shilp-navbar .navbar-collapse {
         position: fixed;
         top: 0;
-        right: -250px; 
-        width: 250px;
-        height: 100vh; 
-        background: #8B7355; 
-        transition: right 1.5s ease-in-out;
-        padding-top: 60px; 
+        right: -260px;
+        width: 260px;
+        height: 100vh;
+        background: #1a3a5c;
+        border-left: 1px solid #2e4a61;
+        transition: right 0.3s ease;
+        padding-top: 64px;
+        overflow-y: auto;
     }
 
-    .vintage-navbar .navbar-collapse.show {
-        position: fixed;
-        height: 100vh; 
-        z-index: 9999999;
-        right: 0; 
+    .shilp-navbar {
+        background: transparent;
+        box-shadow: none;
     }
 
-    .vintage-navbar .close-icon {
-        display: block; 
+    .shilp-navbar .navbar-collapse.show {
+        right: 0;
     }
 
-    .vintage-navbar .nav-item {
-        font-size: 18px;
+    .close-icon {
+        display: block;
     }
 
-    .vintage-navbar .nav-link {
-        display: flex;
-        align-items: center;
+    .shilp-navbar .nav-item {
+        font-size: 1rem;
         justify-content: center;
-        color: #FFF8DC; 
     }
 
-    .vintage-navbar .ProfilePic {
+    .shilp-navbar .nav-link {
+        text-align: center;
+        padding: 0.6rem 1rem;
+    }
+
+    .shilp-navbar .ProfilePic {
         display: flex;
         margin: auto;
     }
@@ -132,17 +183,17 @@
     }
 }
 
-
+/* ── Desktop (≥1201px) ── */
 @media screen and (min-width: 1201px) {
-    .vintage-navbar .navbar-collapse {
-        justify-content: flex-end; 
+
+    .shilp-navbar .navbar-collapse {
+        justify-content: flex-end;
     }
 
-    .vintage-navbar .navbar-brand {
-        margin-right: auto; 
+    .shilp-navbar .navbar-brand {
+        margin-right: auto;
     }
 
-  
     .desktop-dropdown {
         position: relative;
     }
@@ -151,30 +202,9 @@
         position: absolute;
         right: 0;
         top: 100%;
-        background: #8B7355;
-        border: none;
-    }
-
-    .desktop-dropdown .dropdown-item {
-        color: #FFF8DC;
-        padding: 10px 20px;
-        background: #8B7355;
-    }
-
-    .desktop-dropdown .dropdown-item:hover {
-        background: #654321;
     }
 
     .mobile-profile {
         display: none;
     }
-}
-.event-workshop .dropdown-item{
-    display: block;
-}
-.event-workshop{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }

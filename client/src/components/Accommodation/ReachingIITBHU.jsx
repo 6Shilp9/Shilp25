@@ -6,49 +6,44 @@ function ReachingIITBHU() {
   return (
     <div className='outer-body reaching-outer-body'>
         <Zoom>
-        <div className="inner-body reaching-inner-body fs-5 fw-normal">
-            Getting to IIT BHU is facilitated by convenient transportation options in Varanasi. The city is well-connected by air, rail, and road. Here's a guide to reaching IIT BHU from various parts of the country. <br />
-            <br />
-            1. <span className='fw-bold'>By Air:</span> <br />
-            - Lal Bahadur Shastri International Airport (VNS) is the nearest airport to IIT BHU. It serves domestic flights, connecting Varanasi to major cities across India. <br />
-            <br />
-            2. <span className='fw-bold'>By Train:</span> <br />
-            - Varanasi Junction (BSB) is the primary railway station, providing excellent connectivity to different parts of the country. Numerous express and superfast trains operate to and from Varanasi. <br />
-            <br />
-            3. <span className='fw-bold'>From Delhi:</span> <br />
-            - By Air: Indira Gandhi International Airport (DEL) to Lal Bahadur Shastri International Airport (VNS). <br />
-            - By Train: New Delhi Railway Station (NDLS) to Varanasi Junction (BSB). <br />
-            <br />
-            4. <span className='fw-bold'>From Mumbai:</span> <br />
-            - By Air: Chhatrapati Shivaji Maharaj International Airport (BOM) to Lal Bahadur Shastri International Airport (VNS). <br />
-            - By Train: Chhatrapati Shivaji Maharaj Terminus (CSMT) to Varanasi Junction (BSB). <br />
-            <br />
-            5. <span className='fw-bold'>From Kolkata:</span> <br />
-            - By Air: Netaji Subhas Chandra Bose International Airport (CCU) to Lal Bahadur Shastri International Airport (VNS). <br />
-            - By Train: Howrah Junction (HWH) to Varanasi Junction (BSB). <br />
-            <br />
-            6. <span className='fw-bold'>From Chennai:</span> <br />
-            - By Air: Chennai International Airport (MAA) to Lal Bahadur Shastri International Airport (VNS). <br />
-            - By Train: Chennai Central (MAS) to Varanasi Junction (BSB). <br />
-            <br />
-            7. <span className='fw-bold'>From Bangalore:</span> <br />
-            - By Air: Kempegowda International Airport (BLR) to Lal Bahadur Shastri International Airport (VNS). <br />
-            - By Train: Yesvantpur Junction (YPR) to Varanasi Junction (BSB). <br />
-            <br />
-            8. <span className='fw-bold'>From Ahmedabad:</span> <br />
-            - By Air: Sardar Vallabhbhai Patel International Airport (AMD) to Lal Bahadur Shastri International Airport (VNS). <br />
-            - By Train: Ahmedabad Junction (ADI) to Varanasi Junction (BSB). <br />
-            <br />
-            9. <span className='fw-bold'>From Hyderabad:</span> <br />
-            - By Air: Rajiv Gandhi International Airport (HYD) to Lal Bahadur Shastri International Airport (VNS). <br />
-            - By Train: Secunderabad Junction (SC) to Varanasi Junction (BSB). <br />
-            <br />
-            10. <span className='fw-bold'>From Jaipur:</span> <br />
-                - By Air: Jaipur International Airport (JAI) to Lal Bahadur Shastri International Airport (VNS). <br />
-                - By Train: Jaipur Junction (JP) to Varanasi Junction (BSB). <br />
-            <br />
-            Choose the mode of transportation that best suits your preferences and schedule, ensuring a smooth journey to IIT BHU from various parts of the country. <br />
-        </div>
+            <div className="inner-body reaching-inner-body">
+                <h2 className="section-heading">Reaching IIT BHU</h2>
+                <p style={{color: "rgba(255,255,255,0.7)", marginBottom: "1.5rem", fontFamily: "Inter, sans-serif"}}>
+                    Getting to IIT BHU is facilitated by convenient transportation options in Varanasi. The city is well-connected by air, rail, and road.
+                </p>
+                <ul className="policy-list">
+                    <li>
+                        <strong style={{color: "#3ddc84"}}>By Air</strong> — Lal Bahadur Shastri International Airport (VNS) is the nearest airport, connecting Varanasi to major cities across India.
+                    </li>
+                    <li>
+                        <strong style={{color: "#3ddc84"}}>By Train</strong> — Varanasi Junction (BSB) is the primary railway station with excellent connectivity across the country.
+                    </li>
+                    <li>
+                        <strong style={{color: "#3ddc84"}}>From Delhi</strong> — By Air: IGI Airport (DEL) → VNS. By Train: New Delhi (NDLS) → Varanasi Junction (BSB).
+                    </li>
+                    <li>
+                        <strong style={{color: "#3ddc84"}}>From Mumbai</strong> — By Air: CSMIA (BOM) → VNS. By Train: CSMT → Varanasi Junction (BSB).
+                    </li>
+                    <li>
+                        <strong style={{color: "#3ddc84"}}>From Kolkata</strong> — By Air: NSCBI Airport (CCU) → VNS. By Train: Howrah Junction (HWH) → Varanasi Junction (BSB).
+                    </li>
+                    <li>
+                        <strong style={{color: "#3ddc84"}}>From Chennai</strong> — By Air: Chennai Airport (MAA) → VNS. By Train: Chennai Central (MAS) → Varanasi Junction (BSB).
+                    </li>
+                    <li>
+                        <strong style={{color: "#3ddc84"}}>From Bangalore</strong> — By Air: Kempegowda Airport (BLR) → VNS. By Train: Yesvantpur Junction (YPR) → Varanasi Junction (BSB).
+                    </li>
+                    <li>
+                        <strong style={{color: "#3ddc84"}}>From Ahmedabad</strong> — By Air: SVP Airport (AMD) → VNS. By Train: Ahmedabad Junction (ADI) → Varanasi Junction (BSB).
+                    </li>
+                    <li>
+                        <strong style={{color: "#3ddc84"}}>From Hyderabad</strong> — By Air: Rajiv Gandhi Airport (HYD) → VNS. By Train: Secunderabad Junction (SC) → Varanasi Junction (BSB).
+                    </li>
+                    <li>
+                        <strong style={{color: "#3ddc84"}}>From Jaipur</strong> — By Air: Jaipur Airport (JAI) → VNS. By Train: Jaipur Junction (JP) → Varanasi Junction (BSB).
+                    </li>
+                </ul>
+            </div>
         </Zoom>
     </div>
   )

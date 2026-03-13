@@ -1,581 +1,179 @@
 const Contacts = [
-    {
-        "id": 1,
-        "Team": "Tech Team",
-        "team": [
-            {
-                "Designation": "Tech Advisor",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/IV Year/MAYANK_TECH_ADVISOR.webp",
-                        "Name": "Mayank Gupta",
-                        "Email": "mayankmani.nathgupta.cd.civ21@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/guptamayank1206",
-                        "Linkedin": "https://www.linkedin.com/in/mynkk",
-                        "MobileNo": ""
-                    }
-                ]
-            },
-            {
-                "Designation": "Tech Head",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/III Year/SUMIT_SAHU_TECH_HEAD.webp",
-                        "Name": "Sumit Sahu",
-                        "Email": "sumit.sahu.civ22@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/_imssahu",
-                        "Linkedin": "www.linkedin.com/in/sumit27sahu",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/III Year/SUMIT_DUTTA_TECH_HEAD.webp",
-                        "Name": "Sumit Dutta",
-                        "Email": "sumit.dutta.cd.civ22@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/sumit.dutta_/?next=%2F",
-                        "Linkedin": "https://www.linkedin.com/in/sumit-dutta007/",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/III Year/SAKET_MEHTA_TECH_HEAD.webp",
-                        "Name": "Saket Mehta",
-                        "Email": "saket.mehta.civ22@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/mehtasakett/",
-                        "Linkedin": "https://www.linkedin.com/in/saket-mehta-6a9ba0256",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/avatar.webp",
-                        "Name": "Abhijeet Mankani",
-                        "Email": "abhijeet.mankani.civ22@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/abhijeet_mankani/",
-                        "Linkedin": "https://in.linkedin.com/in/abhijeet-mankani-22ab411b1",
-                        "MobileNo": ""
-                    },
-                ]
-            },
-        ]
-    },
-    {
-        "id": 6,
-        "Team": "Marketing Team",
-        "team": [
-            {
-                "Designation": "Marketing Advisor",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/IV Year/AMAN_SRIVASTAVA_MARKETING_ADVISOR.webp",
-                        "Name": "Aman Srivastava",
-                        "Email": "aman.srivastava.civ21@itbhu.ac.in",
-                        "Instagram": "Dhoondh lo (follow nahi karte kya?)",
-                        "Linkedin": "Dhoond lo",
-                        "MobileNo": ""
-                    }
-                ]
-            },
-            {
-                "Designation": "Marketing Head",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/III Year/PRAKHAR_SRIVASTAVA_MARKETING_HEAD.webp",
-                        "Name": "Prakhar Srivastava",
-                        "Email": "prakhar.srivastava.civ22@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/prkhrrrrrr/",
-                        "Linkedin": "https://www.linkedin.com/in/prakhar-srivastava-80b006259/",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/III Year/PRITHVI_DUTTA_MARKETING_HEAD.webp",
-                        "Name": "Prithvi Dutta",
-                        "Email": "prithvi.dutta.civ22@itbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "https://www.linkedin.com/in/prithvi-dutta",
-                        "MobileNo": ""
-                    }
-                ]
-            },
-            {
-                "Designation": "Marketing Executive",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/II Year/GAURAV_MARKETING_EXECUTIVE.webp",
-                        "Name": "Gaurav Agarwal",
-                        "Email": "gaurav.agarwal.civ23@itbhu.ac.in",
-                        "Instagram": "a.garwal_gaurav",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/KARTIKEYA_KULHARI_MARKETING_EXECUTIVE.webp",
-                        "Name": "Kartikeya kulhari",
-                        "Email": "kartikeya.kulhari.cd.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/kartik.eya_1505?igsh=MXNucnE4ZDZzNzc2ag==",
-                        "Linkedin": "www.linkedin.com/in/ kartikeyakulhari15",
-                        "MobileNo": ""
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "Team": "Branding Team",
-        "team": [
-            {
-                "Designation": "Branding Advisor",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/IV Year/MANSI_BRANDING_ADVISOR.webp",
-                        "Name": "Mansi Pandharpure",
-                        "Email": "mansi.pandharpure.civ21@itbhu.ac.in",
-                        "Instagram": "mansi__7603",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/avatar.webp",
-                        "Name": "Ankit Kumar",
-                        "Email": "ankit.kumar.civ21@itbhu.ac.in",
-                        "Instagram": "arre_ankit",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/IV Year/ASHWANI_KUMAR_SHARMA_BRANDING_ADVISOR.webp",
-                        "Name": "Ashwani Kumar Sharma",
-                        "Email": "ashwani.krsharma.civ21@itbhu.ac.in",
-                        "Instagram": "ashwani.kumar.sharma",
-                        "Linkedin": "www.linkedin.com/in/ashwani2003",
-                        "MobileNo": ""
-                    }
-                ]
-            },
-            {
-                "Designation": "Branding Head",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/III Year/PARNA_MALIK_BRANDING_HEAD.webp",
-                        "Name": "Parna Malik",
-                        "Email": "parna.malik.civ22@itbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/III Year/NITIN_BRANDING_HEAD.webp",
-                        "Name": "NITIN",
-                        "Email": "nitin.student.civ22@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/nkgurjar_01?igsh=MTM0ZzViYnJlc3QzNw==",
-                        "Linkedin": "https://www.linkedin.com/in/nitin-kumar-gurjar-137b2a293",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/III Year/AVDHESH_BRANDING_HEAD.webp",
-                        "Name": "Avdhesh",
-                        "Email": "avdhesh.student.civ22@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/avdhesh_gurjar__?igsh=MXBiNnYxcnVnajJ0ag==",
-                        "Linkedin": "https://www.linkedin.com/in/avdhesh-gurjar-48906a225",
-                        "MobileNo": ""
-                    }
-                ]
-            },
-            {
-                "Designation": "Branding Executive",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/II Year/DEVRAJ_MAHAWAR_BRANDING_EXECUTIVE.webp",
-                        "Name": "Devraj Mahawar",
-                        "Email": "devraj.mahawar.civ23@itbhu.ac.in",
-                        "Instagram": "devrajmahawar12",
-                        "Linkedin": "https://www.linkedin.com/in/devraj-mahawar-26a373288/",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/ABHISHEK_KUMAR_BRANDING_EXECUTIVE.webp",
-                        "Name": "Abhishek Kumar",
-                        "Email": "abhishek.kumar.cd.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/___abhi___singh___0/",
-                        "Linkedin": "https://www.linkedin.com/in/abhishek-kumar-17444b282/",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/NAIDU VAMSHIKRISHNA_CONTENT AND BRANDING.webp",
-                        "Name": "Naidu Vamshikrishna",
-                        "Email": "naidu.vamshikrishna.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/_vamshi_krishna3/",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/avatar.webp",
-                        "Name": "Yashas Kumar Kalyani",
-                        "Email": "yashaskr.kalyani.civ23@itbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/Nooka jathin swaroop_content and branding.webp",
-                        "Name": "Nooka Jathin Swaroop",
-                        "Email": "njathin.swaroop.civ23@itbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/ROYYA_VAMSHI_RAM--BRANDING.webp",
-                        "Name": "Royya Vamshi Ram",
-                        "Email": "royyavamshi.ram.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/vamshiroyya?igsh=MXZqN2puM3psemM5dQ==",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    }
-                ]
-            },
-        ]
-    },
-    {
-        "id": 4,
-        "Team": "Events Team",
-        "team": [
-            {
-                "Designation": "Event Advisor",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/IV Year/PRATIK_NAND_EVENT_ADVISOR.webp",
-                        "Name": "Pratik Nand",
-                        "Email": "pratik.nand.civ21@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/pratik_nand5?igsh=c3M0czFoaHc4dnUw",
-                        "Linkedin": "https://www.linkedin.com/in/pratik-nand",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/IV Year/RADHIKA_EVENT_ADVISOR.webp",
-                        "Name": "Radhika Singh Rajawat",
-                        "Email": "radhikas.rajawat.civ21@itbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/IV Year/PRACHI _EVENT_ADVISOR.webp",
-                        "Name": "Prachi Priya",
-                        "Email": "pravishagupta1184@gmail.com",
-                        "Instagram": "",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/avatar.webp",
-                        "Name": "Nandini Bhimsaria",
-                        "Email": "nandini.bhimsaria.civ21@itbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    }
-                ]
-            },
-            {
-                "Designation": "Events Head",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/III Year/SHEFALI_JAISWAL_EVENTS_HEAD.webp",
-                        "Name": "Shefali Jaiswal",
-                        "Email": "shefali.jaiswal.civ22@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/shefalijaiswal1234",
-                        "Linkedin": "https://www.linkedin.com/in/shefali-jaiswal-407704306/",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/III Year/SUNIL_PARSWAL_EVENTS_HEAD.webp",
-                        "Name": "Sunil Parswal",
-                        "Email": "sunil.parswal.civ22@iitbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/sunilparswal/",
-                        "Linkedin": "https://www.linkedin.com/in/sunil-parswal-704809255/",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/III Year/ALOK_TIWARI_EVENTS_HEAD.webp",
-                        "Name": "Alok Tiwari",
-                        "Email": "alok.tiwari.cd.civ22@iitbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "https://www.linkedin.com/in/alok-tiwari-4944a4258",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/III Year/ANURAG_PRAKASH_EVENTS_HEAD.webp",
-                        "Name": "Anurag Prakash",
-                        "Email": "anurag.prakash.civ22@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/anurag._.1?igsh=aHhnazhkNzZha3Bu",
-                        "Linkedin": "https://www.linkedin.com/in/anurag-prakash-7b4736258",
-                        "MobileNo": ""
-                    }
-                ]
-            },
-            {
-                "Designation": "Events' Team Executive",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/II Year/PRANJAL_EVENTS_EXECUTIVE.webp",
-                        "Name": "Pranjal Gupta",
-                        "Email": "pranjal.gupta.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/pranjal0_06/",
-                        "Linkedin": "https://www.linkedin.com/in/pranjalgupta06",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/PRAKHAR_SRIVASTAVA_EVENTS_EXECUTIVE.webp",
-                        "Name": "Prakhar Srivastava",
-                        "Email": "prakhar.srivastava.civ23@itbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/SHUBHAM_KUMAR_EVENTS_EXECUTIVE.webp",
-                        "Name": "Shubham Kumar",
-                        "Email": "shubham.kumar.civ23@itbhu.ac.in",
-                        "Instagram": "Shubham_Kumar_Singh",
-                        "Linkedin": "https://www.linkedin.com/in/shubham-kumar-8257142a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/DIPESH_EVENTS_EXECUTIVE.webp",
-                        "Name": "Dipesh",
-                        "Email": "dipeshiitbhu@gmail.com",
-                        "Instagram": "",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/SUMIT_KUMAR_INDLIA_EVENTS_EXECUTIVE.webp",
-                        "Name": "Sumit Kumar Indlia",
-                        "Email": "sumitkr.indlia.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/im_sumit26?igsh=ZXZseTFydzJyZ2d5",
-                        "Linkedin": "www.linkedin.com/in/sumit-kumar-indlia-b41828299",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/VAIBHAV_EVENTS_EXECUTIVE.webp",
-                        "Name": "Vaibhav Rajvardhan",
-                        "Email": "vaibhav.rajvardhan.civ23@itbhu.ac.in",
-                        "Instagram": "vaibhav_rajput_2528",
-                        "Linkedin": "www.linkedin.com/in/vaibhav-rajvardhan-b1085430a",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/YASH_KUMAR_SAHA_EVENTS_EXECUTIVE.webp",
-                        "Name": "Yash Kumar Saha",
-                        "Email": "yashkr.saha.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/yash_saha_/",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/PRAVEEN_KUMAR_EVENTS_EXECUTIVE.webp",
-                        "Name": "Praveen Kumar",
-                        "Email": "praveen.kumar.civ23@itbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/KASHISH_KUMARI_EVENTS_ EXECUTIVE.webp",
-                        "Name": "Kashish Kumari",
-                        "Email": "kashish.kumari.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/kcs07_05?igsh=MTBvMGRkcHNnbDlvbw==",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    }
-                ]
-            },
-        ]
-    },
-    {
-        "id": 2,
-        "Team": "Public Relations",
-        "team": [
-            {
-                "Designation": "Public Relations Advisor",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/IV Year/SARTHAK_ANAND_PUBLIC_RELATIONS_ADVISOR.webp",
-                        "Name": "Sarthak Anand",
-                        "Email": "sarthak.anand.civ21@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/__chuntaro?igsh=MTlyajYyazhqeDliaw==",
-                        "Linkedin": "https://www.linkedin.com/in/sarthakanand12/",
-                        "MobileNo": ""
-                    }
-                ]
-            },
-            {
-                "Designation": "Public Relations Head",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/III Year/RESHMA_KHATOON_PUBLIC_RELATIONS_HEAD.webp",
-                        "Name": "Reshma Khatoon",
-                        "Email": "reshma.khatoon.civ22@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/reshmakhatoon826/",
-                        "Linkedin": "https://www.linkedin.com/in/reshma-khatoon-1296a1287/",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/III Year/AAKASH_SRIVASTAVA_PUBLIC_RELATION_HEAD.webp",
-                        "Name": "Aakash Srivastava",
-                        "Email": "aakash.srivastava.civ22@iitbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "https://www.linkedin.com/in/srivastava-aakash/",
-                        "MobileNo": ""
-                    }
-                ]
-            },
-            {
-                "Designation": "Public Relations Executive",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/II Year/SARTHAK_CHAUHAN_PUBLIC_RELATIONS_EXECUTIVE.webp",
-                        "Name": "Sarthak Chauhan",
-                        "Email": "sarthak.chauhan.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/sarthak.chauhan.07?igsh=MXRvbDFrOXpseW9xZA==",
-                        "Linkedin": "https://www.linkedin.com/in/sarthak-chauhan-b36ba22a0",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/AADITYA_PUBLIC_RELATIONS_EXECUTIVE.webp",
-                        "Name": "Aaditya Agrawal",
-                        "Email": "aaditya.agrawal.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/aaditya_agrawal_18/profilecard/?igsh=aWN2MTlzaDRpam9t",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/avatar.webp",
-                        "Name": "Bishnu Vimal Jha",
-                        "Email": "bishnuvimal.jha.civ23@iitbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/bishnuhere?igsh=ZWFpdHVzMnAwanQz",
-                        "Linkedin": "https://www.linkedin.com/in/bishnu-vimal-jha-a87708281",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/KARTIKEY_TANWAR_PUBLIC_RELATIONS_EXECUTIVE.webp",
-                        "Name": "Kartikey Tanwar",
-                        "Email": "kartikey.tanwar.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/tanwarkartikey?igsh=MXNiNWRoNGlxeHdtcw==",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/GARVIT_JAIN_PUBLIC_RELATIONS_EXECUTIVE.webp",
-                        "Name": "Garvit Jain",
-                        "Email": "garvit.jain.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/garvit16_jain/",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "Team": "Publicity Team",
-        "team": [
-            {
-                "Designation": "Publicity Advisor",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/IV Year/ANSHIKA_PUBLICITY_ADVISOR.webp",
-                        "Name": "Anshika Singh",
-                        "Email": "anshika.singh.civ21@itbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/IV Year/VISHU_RAJ_PUBLICITY_ADVISOR.webp",
-                        "Name": "Vishu Raj",
-                        "Email": "vishu.raj.civ21@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/vishu_kashyap_01?igsh=MXFsejl6aGMzdTBlOA==",
-                        "Linkedin": "https://www.linkedin.com/in/vishu-raj-940438226",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/IV Year/GUNJIT_PUBLICITY_ADVISOR.webp",
-                        "Name": "Gunjit Dhakar",
-                        "Email": "gunjitkumar.dhakar.civ21@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/_gunjit_dhakar?igsh=MW5iYW5oMDhpejZvNw==",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    }
-                ]
-            },
-            {
-                "Designation": "Publicity Head",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/III Year/AYUSH_KUMAR_PUBLICITY_HEAD.webp",
-                        "Name": "Ayush Kumar",
-                        "Email": "ayush.kumar.civ22@itbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/III Year/SHIKHA_KALONIYA_PUBLICITY_HEAD.webp",
-                        "Name": "Shikha Kaloniya",
-                        "Email": "shikha.kaloniya.civ22@itbhu.ac.in",
-                        "Instagram": "",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    }
-                ]
-            },
-            {
-                "Designation": "Publicity Executive",
-                "data": [
-                    {
-                        "url": "./TeamPhotos/II Year/BINEET_GUPTA_PUBLICITY_EXECUTIVE.webp",
-                        "Name": "Bineet Gupta",
-                        "Email": "bineet.gupta.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/bineet_1729?igsh=MWFnNjc3eWt2amllOQ==",
-                        "Linkedin": "https://www.linkedin.com/in/bineet-gupta-024407308",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/AARTI_MEENA_PUBLICITY_EXECUTIVE.webp",
-                        "Name": "Aarti Meena",
-                        "Email": "aarti.meena.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/aarti_23csb?igsh=aDk1OGp2NncxMjI3",
-                        "Linkedin": "https://www.linkedin.com/in/aarti-meena-42b2682a8",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/KRISHNAKANT_TELANGE_PUBLICITY_EXECUTIVE.webp",
-                        "Name": "Krishnakant Kiran Telange",
-                        "Email": "telange.krishnakantk.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/krishnakant_.06?igsh=anFpdTI5cnY0dzVs",
-                        "Linkedin": "https://www.linkedin.com/in/krishnakant-telange-38804b304",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/II Year/Screenshot_2025-03-13-21-11-35-59_6012fa4d4ddec268fc5c7112cbb265e7.webp",
-                        "Name": "Aditya Bhardwaj",
-                        "Email": "aditya.bhardwaj.civ23@itbhu.ac.in",
-                        "Instagram": "adityabhardwaj9291",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    },
-                    {
-                        "url": "./TeamPhotos/avatar.webp",
-                        "Name": "B. Nayan Preetham",
-                        "Email": "bnayan.preetham.civ23@itbhu.ac.in",
-                        "Instagram": "https://www.instagram.com/nayan_thelion?igsh=bmdzcGxidWgxbHZj",
-                        "Linkedin": "",
-                        "MobileNo": ""
-                    }
-                ]
-            },
-        ]
-    },
+  {
+    id: 1,
+    Team: "Tech Team",
+    team: [
+      {
+        Designation: "Tech Advisor",
+        data: [
+          {
+            url: "./TeamPhotos/IV Year/saket_mehta.png",
+            Name: "Saket Mehta",
+          },
+        ],
+      },
+      {
+        Designation: "Tech Head",
+        data: [
+          {
+            url: "./TeamPhotos/III Year/ayush_sheel.jpg",
+            Name: "Ayush Sheel",
+          },
+        ],
+      },
+      {
+        Designation: "Tech Executive",
+        data: [
+          {
+            url: "./TeamPhotos/II Year/seturaman_kumar.jpeg",
+            Name: "Seturaman Kumar",
+          },
+          {
+            url: "./TeamPhotos/II Year/aayushman_binodkumar_ranjan.jpg",
+            Name: "Aayushman Ranjan",
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 6,
+    Team: "Marketing Team",
+    team: [
+      {
+        Designation: "Marketing Head",
+        data: [
+          {
+            url: "./TeamPhotos/III Year/ayushi_vijayvargiya.jpg",
+            Name: "Ayushi Vijay Vargiya",
+          },
+          {
+            url: "./TeamPhotos/III Year/ipshita_joshi.png",
+            Name: "Ipshita Joshi",
+          },
+        ],
+      },
+      {
+        Designation: "Marketing Executive",
+        data: [
+          {
+            url: "./TeamPhotos/II Year/dheeraj_borana.jpg",
+            Name: "Dheeraj Borana",
+          },
+          {
+            url: "./TeamPhotos/II Year/abhyudaya_singh.jpg",
+            Name: "Abhyudaya Singh",
+          },
+          {
+            url: "./TeamPhotos/II Year/isha_gupta.jpg",
+            Name: "Isha Gupta",
+          },
+          {
+            url: "./TeamPhotos/II Year/suhel_dev.jpg",
+            Name: "Suhel Dev",
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    Team: "Branding Team",
+    team: [
+      {
+        Designation: "Branding Head",
+        data: [
+          {
+            url: "./TeamPhotos/III Year/devraj_mahawar.jpg",
+            Name: "Devraj Mahawar",
+          },
+          {
+            url: "./TeamPhotos/III Year/archi_arun.jpeg",
+            Name: "Archi Arun",
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 4,
+    Team: "Events Team",
+    team: [
+      {
+        Designation: "Events Head",
+        data: [
+          {
+            url: "./TeamPhotos/III Year/prakhar_srivastava.jpg",
+            Name: "Prakhar Srivastava",
+          },
+          {
+            url: "./TeamPhotos/III Year/yash_kumar_saha.jpg",
+            Name: "Yash Kumar Saha",
+          },
+          {
+            url: "./TeamPhotos/III Year/mahesh_pareta.jpg",
+            Name: "Mahesh Pareta",
+          },
+          {
+            url: "./TeamPhotos/III Year/kashish_kumari.jpg",
+            Name: "Kashish Kumari",
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 2,
+    Team: "Public Relations",
+    team: [
+      {
+        Designation: "PR Head",
+        data: [
+          {
+            url: "./TeamPhotos/III Year/photoMahika.jpg",
+            Name: "Mahika Chaudhary",
+          },
+        ],
+      },
+      {
+        Designation: "PR Executive",
+        data: [
+          {
+            url: "./TeamPhotos/II Year/ekta_dubey.jpg",
+            Name: "Ekta Dubey",
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 5,
+    Team: "Publicity Team",
+    team: [
+      {
+        Designation: "Publicity Head",
+        data: [
+          {
+            url: "./TeamPhotos/III Year/aarti_meena.jpg",
+            Name: "Aarti Meena",
+          },
+          {
+            url: "./TeamPhotos/III Year/sarthak_chauhan.jpg",
+            Name: "Sarthak Chauhan",
+          },
+          {
+            url: "./TeamPhotos/III Year/aaditya_agrawal.jpg",
+            Name: "Aaditya Agrawal",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export default Contacts;

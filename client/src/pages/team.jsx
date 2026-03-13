@@ -51,12 +51,12 @@ const convenors = [
         Designation: "Convenor",
         data: [
             {
-                "url": "./TeamPhotos/IV Year/PARAM_SRIVASTAVA_CO_CONVENOR.webp",
-                "Name": "Param Srivastava",
-                "Email": "param.srivastava.civ21@itbhu.ac.in",
-                "Instagram": "",
-                "Linkedin": "https://www.linkedin.com/in/param-srivastava-016ba6261",
-                "MobileNo": ""
+                "url": "./TeamPhotos/IV Year/MUGDHA_CHATURVEDI_CO_CONVENER.webp",
+                "Name": "Mugdha Chaturvedi"
+                //"Email": "param.srivastava.civ21@itbhu.ac.in",
+                //"Instagram": "",
+                //"Linkedin": "https://www.linkedin.com/in/param-srivastava-016ba6261",
+                //"MobileNo": ""
             }
         ],
     },
@@ -66,20 +66,28 @@ const convenors = [
                 Designation: "Co-Convenor",
                 data: [
                     {
-                                            "url": "./TeamPhotos/III Year/MUGDHA_CHATURVEDI_CO_CONVENER.webp",
-                                            "Name": "Mugdha Chaturvedi",
-                                            "Email": "mugdha.chaturvedi.civ22@itbhu.ac.in",
-                                            "Instagram": "https://www.instagram.com/mugdha__chaturvedi?igsh=Nm1kZmR3M2Z6ZmFr",
-                                            "Linkedin": "https://www.linkedin.com/in/mugdha-chaturvedi-096853258",
-                                            "MobileNo": ""
+                                            "url": "./TeamPhotos/IV Year/PARNA_MALIK_BRANDING_HEAD.webp",
+                                            "Name": "Parna Malik"
+                                            //"Email": "mugdha.chaturvedi.civ22@itbhu.ac.in",
+                                            //"Instagram": "https://www.instagram.com/mugdha__chaturvedi?igsh=Nm1kZmR3M2Z6ZmFr",
+                                            //"Linkedin": "https://www.linkedin.com/in/mugdha-chaturvedi-096853258",
+                                            //"MobileNo": ""
                                         },
                                         {
-                                            "url": "./TeamPhotos/IV Year/DEVESH_SINDHI_CONVENOR.webp",
-                                            "Name": "Devesh Sindhi",
-                                            "Email": "devesh.sindhi.civ21@itbhu.ac.in",
-                                            "Instagram": "",
-                                            "Linkedin": "",
-                                            "MobileNo": ""
+                                            "url": "./TeamPhotos/IV Year/SUNIL_PARSWAL_EVENTS_HEAD.webp",
+                                            "Name": "Sunil Parswal"
+                                            //"Email": "devesh.sindhi.civ21@itbhu.ac.in",
+                                            //"Instagram": "",
+                                            //"Linkedin": "",
+                                            //"MobileNo": ""
+                                        },
+                                        {
+                                            "url": "./TeamPhotos/III Year/Screenshot_2025-07-27-13-53-47-75_6012fa4d4ddec268fc5c7112cbb265e7 - Aditya Bhardwaj 4-Yr B.Tech._ Civil Engg., IIT(BHU).jpg",
+                                            "Name": "Aditya Bhardwaj"
+                                            //"Email": "devesh.sindhi.civ21@itbhu.ac.in",
+                                            //"Instagram": "",
+                                            //"Linkedin": "",
+                                            //"MobileNo": ""
                                         }
                                         
                 ]

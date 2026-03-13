@@ -21,7 +21,7 @@ app.use("/auth", auth);
 
 app.use("/userData", userData);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5002;
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`);
 });
